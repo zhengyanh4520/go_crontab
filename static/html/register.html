@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <base href="<%=basePath%>">
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>登录</title>
+
+    <!-- 引入 -->
+    <link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-chalk/index.css">
+    <style>
+        .el-input{
+            width: 250px;
+        }
+        body{
+            background-image: url("/static/picture/background.jfif");
+        }
+        #register{
+            position: absolute;
+            left: 36%;
+            top: 26%;
+            width: auto;
+            height: auto;
+            padding-top: 40px;
+            padding-bottom: 20px;
+            padding-right: 20px;
+            background: white;
+            border-radius: 10px;
+            opacity:0.91;
+        }
+    </style>
+</head>
+</head>
+<body>
+    <div id="register">
+    <el-form ref="form" :model="form" status-icon :rules="rules" label-width="100px" label-position="right">
+        <el-form-item label="账号：" prop="id">
+            <el-input v-model="form.id"></el-input>
+        </el-form-item>
+
+        <el-form-item label="密码：" prop="password">
+            <el-input type="password" v-model="form.password"></el-input>
+        </el-form-item>
+
+        <el-form-item label="确认密码：" prop="password2">
+            <el-input type="password" v-model="form.password2"></el-input>
+        </el-form-item>
+
+        <el-form-item label="用户名：" prop="name">
+            <el-input v-model="form.name"></el-input>
+        </el-form-item>
+
+        <el-form-item >
+            <el-button type="primary" @click="register(form)">注册</el-button>
+            <el-button type="primary" @click="toLogin()">返回登录</el-button>
+        </el-form-item>
+    </el-form>
+</div>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12"></script>
+    <!-- 引入组件库 -->
+    <script src="https://unpkg.com/element-ui/lib/index.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script>
+        new Vue({
+            el: '#register',
+            data() {
+                var validatePass = (rule, value, callback) => {
+                    if (value === '') {
+                        callback(new Error('请再次输入密码'));
+                    } else if (value !== this.form.password) {
+                        callback(new Error('两次输入密码不一致!'));
+                    } else {
+                        callback();
+                    }
+                };
+
+                return {
+                    form: {
+                        id:"",
+                        password:"",
+                        password2:"",
+                        name:"",
+                    },
+                    rules: {
+                        id:[
+                            {type: "string", required: true, message: '请输入账户', trigger: 'blur'},
+                            {type: "string", message: '账户只能为数字、字母组合',pattern:/^[A-Za-z0-9]+$/, trigger: 'blur'},
+                            {max: 20, message: "长度在20以内", trigger: "blur" }
+                        ],
+                        password:[
+                            {type: "string", required: true, message: '请输入密码', trigger: 'blur'},
+                            {max: 20, message: "长度在20以内", trigger: "blur" }
+                        ],
+                        password2:[
+                            {validator: validatePass,required: true, trigger: 'blur' }
+                        ],
+                        name:[
+                            {type: "string", required: true, message: '请输入用户名', trigger: 'blur'},
+                            {max: 20, message: "长度在20以内", trigger: "blur" }
+                        ]
+                    },
+                };
+            },
+            methods: {
+                register(form){
+                    this.$refs.form.validate((valid) => {
+                        if (valid) {
+                            const user=this.form;
+                            axios({
+                                method: 'post',
+                                url: '../../register',
+                                data:
+                                    {
+                                        "id": user.id,
+                                        "password": user.password,
+                                        "name": user.name,
+                                    },
+                            }).then(function (response) {
+                                if (response.data.error === "") {
+                                    alert("注册成功！");
+                                    window.location.href='/static/html/login.html';
+                                } else {
+                                    alert("注册失败！，可能是用户名已被占用 \n" +response.data.error);
+                                }
+                            }).catch(function (error) {
+                                alert("出错：" + error);
+                            });
+                        } else {
+                            alert("请按提示填写各信息")
+                            return false;
+                        }
+                    });
+                },
+                toLogin(){
+                    window.location.href='/static/html/login.html'
+                },
+            }
+        });
+    </script>
+</body>
+</html>

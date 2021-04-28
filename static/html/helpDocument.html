@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <title>查看任务主机</title>
+
+    <!-- 引入 -->
+    <link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-chalk/index.css">
+    <style>
+        h4{
+            text-indent:2em;
+        }
+    </style>
+</head>
+<body>
+    <div id="block">
+        <strong style="font-size: 20px;margin: 10px">帮助文档</strong>
+        <hr>
+        <h3>一、任务主机</h3>
+            <h4>1、点击查看任务主机，可查看当前用户配置的所有主机的在线状况，并可添加新的主机。</h4>
+            <h4>2、要配置某一主机的各类定时任务前，用户必须先添加该主机，配置任务时才可以选择该主机配置。</h4>
+            <h4>3、配置任务时，任务主机必须运行程序（即必须在线），否则任务无法下达该主机，配置将会失败</h4>
+        <h3>二、调度器</h3>
+            <h4>1、点击查看调度器，可查看当前各调度器的状态。</h4>
+            <h4>2、leader调度器会提供系统服务，follow调度器将会监听leader调度器状态，当leader下线或宕机时，follow中竞争出新的leader启动服务接管系统。</h4>
+            <h4>3、只有正在运行调度器程序的主机才会出现在列表中。</h4>
+        <h3>三、配置任务</h3>
+            <h4>1、系统可配置多类定时任务，可根据配置页面的选项组合出用户需要的定时任务。</h4>
+            <h4>2、任务配置前，需要确保用户已经添加了对应的主机，并已经在主机上运行了相应系统的程序。</h4>
+            <h4>3、任务超时时间单位为秒，默认输入0时，超时时间为1天，可根据需要进行配置。</h4>
+            <h4>4、任务执行命令为相应系统控制台可执行的命令，配置前可在系统控制台执行命令查看是否出错。</h4>
+            <h4>5、可根据任务是否长期循环或是只在某一时刻定时执行一次，通过输入crontab的时间格式或时间选择器去配置任务相应的执行时间。</h4>
+            <h4>6、可在查看任务页面对某个任务进行相关的各个操作。</h4>
+            <h4>7、crontab时间表达式基本格式（* * * * * *）：</h4>
+            <img src="/static/picture/table.png" style="margin: 0px 50px">
+        <h3>四、共享指令</h3>
+            <h4>1、点击查看共享指令页面，可查阅当前用户创建的单机任务命令和当前系统中所有用户共享出的单机任务命令。</h4>
+            <h4>2、用户层和系统层的单机命令互不影响，用户层决定该命令在当前用户所创建的所有单机任务中只能存在一个;
+                系统层决定该命令在当前系统中所创建的所有单机任务中只能存在一个，即所有用户共享。</h4>
+            <h4>3、配置任务时，将任务选择作为单机任务后，可以选择单机任务指令是否在系统中共享，若选否即只是用户自己共享。</h4>
+            <h4>注：若任务没有被选作为单机任务时，指令共享选项不会对任务产生任何影响。</h4>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12"></script>
+    <!-- 引入组件库 -->
+    <script src="https://unpkg.com/element-ui/lib/index.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script>
+    new Vue({
+        el: '#block',
+        data() {
+            return {
+                hostList:[],
+                dialogVisible:false,
+                data:null,
+                updateForm:{
+                    host:"",
+                    port:"",
+                    name:"",
+                },
+                currentPage: 1,
+                total:0,
+                pageSize:10,
+            }
+        },
+        methods:{
+            handleSizeChange(val) {
+                this.currentPage = 1;
+                this.pageSize = val;
+            },
+            handleCurrentChange(val) {
+                this.currentPage = val;
+            },
+            toAddHost(){
+                window.location.href="/static/html/addNode.html";
+            },
+            deleteNode(row){
+                const host=row.host;
+                axios({
+                    method: 'post',
+                    url: '../../deleteNode',
+                    data:
+                        {
+                            "user_id": user_id,
+                            "host": host,
+                        },
+                    transformRequest: [function (data) {
+                        let ret = ''
+                        for (let temp in data) {
+                            ret += encodeURIComponent(temp) + '=' + encodeURIComponent(data[temp]) + '&'
+                        }
+                        return ret
+                    }],
+                    headers: {
+                        'Content-Type': 'application/x-www-form-urlencoded'
+                    },
+                }).then(function (response) {
+                    if (response.data.error === "") {
+                        alert("成功");
+                    } else {
+                        alert("出错："+response.data.error);
+                    }
+                    window.location.reload();
+                }).catch(function (error) {
+                    alert("出错：" + error);
+                });
+            },
+            toData(row){
+                this.updateForm.host=row.host
+                this.updateForm.name=row.name
+                this.updateForm.port=row.port
+                this.dialogVisible=true
+            },
+            update(){
+                const ctx=this.updateForm;
+                axios({
+                    method: 'post',
+                    url: '../../updateNode',
+                    data:
+                        {
+                            "user_id" : user_id,
+                            "host": ctx.host,
+                            "name": ctx.name,
+                            "port": ctx.port,
+                        },
+                }).then(function (response) {
+                    if (response.data.error === "") {
+                        alert("更新成功！");
+                        window.location.href="/static/html/readNodeList.html";
+                    } else {
+                        alert("出错："+response.data.error);
+                    }
+                    window.location.reload()
+                }).catch(function (error) {
+                    alert("出错：" + error);
+                });
+            },
+        },
+        mounted() {
+            const ctx=this;
+            axios({
+                method: 'post',
+                url: '../../readNodeList',
+            }).then(function (response) {
+                if (response.data.error === "") {
+                    ctx.hostList=response.data.hostList;
+                    if (ctx.statusList===null){
+                        ctx.statusList=[];
+                    }
+                } else {
+                    alert("出错："+response.data.error);
+                }
+            }).catch(function (error) {
+                alert("出错：" + error);
+            });
+        }
+    });
+</script>
+</body>
+</html>

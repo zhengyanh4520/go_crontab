@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <title>查看调度器</title>
+
+    <!-- 引入 -->
+    <link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-chalk/index.css">
+    <style>
+        .el-header {
+            background-color: #B3C0D1;
+            color: #333;
+            text-align: left;
+            line-height: 60px;
+        }
+        .el-main {
+            background-color: #E9EEF3;
+            color: #333;
+            text-align: center;
+            line-height: 40px;
+        }
+    </style>
+</head>
+<body>
+    <div id="block">
+        <strong style="font-size: 20px;margin: 10px">查看调度器列表</strong>
+        <hr>
+        <el-container>
+            <el-main>
+                <el-table
+                        :data="hostList.slice((currentPage-1)*pageSize,currentPage*pageSize)"
+                        border
+                        style="width: 100%">
+                    <el-table-column
+                            prop="host"
+                            label="主机号">
+                    </el-table-column>
+                    <el-table-column
+                            prop="port"
+                            label="端口号">
+                    </el-table-column>
+                    <el-table-column
+                            prop="status"
+                            label="主机状态">
+                    </el-table-column>
+
+                </el-table>
+
+                <!-- 分页器 -->
+                <div class="block" style="margin-top:15px;">
+                    <el-pagination align='center' @size-change="handleSizeChange" @current-change="handleCurrentChange"
+                                   :current-page="currentPage"
+                                   :page-sizes="[10,20,50]"
+                                   :page-size="pageSize"
+                                   layout="total, sizes, prev, pager, next, jumper"
+                                   :total="hostList.length">
+                    </el-pagination>
+                </div>
+            </el-main>
+
+        </el-container>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12"></script>
+    <!-- 引入组件库 -->
+    <script src="https://unpkg.com/element-ui/lib/index.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script>
+        const user_id=getCookie("user_id")
+        new Vue({
+            el: '#block',
+            data() {
+                return {
+                    hostList:[],
+                    currentPage: 1,
+                    total:0,
+                    pageSize:10,
+                }
+            },
+            methods:{
+                handleSizeChange(val) {
+                    this.currentPage = 1;
+                    this.pageSize = val;
+                },
+                handleCurrentChange(val) {
+                    this.currentPage = val;
+                },
+            },
+            mounted() {
+                const ctx=this
+                axios({
+                    method: 'post',
+                    url: '../../readSchedulerList',
+                }).then(function (response) {
+                    ctx.hostList=response.data.hostList;
+                }).catch(function (error) {
+                    alert(error);
+                });
+            }
+        });
+
+        function getCookie(cname){
+            var name = cname + "=";
+            var ca = document.cookie.split(';');
+            for(var i=0; i<ca.length; i++) {
+                var c = ca[i].trim();
+                if (c.indexOf(name)==0) { return c.substring(name.length,c.length); }
+            }
+            return "";
+        }
+    </script>
+</body>
+</html>

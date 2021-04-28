@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html style="overflow:hidden;">
+<head>
+    <meta charset="utf-8">
+    <title>测试</title>
+    <!-- 引入样式 -->
+    <link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-chalk/index.css">
+    <style>
+        html,body{
+            width: 100%;
+            height: 100%;
+        }
+
+        #app{
+            width: 100%;
+            height: 100%;
+        }
+
+        .el-container{
+            width: 100%;
+            height: 100%;
+        }
+
+        .el-header {
+            display: flex;
+            background-color: #3b8cff;
+            color: #333;
+            /*line-height: 60px;*/
+        }
+
+        .el-aside {
+            color: #333;
+            height: 100%;
+        }
+
+        #mainFrame{
+            width: 100%;
+            height: 100%;
+        }
+        #title{
+            display: flex;
+            align-items: center;
+            margin-left: 5px;
+            float: left;
+            font-size: 20px;
+            color: honeydew;
+        }
+        #user{
+            flex-grow: 1;
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            font-size: 18px;
+            margin-right: 100px;
+            color: honeydew;
+        }
+        #head{
+            width: 50px;
+            border-radius: 100%;
+            margin: 5px 0 0 10px;
+        }
+        .aside{
+            background-color: rgb(238, 241, 246)
+        }
+        .menu{
+            background-color:rgba(0,0,0,0);
+        }
+        .menu.element{
+            font-size: 16px;
+        }
+        .el-submenu__title:hover{
+            background-color: lightblue !important;
+        }
+        .el-menu-item:hover {
+            background-color: lightblue !important;
+        }
+
+        .el-menu-item.is-active {
+            background-color: deepskyblue !important;
+            color: #fff;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="app">
+        <el-container>
+            <el-header>
+                <div id="title">
+                    <span>定时任务管理系统</span>
+                </div>
+                <div id="user">
+                    <el-dropdown trigger="click">
+                        <img id="head" src="/static/picture/head.jfif">
+                        <el-dropdown-menu >
+                            <el-dropdown-item><span @click="toModifyPassword()">修改密码</span></el-dropdown-item>
+                            <el-dropdown-item><span @click="toModifyName()">修改用户名</span></el-dropdown-item>
+                        </el-dropdown-menu>
+                    </el-dropdown>
+                    <span style="margin: auto 15px;">{{name}}</span>
+                    <i @click="dialogVisible=true" class="el-icon-switch-button"></i>
+                    <el-dialog
+                            title="提示"
+                            :visible.sync="dialogVisible"
+                            width="35%"
+                            center>
+                        <span>确定注销此用户么？</span>
+
+                        <span slot="footer">
+                            <el-button type="primary" @click="dialogVisible=false">取 消</el-button>
+                            <el-button type="primary" @click="exit()">确 定</el-button>
+                        </span>
+                    </el-dialog>
+                </div>
+            </el-header>
+
+            <el-container>
+                <el-aside width="200px" class="aside">
+                        <el-menu class="menu">
+                            <el-menu-item index="0" @click="toHelpDocument()" class="menu element"><i class="el-icon-s-promotion"></i>帮助文档</el-menu-item>
+                            <el-menu-item index="1" @click="toReadNode()" class="menu element"><i class="el-icon-copy-document"></i>查看任务主机</el-menu-item>
+                            <el-menu-item index="2" @click="toReadScheduler()" class="menu element"><i class="el-icon-discount"></i>查看调度器</el-menu-item>
+                            <el-menu-item index="3" @click="toReadTasks()" class="menu element"><i class="el-icon-files"></i>查看任务</el-menu-item>
+                            <el-menu-item index="4" @click="toReadCommand()" class="menu element"><i class="el-icon-chat-dot-round"></i>查看共享指令</el-menu-item>
+                        </el-menu>
+
+                </el-aside>
+                <el-main style="margin: 0px;padding: 0px;">
+                    <iframe frameborder="no" src="/static/html/helpDocument.html" name="mainFrame" scrolling="auto" noresize="noresize" id="mainFrame" title="mainFrame" ></iframe>
+                </el-main>
+            </el-container>
+        </el-container>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12"></script>
+    <!-- 引入组件库 -->
+    <script src="https://unpkg.com/element-ui/lib/index.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script>
+        new Vue({
+            el: '#app',
+            data() {
+                const user_name=decodeURI(getCookie("user_name"));
+                return {
+                    name: user_name,
+                    dialogVisible: false,
+                }
+            },
+            methods: {
+                toHelpDocument(){
+                    document.getElementById('mainFrame').src='/static/html/helpDocument.html';
+                },
+                toReadTasks(){
+                    document.getElementById('mainFrame').src='/static/html/readTasks.html';
+                },
+                toReadNode(){
+                    document.getElementById('mainFrame').src='/static/html/readNodeList.html';
+                },
+                toReadScheduler(){
+                    document.getElementById('mainFrame').src='/static/html/readSchedulerList.html';
+                },
+                toReadCommand(){
+                    document.getElementById('mainFrame').src= '/static/html/readCommandList.html';
+                },
+                toModifyPassword(){
+                    document.getElementById('mainFrame').src= '/static/html/modifyPassword.html';
+                },
+                toModifyName(){
+                    document.getElementById('mainFrame').src= '/static/html/modifyName.html';
+                },
+                exit(){
+                    axios({
+                        method: 'get',
+                        url: '../../exit',
+                    }).then(function () {
+                        window.location.href='/static/html/login.html';
+                    }).catch(function (error) {
+                        alert("出错：" + error);
+                    });
+                },
+            },
+        });
+
+        function getCookie(cname){
+            var name = cname + "=";
+            var ca = document.cookie.split(';');
+            for(var i=0; i<ca.length; i++) {
+                var c = ca[i].trim();
+                if (c.indexOf(name)==0) { return c.substring(name.length,c.length); }
+            }
+            return "";
+        }
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>配置任务</title>
+
+    <!-- 引入 -->
+    <link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-chalk/index.css">
+    <style>
+        .el-input{
+            width: 300px;
+        }
+
+    </style>
+</head>
+<body>
+    <strong style="font-size: 20px;margin: 10px">配置任务</strong>
+    <hr>
+    <div id="test">
+        <el-form ref="form" :model="form" :rules="rules"  label-width="200px" label-position="right">
+            <el-form-item label="任务名称："  prop="name">
+                <el-input v-model="form.name"></el-input>
+            </el-form-item>
+            <el-tooltip class="item" effect="dark" content="输入为:* * * * * * （从左到右*号单位为：秒，分，时，天，月，星期）；任务只定时执行一次时使用时间选择器" placement="top-start">
+                <el-form-item label="执行时间：">
+                    <el-input v-model="form.time_format1"></el-input>
+                    <el-date-picker
+                            v-model="form.time_format2"
+                            type="datetime"
+                            value-format="yyyy-MM-dd HH:mm:ss"
+                            placeholder="选择日期时间">
+                    </el-date-picker>
+                </el-form-item>
+            </el-tooltip>
+            <el-form-item label="执行主机：">
+                <el-select v-model="form.host" placeholder="请选择">
+                    <el-option v-for="h in hostList"
+                               :key="h.host"
+                               :label="h.name+`:`+h.host+`:`+h.port"
+                               :value="h.host+`:`+h.port">
+                    </el-option>
+                </el-select>
+            </el-form-item>
+            <el-tooltip class="item" effect="dark" content="单位为秒,为0是默认为超时时间为一天" placement="top-start">
+                <el-form-item label="超时时间：" prop="timeout">
+                    <el-input v-model.number="form.timeout" ></el-input>
+                </el-form-item>
+            </el-tooltip>
+            <el-form-item label="执行命令："  prop="command">
+                <el-input v-model="form.command" type="textarea" autosize style="width: 300px"></el-input>
+            </el-form-item>
+            <el-form-item label="主机系统：">
+                <el-switch
+                        v-model="form.system"
+                        inactive-text="Linux"
+                        active-text="Windows">
+                </el-switch>
+            </el-form-item>
+
+            <el-tooltip class="item" effect="dark" content="任务只在某一时刻执行一次，此时执行时间格式为：YYYY-MM-DD HH:MM:SS" placement="top-start">
+                <el-form-item label="是否只定时执行一次：">
+                    <el-switch
+                            v-model="form.once"
+                            inactive-text="否"
+                            active-text="是">
+                    </el-switch>
+                </el-form-item>
+            </el-tooltip>
+
+
+            <el-tooltip class="item" effect="dark" content="各主机上相同命令的任务均配置此属性时，表示相同指令下只有一个任务被允许下发执行" placement="top-start">
+                <el-form-item label="是否只允许单机运行：">
+                    <el-switch
+                            v-model="form.alone"
+                            inactive-text="否"
+                            active-text="是">
+                    </el-switch>
+                </el-form-item>
+            </el-tooltip>
+
+            <el-tooltip class="item" effect="dark" content="即管理系统层中只允许同时存在这一指令的唯一任务（不影响用户层）" placement="top-start">
+                <el-form-item label="指令是否共享到系统中：">
+                    <el-switch
+                            v-model="form.share"
+                            inactive-text="否"
+                            active-text="是">
+                    </el-switch>
+                </el-form-item>
+            </el-tooltip>
+
+            <el-tooltip class="item" effect="dark" content="即任务执行时，该任务的下一次执行时间到达，是否允许一起执行" placement="top-start">
+                <el-form-item label="是否允许重复：" >
+                    <el-switch
+                            v-model="form.repeat"
+                            inactive-text="否"
+                            active-text="是">
+                    </el-switch>
+                </el-form-item>
+            </el-tooltip>
+
+            <el-form-item>
+                <el-button type="primary" @click="onSubmit(form)">立即创建</el-button>
+                <el-button @click="exit()">取消</el-button>
+            </el-form-item>
+        </el-form>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12"></script>
+    <!-- 引入组件库 -->
+    <script src="https://unpkg.com/element-ui/lib/index.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script>
+        const user_id=getCookie("user_id");
+        new Vue({
+            el: '#test',
+            data() {
+                let checkTimeOut = (rule, value, callback) => {
+                    setTimeout(() => {
+                        if(!Number.isInteger(value)) {
+                            callback(new Error('请输入数字值'));
+                        } else {
+                            if(value > 86400) {
+                                callback(new Error('超时时间不能超过一天，即86400'));
+                            } else if(value<0) {
+                                callback(new Error('超时时间不能为负数'));
+                            }else{
+                                callback();
+                            }
+                        }
+                    }, 1000);
+                };
+                return {
+                    form: {
+                        name: '',
+                        time_format1: '',
+                        time_format2: '',
+                        command: '',
+                        host: '',
+                        timeout: 0,
+                        system:false,
+                        once:false,
+                        alone:false,
+                        share:false,
+                        repeat:false,
+                    },
+                    rules: {
+                        timeout:[{required: true, validator: checkTimeOut, trigger: 'blur'}],
+                        command:[{required: true,  message: '不能为空', trigger: 'blur'}],
+                        name:[{required: true, message: '不能为空', trigger: 'blur'}]
+                    },
+                    hostList:[],
+                }
+            },
+            methods: {
+                exit(){
+                    window.location.href='/statichtml/readTasks.html';
+                },
+                onSubmit(form) {
+                    this.$refs.form.validate((valid) => {
+                        if (valid) {
+                            let form = null;
+                            form = this.form;
+                            const params = form;
+                            let time_format = null;
+                            if (params.once) {
+                                time_format = params.time_format2;
+                            } else {
+                                time_format = params.time_format1;
+                            }
+                            axios({
+                                method: 'post',
+                                url: '../../acceptTask',
+                                data:
+                                    {
+                                        "user_id": user_id,
+                                        "name": params.name,
+                                        "time_format": time_format,
+                                        "command": params.command,
+                                        "host": params.host,
+                                        "timeout": params.timeout,
+                                        "system": params.system,
+                                        "once": params.once,
+                                        "alone": params.alone,
+                                        "share": params.share,
+                                        "repeat": params.repeat,
+                                    },
+                            }).then(function (response) {
+                                if (response.data.error === "") {
+                                    alert("创建成功！");
+                                    window.location.href = "/static/html/readTasks.html";
+                                } else {
+                                    alert("出错：" + response.data.error + "\n" + response.data.error1);
+                                }
+                            }).catch(function (error) {
+                                alert("出错：" + error);
+                            });
+                        } else {
+                            alert("请按提示填写各信息")
+                            return false;
+                        }
+                    });
+                },
+            },
+            mounted() {
+                const ctx=this;
+                axios({
+                    method: 'post',
+                    url: '../../readNodeList',
+                    data:
+                        {
+                            "user_id": user_id,
+                        },
+                }).then(function (response) {
+                    if (response.data.error===""){
+                        ctx.hostList=response.data.hostList;
+                    }else{
+                        alert("出错："+response.data.error);
+                    }
+                }).catch(function (error) {
+                    alert("出错："+error);
+                });
+            }
+        });
+
+        function getCookie(cname){
+            var name = cname + "=";
+            var ca = document.cookie.split(';');
+            for(var i=0; i<ca.length; i++) {
+                var c = ca[i].trim();
+                if (c.indexOf(name)==0) { return c.substring(name.length,c.length); }
+            }
+            return "";
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <title>查看任务日志</title>
+
+    <!-- 引入 -->
+    <link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-chalk/index.css">
+    <style>
+        .el-header {
+            background-color: #B3C0D1;
+            color: #333;
+            text-align: left;
+            line-height: 60px;
+        }
+        .el-main {
+            background-color: #E9EEF3;
+            color: #333;
+            text-align: center;
+            line-height: 40px;
+        }
+        .el-input{
+            width: 200px;
+        }
+    </style>
+</head>
+<body>
+    <div id="block">
+        <strong style="font-size: 20px;margin: 10px">查看任务日志</strong>
+        <hr>
+        <el-container>
+            <el-main>
+                <el-table
+                        :data="logText"
+                        border
+                        style="width: 100%">
+                    <el-table-column
+                            prop="text"
+                            label="日志文本">
+                    </el-table-column>
+                </el-table>
+            </el-main>
+        </el-container>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12"></script>
+    <!-- 引入组件库 -->
+    <script src="https://unpkg.com/element-ui/lib/index.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script>
+        new Vue({
+            el: '#block',
+            data() {
+                return {
+                    logText:null,
+                }
+            },
+            mounted() {
+                const task_id=getCookie("task_id");
+                const host=getCookie("host");
+                const ctx=this;
+                axios({
+                    method: 'post',
+                    url: '../../readTaskLog',
+                    data:
+                        {
+                            "task_id": task_id,
+                            "host": host
+                        },
+                    transformRequest: [function (data) {
+                        let ret = ''
+                        for (let temp in data) {
+                            ret += encodeURIComponent(temp) + '=' + encodeURIComponent(data[temp]) + '&'
+                        }
+                        return ret
+                    }],
+                    headers: {
+                        'Content-Type': 'application/x-www-form-urlencoded'
+                    },
+                }).then(function (response) {
+                    if (response.data.error === "") {
+                        ctx.logText=response.data.logText;
+                    } else {
+                        alert(response.data.error+"\n 请检查该任务节点是否已开启");
+                    }
+                }).catch(function (error) {
+                    alert("出错：" + error);
+                });
+            }
+        });
+
+        function getCookie(cname){
+            var name = cname + "=";
+            var ca = document.cookie.split(';');
+            for(var i=0; i<ca.length; i++) {
+                var c = ca[i].trim();
+                if (c.indexOf(name)==0) { return c.substring(name.length,c.length); }
+            }
+            return "";
+        }
+    </script>
+</body>
+</html>

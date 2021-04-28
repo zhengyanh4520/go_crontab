@@ -1,0 +1,19 @@
+log:
+  path: ./log/scheduler
+
+http:
+  host: 192.168.196.1
+  port: 8080
+
+etcd:
+  end_points:
+    - 192.168.196.1:2379
+  dial_timeout: 5
+  ttl: 5
+
+mysql:
+  host: 192.168.196.1
+  port: 3306
+  user: root
+  password: root
+  database: gocron

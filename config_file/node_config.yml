@@ -1,0 +1,19 @@
+log:
+  path: ../log/node
+
+mysql:
+  host: 192.168.196.1
+  port: 3306
+  user: root
+  password: root
+  database: gocron
+
+http:
+  host: 192.168.196.1
+  port: 8888
+
+etcd:
+  end_points:
+    - 192.168.196.1:2379
+  dial_timeout: 5
+  ttl: 5

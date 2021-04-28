@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <base href="<%=basePath%>">
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>修改用户名</title>
+
+    <!-- 引入 -->
+    <link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-chalk/index.css">
+    <style>
+        .el-input{
+            width: 300px;
+        }
+    </style>
+</head>
+</head>
+<body>
+<strong style="font-size: 20px;margin: 10px">修改个人信息</strong>
+<hr>
+<div id="block">
+    <el-form ref="form" :model="form" status-icon :rules="rules" label-width="200px" label-position="right">
+        <el-form-item label="账号：" prop="id">
+            <el-input v-model="form.id" :disabled="true"></el-input>
+        </el-form-item>
+
+        <el-form-item label="用户名：" prop="name">
+            <el-input v-model="form.name"></el-input>
+        </el-form-item>
+
+        <el-form-item >
+            <el-button type="primary" @click="modifyName(form)">修改用户名</el-button>
+        </el-form-item>
+    </el-form>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/vue@2.6.12"></script>
+<!-- 引入组件库 -->
+<script src="https://unpkg.com/element-ui/lib/index.js"></script>
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+<script>
+    new Vue({
+        el: '#block',
+        data() {
+            var validatePass = (rule, value, callback) => {
+                if (value === '') {
+                    callback(new Error('请再次输入新密码'));
+                } else if (value !== this.form.newPassword) {
+                    callback(new Error('两次输入密码不一致!'));
+                } else {
+                    callback();
+                }
+            };
+            return {
+                form: {
+                    id: getCookie("user_id"),
+                    name:decodeURI(getCookie("user_name")),
+                },
+                rules: {
+                    id:[
+                        {type: "string", required: true, message: '请输入账户', trigger: 'blur'},
+                        {type: "string", message: '账户只能为数字、字母组合',pattern:/^[A-Za-z0-9]+$/, trigger: 'blur'},
+                        {max: 20, message: "长度在20以内", trigger: "blur" }
+                    ],
+                    name:[
+                        {type: "string", required: true, message: '请输入用户名', trigger: 'blur'},
+                        {max: 20, message: "长度在20以内", trigger: "blur" }
+                    ]
+                },
+            };
+        },
+        methods: {
+            modifyName(form){
+                this.$refs.form.validate((valid) => {
+                    if (valid) {
+                        const user=this.form;
+                        axios({
+                            method: 'post',
+                            url: '../../modifyName',
+                            data:
+                                {
+                                    "id": user.id,
+                                    "name": user.name,
+                                },
+                            transformRequest: [function (data) {
+                                let ret = ''
+                                for (let temp in data) {
+                                    ret += encodeURIComponent(temp) + '=' + encodeURIComponent(data[temp]) + '&'
+                                }
+                                return ret
+                            }],
+                            headers: {
+                                'Content-Type': 'application/x-www-form-urlencoded'
+                            },
+                        }).then(function (response) {
+                            if (response.data.error === "") {
+                                alert("修改成功！刷新后显示新用户名");
+                                window.location.href='/static/html/login.html';
+                            } else {
+                                alert("修改出错：" +response.data.error);
+                            }
+                        }).catch(function (error) {
+                            alert("出错：" + error);
+                        });
+                    } else {
+                        alert("请按提示填写各信息")
+                        return false;
+                    }
+                });
+            },
+        }
+    });
+
+    function getCookie(cname){
+        var name = cname + "=";
+        var ca = document.cookie.split(';');
+        for(var i=0; i<ca.length; i++) {
+            var c = ca[i].trim();
+            if (c.indexOf(name)==0) { return c.substring(name.length,c.length); }
+        }
+        return "";
+    }
+</script>
+</body>
+</html>
