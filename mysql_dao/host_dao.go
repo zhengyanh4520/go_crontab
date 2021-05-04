@@ -15,7 +15,7 @@ func (h *HostDao) GetHostList(user_id string) ([]model.HostList, error) {
 
 	logger.Info("获取用户任务主机列表")
 
-	sql := "select host,name,port from host_table where user_id=?"
+	sql := "select host,name,port from HostTable where user_id=?"
 
 	client := getMysqlClient()
 	stmt, err := client.Prepare(sql)
@@ -64,7 +64,7 @@ func (h *HostDao) InsertHostTable(u *model.HostList) error {
 
 	logger.Info("新增用户任务主机列表数据入库")
 
-	sql := "insert into host_table(name,user_id,host,port) values(?,?,?,?)"
+	sql := "insert into HostTable(name,user_id,host,port) values(?,?,?,?)"
 
 	client := getMysqlClient()
 	stmt, err := client.Prepare(sql)
@@ -90,7 +90,7 @@ func (h *HostDao) DeleteHostList(user_id string, host string) error {
 
 	logger.Info("删除用户任务主机数据")
 
-	sql := "delete from host_table where user_id=? and host=?"
+	sql := "delete from HostTable where user_id=? and host=?"
 
 	client := getMysqlClient()
 	stmt, err := client.Prepare(sql)
@@ -118,7 +118,7 @@ func (h *HostDao) UpdateHostTable(u *model.HostList) error {
 
 	logger.Info("更新用户任务主机列表数据")
 
-	sql := "update host_table set name=?,port=? where user_id=? and host=?"
+	sql := "update HostTable set name=?,port=? where user_id=? and host=?"
 
 	client := getMysqlClient()
 	stmt, err := client.Prepare(sql)

@@ -15,7 +15,7 @@ func (s *StatusDao) InsertTaskStatus(statusInfo *model.StatusInfo) error {
 
 	logger.Info("任务执行状态数据入库")
 
-	sql := "insert into status_table(host,task_id, start_time,end_time,status,error)" +
+	sql := "insert into StatusTable(host,task_id, start_time,end_time,status,error)" +
 		" values(?,?,?,?,?,?)"
 
 	client := getMysqlClient()
@@ -41,11 +41,11 @@ func (s *StatusDao) GetTaskStatus(id string) ([]*model.StatusInfo, error) {
 
 	//只取最近一天内
 	/*sql := "select task_id,host,start,end,status,error " +
-	"from status_table " +
+	"from StatusTable " +
 	"where to_days(now()) - to_days(insert_time) <=1"*/
 
 	sql := "select task_id,t.name,s.host,start_time,end_time,status,error " +
-		"from status_table s,task_table t " +
+		"from StatusTable s,task_table t " +
 		"where t.id=? and t.id=s.task_id " +
 		"order by start_time desc;"
 

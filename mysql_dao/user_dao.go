@@ -17,7 +17,7 @@ func (u *UserDao) CheckUser(checkUser *model.User) (*model.User, error) {
 
 	logger.Info("校验用户密码")
 
-	sql := "select id,password,name,status from user_table where id=?"
+	sql := "select id,password,name,status from UserTable where id=?"
 	client := getMysqlClient()
 	stmt, err := client.Prepare(sql)
 	if err != nil {
@@ -59,7 +59,7 @@ func (u *UserDao) InsertUser(user *model.User) error {
 
 	logger.Info("注册新用户数据入库")
 
-	sql := "insert into user_table(id,password,name,status) values(?,?,?,?)"
+	sql := "insert into UserTable(id,password,name,status) values(?,?,?,?)"
 
 	client := getMysqlClient()
 	stmt, err := client.Prepare(sql)
@@ -86,7 +86,7 @@ func (u *UserDao) ModifyUserPassword(id, newPwd, oldPwd string) error {
 
 	logger.Info("修改用户密码")
 
-	sql := "select password from user_table where id=?"
+	sql := "select password from UserTable where id=?"
 	client := getMysqlClient()
 	stmt, err := client.Prepare(sql)
 	if err != nil {
@@ -112,7 +112,7 @@ func (u *UserDao) ModifyUserPassword(id, newPwd, oldPwd string) error {
 		if oldPwd != password {
 			return errors.New("原密码错误")
 		} else {
-			sql = "update user_table set password=? where id=?"
+			sql = "update UserTable set password=? where id=?"
 			stmt, err := client.Prepare(sql)
 			if err != nil {
 				logger.Error("修改用户密码出错：" + err.Error())
@@ -139,7 +139,7 @@ func (u *UserDao) ModifyUserName(id, name string) error {
 
 	logger.Info("修改用户用户名")
 
-	sql := "update user_table set name=? where id=?"
+	sql := "update UserTable set name=? where id=?"
 	client := getMysqlClient()
 	stmt, err := client.Prepare(sql)
 	if err != nil {

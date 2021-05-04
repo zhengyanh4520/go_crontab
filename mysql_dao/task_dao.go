@@ -16,7 +16,7 @@ func (t *TaskDao) InsertTask(task *model.Task) error {
 
 	logger.Info("任务数据入库")
 
-	sql := "insert into task_table(id,name,user_id,time_format,command,host,timeout,alone," +
+	sql := "insert into TaskTable(id,name,user_id,time_format,command,host,timeout,alone," +
 		"once,repeats,run_system,share,off) values(?,?,?,?,?,?,?,?,?,?,?,?,?)"
 
 	client := getMysqlClient()
@@ -43,7 +43,7 @@ func (t *TaskDao) DeleteTask(task *model.Task) (*model.Task, error) {
 
 	logger.Info("删除任务数据")
 
-	sql := "delete from task_table where id=?"
+	sql := "delete from TaskTable where id=?"
 
 	oldTask, err := t.GetTask(task.Id)
 	if err != nil {
@@ -82,7 +82,7 @@ func (t *TaskDao) DeleteTaskData(id string) error {
 
 	logger.Info("删除任务数据")
 
-	sql := "delete from task_table where id=?"
+	sql := "delete from TaskTable where id=?"
 
 	client := getMysqlClient()
 	stmt, err := client.Prepare(sql)
@@ -138,7 +138,7 @@ func (t *TaskDao) UpdateTaskOff(taskId string, off bool) error {
 
 	logger.Info("修改任务开关属性")
 
-	sql := "update task_table set off=? where id=?"
+	sql := "update TaskTable set off=? where id=?"
 	client := getMysqlClient()
 	stmt, err := client.Prepare(sql)
 	if err != nil {
@@ -180,7 +180,7 @@ func (t *TaskDao) CheckTask(task *model.Task) (bool, error) {
 
 	logger.Info("校验任务数据")
 
-	sql := "select user_id from task_table where id=?"
+	sql := "select user_id from TaskTable where id=?"
 
 	client := getMysqlClient()
 	stmt, err := client.Prepare(sql)
@@ -222,7 +222,7 @@ func (t *TaskDao) GetTasksByHost(host string) (*model.TaskList, error) {
 	logger.Info("查询节点任务数据")
 
 	sql := "select id,name,user_id,time_format,command,host,timeout,alone,once,repeats,run_system,share,off " +
-		"from task_table where host=?"
+		"from TaskTable where host=?"
 
 	client := getMysqlClient()
 	stmt, err := client.Prepare(sql)
@@ -273,7 +273,7 @@ func (t *TaskDao) GetTasksByWords(name, host string, timeout, system, once, alon
 	logger.Info("查询节点任务数据")
 
 	sql := "select id,name,user_id,time_format,command,host,timeout,alone,once,repeats,run_system,share,off " +
-		"from task_table where if(?='',1,name=?) and if(?='',1,host=?) and timeout=? and if(?=2,1,run_system=?) " +
+		"from TaskTable where if(?='',1,name=?) and if(?='',1,host=?) and timeout=? and if(?=2,1,run_system=?) " +
 		"and if(?=2,1,once=?)  and if(?=2,1,alone=?) and if(?=2,1,share=?) and if(?=2,1,repeats=?) and if(?=2,1,off=?);"
 
 	client := getMysqlClient()
@@ -312,7 +312,7 @@ func (t *TaskDao) GetTasksByWords(name, host string, timeout, system, once, alon
 
 func (t *TaskDao) GetAllTasks() (*model.TaskList, error) {
 	sql := "select id,name,user_id,time_format,command,host,timeout,alone,once,repeats,run_system,share,off " +
-		"from task_table"
+		"from TaskTable"
 
 	log.WithField("sql", sql).Info("查询全部任务数据")
 
@@ -351,7 +351,7 @@ func (t *TaskDao) GetTask(id string) (*model.Task, error) {
 	logger.Info("获取任务数据")
 
 	sql := "select id,name,user_id,time_format,command,host,timeout,alone,once,repeats,run_system,share,off " +
-		"from task_table where id=?"
+		"from TaskTable where id=?"
 
 	client := getMysqlClient()
 	stmt, err := client.Prepare(sql)
@@ -391,7 +391,7 @@ func (t *TaskDao) GetTaskByUser(user_id string) (*model.TaskList, error) {
 	logger.Info("查询用户任务数据")
 
 	sql := "select id,name,user_id,time_format,command,host,timeout,alone,once,repeats,run_system,share,off " +
-		"from task_table " +
+		"from TaskTable " +
 		"where user_id=?"
 
 	client := getMysqlClient()
