@@ -89,7 +89,7 @@ func initLog(path string) {
 	// 设置 rotatelogs
 	logWriter, err := rotatelogs.New(
 		//分割后文件名称
-		path+".%Y%m%d.log",
+		path+"%Y%m%d.log",
 
 		//生成软链，指向最新日志文件
 		rotatelogs.WithLinkName(path),
