@@ -24,7 +24,7 @@ var (
 )
 
 func main() {
-	src := "./config_file/scheduler_config.yml"
+	src := "../config_file/scheduler_config.yml"
 
 	con, err := config.ReadConfig(src)
 	if err != nil {

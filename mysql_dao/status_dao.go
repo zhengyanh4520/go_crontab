@@ -45,7 +45,7 @@ func (s *StatusDao) GetTaskStatus(id string) ([]*model.StatusInfo, error) {
 	"where to_days(now()) - to_days(insert_time) <=1"*/
 
 	sql := "select task_id,t.name,s.host,start_time,end_time,status,error " +
-		"from StatusTable s,task_table t " +
+		"from StatusTable s,TaskTable t " +
 		"where t.id=? and t.id=s.task_id " +
 		"order by start_time desc;"
 

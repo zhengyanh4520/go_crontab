@@ -54,9 +54,9 @@ func NewSchedulerServer(con *config.HttpConfig) *HttpServer {
 	}
 
 	r := gin.Default().Delims("{[", "]}")
-	r.LoadHTMLGlob("./static/html/*")
+	r.LoadHTMLGlob("../static/html/*")
 
-	r.StaticFS("/static", http.Dir("./static"))
+	r.StaticFS("/static", http.Dir("../static"))
 
 	r.GET("/index", func(c *gin.Context) {
 		c.HTML(http.StatusOK, "login.html", nil)
