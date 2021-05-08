@@ -71,8 +71,7 @@ func InitSchedulerEtcd(con *config.EtcdConfig, hcfg *config.HttpConfig, reset ch
 	//监听
 	ch := make(chan error, 0)
 	go sEtcd.watchSchedulerLeader(ctx, ch, reset)
-	go sEtcd.watchSchedulerList(ctx)
-	go sEtcd.watchNodeList(ctx)
+	go sEtcd.watchSchedulerList(ctx,reset)
 
 	//尝试抢锁，决定调度器的leader
 	result, err := sEtcd.lock()
@@ -83,6 +82,7 @@ func InitSchedulerEtcd(con *config.EtcdConfig, hcfg *config.HttpConfig, reset ch
 
 	if result {
 		fmt.Println("当前调度器为leader，启动")
+		go sEtcd.watchNodeList(ctx)
 		leader = true
 		return nil
 	}
@@ -167,7 +167,7 @@ func (s *SchedulerEtcd) watchSchedulerLeader(ctx context.Context, ch chan error,
 	}
 }
 
-func (s *SchedulerEtcd) watchSchedulerList(ctx context.Context) {
+func (s *SchedulerEtcd) watchSchedulerList(ctx context.Context, reset chan int) {
 	//监听当前调度器列表，即当前分布式系统中的调度器总数
 
 	resp := s.Client.Watch(context.TODO(), constants.SchedulerPrefix, clientv3.WithPrefix())
@@ -179,29 +179,16 @@ func (s *SchedulerEtcd) watchSchedulerList(ctx context.Context) {
 				case clientv3.EventTypePut:
 					log.Info("系统加入了新的调度器：" + string(e.Kv.Value))
 				case clientv3.EventTypeDelete:
-					log.Error("系统退出了一调度器：" + string(e.Kv.Key))
-
-					//如果退出的是它自己，但此时还在监听，说明是租约出了问题
-					if string(e.Kv.Key)[len(constants.SchedulerPrefix):] == s.Host {
-						//重新续租
-						err := s.keepAlive(ctx)
-						if err != nil {
-							//出错即此异常无法解决，直接让调度器中止
-							log.Error("调度器etcd续租出错：", err.Error())
-							panic("调度器etcd续租出错：" + err.Error())
-						}
-
-						//重注册，失败说明此异常无法解决，等待重启
-						if err := s.register(); err != nil {
-							fmt.Println("调度器注册etcd出错：" + err.Error())
-							panic("调度器注册etcd出错：" + err.Error())
-						}
-
-						log.Warn("调度器租约异常，已重新注册")
+					log.Error("系统退出了一台调度器：" + string(e.Kv.Key))
+					host := string(e.Kv.Key)[len(constants.SchedulerPrefix):]
+					//如果退出的是它自己，但此时还在监听，说明是租约出了问题，重置
+					if host == s.Host {
+						log.WithField("host", string(e.Kv.Key)).Error("调度器续租出错，重置")
+						fmt.Println("调度器续租出错，重置")
+						reset <- 1
 						continue
 					}
 				}
-
 			}
 		case <-ctx.Done():
 			return

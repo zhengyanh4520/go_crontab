@@ -148,7 +148,7 @@ func (j *NodeJob) Run() {
 func (j *NodeJob) RunOnLinux(ctx context.Context, statusInfo *model.StatusInfo, taskLog *log.Logger) {
 	cmd := exec.Command("/bin/bash", "-c", j.Task.Command)
 	cmd.SysProcAttr = &syscall.SysProcAttr{
-		Setpgid: true,
+		//Setpgid: true,
 	}
 
 	result := make(chan int)
@@ -157,7 +157,7 @@ func (j *NodeJob) RunOnLinux(ctx context.Context, statusInfo *model.StatusInfo, 
 	select {
 	case <-ctx.Done():
 		if cmd.Process.Pid > 0 {
-			syscall.Kill(-cmd.Process.Pid, syscall.SIGKILL)
+			//syscall.Kill(-cmd.Process.Pid, syscall.SIGKILL)
 		}
 		statusInfo.Status = "失败"
 		statusInfo.Error = "运行时间超时，杀死此次任务"

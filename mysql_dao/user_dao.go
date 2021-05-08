@@ -17,7 +17,7 @@ func (u *UserDao) CheckUser(checkUser *model.User) (*model.User, error) {
 
 	logger.Info("校验用户密码")
 
-	sql := "select id,password,name,status from UserTable where id=?"
+	sql := "select id,password,name from UserTable where id=?"
 	client := getMysqlClient()
 	stmt, err := client.Prepare(sql)
 	if err != nil {
@@ -34,7 +34,7 @@ func (u *UserDao) CheckUser(checkUser *model.User) (*model.User, error) {
 
 	for rows.Next() {
 		var user model.User
-		err = rows.Scan(&user.Id, &user.Password, &user.Name, &user.Status)
+		err = rows.Scan(&user.Id, &user.Password, &user.Name)
 		if err != nil {
 			logger.Error("校验用户密码出错：" + err.Error())
 			return nil, err
@@ -53,13 +53,12 @@ func (u *UserDao) InsertUser(user *model.User) error {
 	logger := log.WithFields(log.Fields{
 		"insert_id":     user.Id,
 		"insert_psw":    user.Password,
-		"insert_status": user.Status,
 		"insert_name":   user.Name,
 	})
 
 	logger.Info("注册新用户数据入库")
 
-	sql := "insert into UserTable(id,password,name,status) values(?,?,?,?)"
+	sql := "insert into UserTable(id,password,name) values(?,?,?)"
 
 	client := getMysqlClient()
 	stmt, err := client.Prepare(sql)
@@ -68,7 +67,7 @@ func (u *UserDao) InsertUser(user *model.User) error {
 		return err
 	}
 
-	_, err = stmt.Exec(user.Id, user.Password, user.Name, user.Status)
+	_, err = stmt.Exec(user.Id, user.Password, user.Name)
 	if err != nil {
 		logger.Error("注册新用户数据入库出错：" + err.Error())
 		return err

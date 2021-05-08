@@ -19,7 +19,7 @@ run_system bool not null default false,
 share bool not null default false,
 off bool not null default false,
 index(host),
-CONSTRAINT FOREIGN KEY (`user_id`) REFERENCES `user_table`(`id`)
+CONSTRAINT FOREIGN KEY (`user_id`) REFERENCES `UserTable`(`id`)
 ON DELETE CASCADE
 ON UPDATE CASCADE
 );
@@ -34,7 +34,7 @@ status varchar(10) not null default "" comment '任务执行状态',
 error varchar(100) not null default "",
 insert_time  timestamp not null default CURRENT_TIMESTAMP,
 index(task_id),
-CONSTRAINT FOREIGN KEY (`task_id`) REFERENCES `task_table`(`id`)
+CONSTRAINT FOREIGN KEY (`task_id`) REFERENCES `TaskTable`(`id`)
 ON DELETE CASCADE
 ON UPDATE CASCADE
 );
@@ -45,7 +45,7 @@ user_id varchar(20) not null,
 host varchar(20) not null,
 port varchar(10) not null,
 PRIMARY KEY (`user_id`,`host`),
-CONSTRAINT FOREIGN KEY (`user_id`) REFERENCES `user_table`(`id`)
+CONSTRAINT FOREIGN KEY (`user_id`) REFERENCES `UserTable`(`id`)
 ON DELETE CASCADE
 ON UPDATE CASCADE
 );

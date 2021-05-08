@@ -55,14 +55,8 @@ func initConfig(con *config.Config) {
 	//init log
 	initLog(con.Log.Path)
 
-	//init mysql
-	err := db.InitMysql(con.MySql)
-	if err != nil {
-		panic("初始化数据库出错：" + err.Error())
-	}
-
 	//init etcd
-	err = etcd.InitNodeEtcd(con.Etcd, con.Http, reset)
+	err := etcd.InitNodeEtcd(con.Etcd, con.Http, reset)
 	if err != nil {
 		panic("初始化etcd出错：" + err.Error())
 	}

@@ -21,7 +21,7 @@ func newNodeHandler(s *HttpServer) *nodeHandler {
 	}
 }
 
-func (v1 *nodeHandler) acceptTask(w http.ResponseWriter, r *http.Request) {
+func (n1 *nodeHandler) acceptTask(w http.ResponseWriter, r *http.Request) {
 	logger := log.WithFields(log.Fields{
 		"local_host:": r.Host,
 		"remote_host": r.RemoteAddr,
@@ -65,7 +65,7 @@ func (v1 *nodeHandler) acceptTask(w http.ResponseWriter, r *http.Request) {
 	w.Write([]byte("success"))
 }
 
-func (v1 *nodeHandler) updateTask(w http.ResponseWriter, r *http.Request) {
+func (n1 *nodeHandler) updateTask(w http.ResponseWriter, r *http.Request) {
 	logger := log.WithFields(log.Fields{
 		"local_host:": r.Host,
 		"remote_host": r.RemoteAddr,
@@ -103,7 +103,7 @@ func (v1 *nodeHandler) updateTask(w http.ResponseWriter, r *http.Request) {
 	w.Write([]byte("success"))
 }
 
-func (v1 *nodeHandler) deleteTask(w http.ResponseWriter, r *http.Request) {
+func (n1 *nodeHandler) deleteTask(w http.ResponseWriter, r *http.Request) {
 	logger := log.WithFields(log.Fields{
 		"local_host:": r.Host,
 		"remote_host": r.RemoteAddr,
@@ -141,7 +141,7 @@ func (v1 *nodeHandler) deleteTask(w http.ResponseWriter, r *http.Request) {
 	w.Write([]byte("success"))
 }
 
-func (v1 *nodeHandler) sendLog(w http.ResponseWriter, r *http.Request) {
+func (n1 *nodeHandler) sendLog(w http.ResponseWriter, r *http.Request) {
 	logger := log.WithFields(log.Fields{
 		"local_host:": r.Host,
 		"remote_host": r.RemoteAddr,
@@ -172,7 +172,7 @@ func (v1 *nodeHandler) sendLog(w http.ResponseWriter, r *http.Request) {
 	w.Write(logText)
 }
 
-func (v1 *nodeHandler) deleteUselessTaskLog(w http.ResponseWriter, r *http.Request) {
+func (n1 *nodeHandler) deleteUselessTaskLog(w http.ResponseWriter, r *http.Request) {
 	logger := log.WithFields(log.Fields{
 		"local_host:": r.Host,
 		"remote_host": r.RemoteAddr,

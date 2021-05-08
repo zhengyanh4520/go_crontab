@@ -90,7 +90,8 @@ func (n *NodeEtcd) watchNodeList(ctx context.Context, reset chan int) {
 				case clientv3.EventTypeDelete:
 					host := string(e.Kv.Key)[len(constants.NodePrefix):]
 					if host == n.Host {
-						log.WithField("host", string(e.Kv.Key)).Error("节点续租c出错，重置")
+						log.WithField("host", host).Error("节点续租出错，重置")
+						fmt.Println("节点续租出错，重置")
 						reset <- 1
 					}
 				}

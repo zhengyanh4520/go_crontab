@@ -40,7 +40,6 @@ type User struct {
 	Id       string `form:"id" json:"id"`
 	Password string `form:"password" json:"password`
 	Name     string `form:"name" json:"name"`
-	Status   int    `form:"status" json:"status"`
 }
 
 type HostList struct {

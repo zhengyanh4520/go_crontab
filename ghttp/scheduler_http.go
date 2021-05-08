@@ -23,7 +23,7 @@ func newSchedulerHandler(s *HttpServer) *schedulerHandler {
 	}
 }
 
-func (v1 *schedulerHandler) login(c *gin.Context) {
+func (s1 *schedulerHandler) login(c *gin.Context) {
 	log.WithField("remote_host", c.Request.RemoteAddr).Info("用户登录")
 
 	var inputUser model.User
@@ -41,15 +41,15 @@ func (v1 *schedulerHandler) login(c *gin.Context) {
 		return
 	}
 
-	c.SetCookie("user_id", user.Id, 3600*24, "/", v1.server.host, false, false)
-	c.SetCookie("user_name", user.Name, 3600*24, "/", v1.server.host, false, false)
+	c.SetCookie("user_id", user.Id, 3600*24, "/", s1.server.host, false, false)
+	c.SetCookie("user_name", user.Name, 3600*24, "/", s1.server.host, false, false)
 
 	c.JSON(http.StatusOK, gin.H{
 		"error": "",
 	})
 }
 
-func (v1 *schedulerHandler) register(c *gin.Context) {
+func (s1 *schedulerHandler) register(c *gin.Context) {
 	log.WithField("remote_host", c.Request.RemoteAddr).Info("用户注册")
 
 	var user model.User
@@ -76,7 +76,7 @@ func (v1 *schedulerHandler) register(c *gin.Context) {
 	})
 }
 
-func (v1 *schedulerHandler) modifyPassword(c *gin.Context) {
+func (s1 *schedulerHandler) modifyPassword(c *gin.Context) {
 	log.WithField("remote_host", c.Request.RemoteAddr).Info("修改用户密码")
 
 	id := c.PostForm("id")
@@ -98,7 +98,7 @@ func (v1 *schedulerHandler) modifyPassword(c *gin.Context) {
 	})
 }
 
-func (v1 *schedulerHandler) modifyName(c *gin.Context) {
+func (s1 *schedulerHandler) modifyName(c *gin.Context) {
 	log.WithField("remote_host", c.Request.RemoteAddr).Info("修改用户用户名")
 
 	id := c.PostForm("id")
@@ -114,22 +114,22 @@ func (v1 *schedulerHandler) modifyName(c *gin.Context) {
 		return
 	}
 
-	c.SetCookie("user_name", name, 3600*24, "/", v1.server.host, false, false)
+	c.SetCookie("user_name", name, 3600*24, "/", s1.server.host, false, false)
 
 	c.JSON(http.StatusOK, gin.H{
 		"error": "",
 	})
 }
 
-func (v1 *schedulerHandler) exit(c *gin.Context) {
+func (s1 *schedulerHandler) exit(c *gin.Context) {
 	log.WithField("remote_host", c.Request.RemoteAddr).Info("用户注销")
 
-	c.SetCookie("user_id", "", -1, "/", v1.server.host, false, false)
-	c.SetCookie("user_name", "", -1, "/", v1.server.host, false, false)
+	c.SetCookie("user_id", "", -1, "/", s1.server.host, false, false)
+	c.SetCookie("user_name", "", -1, "/", s1.server.host, false, false)
 	c.JSON(http.StatusOK, nil)
 }
 
-func (v1 *schedulerHandler) addNode(c *gin.Context) {
+func (s1 *schedulerHandler) addNode(c *gin.Context) {
 	log.WithField("remote_host", c.Request.RemoteAddr).Info("新增任务节点")
 
 	var hostList model.HostList
@@ -156,7 +156,7 @@ func (v1 *schedulerHandler) addNode(c *gin.Context) {
 	})
 }
 
-func (v1 *schedulerHandler) readNodeList(c *gin.Context) {
+func (s1 *schedulerHandler) readNodeList(c *gin.Context) {
 	log.WithField("remote_host", c.Request.RemoteAddr).Info("查看任务节点列表")
 
 	user_id, err := c.Cookie("user_id")
@@ -197,7 +197,7 @@ func (v1 *schedulerHandler) readNodeList(c *gin.Context) {
 	})
 }
 
-func (v1 *schedulerHandler) readSchedulerList(c *gin.Context) {
+func (s1 *schedulerHandler) readSchedulerList(c *gin.Context) {
 	log.WithField("remote_host", c.Request.RemoteAddr).Info("查看调度器列表")
 
 	//获取etcd数据
@@ -241,7 +241,7 @@ func (v1 *schedulerHandler) readSchedulerList(c *gin.Context) {
 	})
 }
 
-func (v1 *schedulerHandler) readCommandList(c *gin.Context) {
+func (s1 *schedulerHandler) readCommandList(c *gin.Context) {
 	log.WithField("remote_host", c.Request.RemoteAddr).Info("查看共享命令列表")
 
 	user_id, err := c.Cookie("user_id")
@@ -269,7 +269,7 @@ func (v1 *schedulerHandler) readCommandList(c *gin.Context) {
 	})
 }
 
-func (v1 *schedulerHandler) deleteNode(c *gin.Context) {
+func (s1 *schedulerHandler) deleteNode(c *gin.Context) {
 	log.WithField("remote_host", c.Request.RemoteAddr).Info("删除任务节点")
 
 	var user_id = c.PostForm("user_id")
@@ -290,7 +290,7 @@ func (v1 *schedulerHandler) deleteNode(c *gin.Context) {
 	})
 }
 
-func (v1 *schedulerHandler) updateNode(c *gin.Context) {
+func (s1 *schedulerHandler) updateNode(c *gin.Context) {
 	log.WithField("remote_host", c.Request.RemoteAddr).Info("更新任务节点")
 
 	var hostList model.HostList
@@ -318,7 +318,7 @@ func (v1 *schedulerHandler) updateNode(c *gin.Context) {
 	})
 }
 
-func (v1 *schedulerHandler) acceptTask(c *gin.Context) {
+func (s1 *schedulerHandler) acceptTask(c *gin.Context) {
 	logger := log.WithFields(log.Fields{
 		"local_host:": c.Request.Host,
 		"remote_host": c.Request.RemoteAddr,
@@ -394,7 +394,7 @@ func (v1 *schedulerHandler) acceptTask(c *gin.Context) {
 	})
 }
 
-func (v1 *schedulerHandler) updateTask(c *gin.Context) {
+func (s1 *schedulerHandler) updateTask(c *gin.Context) {
 	logger := log.WithFields(log.Fields{
 		"local_host:": c.Request.Host,
 		"remote_host": c.Request.RemoteAddr,
@@ -486,7 +486,7 @@ func (v1 *schedulerHandler) updateTask(c *gin.Context) {
 	})
 }
 
-func (v1 *schedulerHandler) updateTaskData(c *gin.Context) {
+func (s1 *schedulerHandler) updateTaskData(c *gin.Context) {
 	logger := log.WithFields(log.Fields{
 		"local_host:": c.Request.Host,
 		"remote_host": c.Request.RemoteAddr,
@@ -518,7 +518,7 @@ func (v1 *schedulerHandler) updateTaskData(c *gin.Context) {
 	c.JSON(http.StatusOK, gin.H{"error": ""})
 }
 
-func (v1 *schedulerHandler) deleteTask(c *gin.Context) {
+func (s1 *schedulerHandler) deleteTask(c *gin.Context) {
 	logger := log.WithFields(log.Fields{
 		"local_host:": c.Request.Host,
 		"remote_host": c.Request.RemoteAddr,
@@ -600,7 +600,7 @@ func (v1 *schedulerHandler) deleteTask(c *gin.Context) {
 	})
 }
 
-func (v1 *schedulerHandler) openOrCloseTask(c *gin.Context) {
+func (s1 *schedulerHandler) openOrCloseTask(c *gin.Context) {
 	logger := log.WithFields(log.Fields{
 		"local_host:": c.Request.Host,
 		"remote_host": c.Request.RemoteAddr,
@@ -706,7 +706,7 @@ func (v1 *schedulerHandler) openOrCloseTask(c *gin.Context) {
 	})
 }
 
-func (v1 *schedulerHandler) deleteTaskData(c *gin.Context) {
+func (s1 *schedulerHandler) deleteTaskData(c *gin.Context) {
 	logger := log.WithFields(log.Fields{
 		"local_host:": c.Request.Host,
 		"remote_host": c.Request.RemoteAddr,
@@ -729,7 +729,7 @@ func (v1 *schedulerHandler) deleteTaskData(c *gin.Context) {
 	c.JSON(http.StatusOK, gin.H{"error": ""})
 }
 
-func (v1 *schedulerHandler) queryTask(c *gin.Context) {
+func (s1 *schedulerHandler) queryTask(c *gin.Context) {
 	logger := log.WithFields(log.Fields{
 		"local_host:": c.Request.Host,
 		"remote_host": c.Request.RemoteAddr,
@@ -767,7 +767,7 @@ func (v1 *schedulerHandler) queryTask(c *gin.Context) {
 	})
 }
 
-func (v1 *schedulerHandler) readTaskList(c *gin.Context) {
+func (s1 *schedulerHandler) readTaskList(c *gin.Context) {
 	log.WithField("remote_host", c.Request.RemoteAddr).Info("查看任务列表")
 
 	user_id, err := c.Cookie("user_id")
@@ -791,7 +791,7 @@ func (v1 *schedulerHandler) readTaskList(c *gin.Context) {
 	})
 }
 
-func (v1 *schedulerHandler) acceptStatus(c *gin.Context) {
+func (s1 *schedulerHandler) acceptStatus(c *gin.Context) {
 	logger := log.WithFields(log.Fields{
 		"local_host:": c.Request.Host,
 		"remote_host": c.Request.RemoteAddr,
@@ -826,7 +826,7 @@ func (v1 *schedulerHandler) acceptStatus(c *gin.Context) {
 	})
 }
 
-func (v1 *schedulerHandler) readTaskStatus(c *gin.Context) {
+func (s1 *schedulerHandler) readTaskStatus(c *gin.Context) {
 	log.WithField("remote_host", c.Request.RemoteAddr).Info("查看任务执行状态")
 
 	id := c.PostForm("task_id")
@@ -844,7 +844,7 @@ func (v1 *schedulerHandler) readTaskStatus(c *gin.Context) {
 	})
 }
 
-func (v1 *schedulerHandler) readTaskLog(c *gin.Context) {
+func (s1 *schedulerHandler) readTaskLog(c *gin.Context) {
 	log.WithField("remote_host", c.Request.RemoteAddr).Info("查看任务日志")
 
 	id := c.PostForm("task_id")
@@ -874,7 +874,7 @@ func (v1 *schedulerHandler) readTaskLog(c *gin.Context) {
 	})
 }
 
-func (v1 *schedulerHandler) deleteUselessTaskLog(c *gin.Context) {
+func (s1 *schedulerHandler) deleteUselessTaskLog(c *gin.Context) {
 	log.WithField("remote_host", c.Request.RemoteAddr).Info("通知任务节点删除多余任务日志")
 
 	host := c.PostForm("host")

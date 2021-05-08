@@ -99,27 +99,6 @@ func NewSchedulerServer(con *config.HttpConfig) *HttpServer {
 
 	log.Info("http配置成功")
 	return hs
-
-	/*hs := &HttpServer{
-		host: con.Host,
-		post: con.Post,
-	}
-
-	handler := newSchedulerHandler(hs)
-
-	mux := http.NewServeMux()
-	mux.HandleFunc(acceptTask, handler.acceptTask)
-	mux.HandleFunc(updateTask, handler.updateTask)
-	mux.HandleFunc(deleteTask, handler.deleteTask)
-	mux.HandleFunc(queryTask, handler.queryTask)
-
-	hs.server = &http.Server{
-		Addr:    fmt.Sprintf("%s:%d", hs.host, hs.post),
-		Handler: mux,
-	}
-
-	log.Info("http配置成功")
-	return hs*/
 }
 
 func NewNodeServer(con *config.HttpConfig) *HttpServer {
