@@ -1,0 +1,12 @@
+time="2021-05-08 20:24:48" level=info msg="http配置成功"
+time="2021-05-08 20:24:48" level=info msg="任务节点启动"
+time="2021-05-08 20:24:48" level=info msg="http服务启动" host=192.168.196.1 post=8888
+time="2021-05-08 20:27:17" level=info msg="接收到新任务请求" local_host:="192.168.196.1:8888" remote_host="192.168.196.1:51023" task="{tasks:[{id:086d46ce-b0cb-4a63-a953-2c547bdee2e7,name:windows节点测试任务1,user_id:test1,time_format:30 * * * * *,command:cd C:\\\\Users\\\\ASUS\\\\Desktop\\\\毕设 \\u0026 test.exe,host:192.168.196.1:8888,timeout:0,alone:true,once:false,repeat:false,system:true,share:true,off:false}]}" url=/acceptTask
+time="2021-05-08 20:27:17" level=info msg="{id:086d46ce-b0cb-4a63-a953-2c547bdee2e7,name:windows节点测试任务1,user_id:test1,time_format:30 * * * * *,command:cd C:\\\\Users\\\\ASUS\\\\Desktop\\\\毕设 \\u0026 test.exe,host:192.168.196.1:8888,timeout:0,alone:true,once:false,repeat:false,system:true,share:true,off:false}"
+time="2021-05-08 20:27:17" level=info msg="设置任务完成" 任务数量=1
+time="2021-05-08 20:27:17" level=info msg="接收任务结束" local_host:="192.168.196.1:8888" remote_host="192.168.196.1:51023" url=/acceptTask
+time="2021-05-08 20:58:34" level=info msg="接收到新任务请求" local_host:="192.168.196.1:8888" remote_host="192.168.196.1:51198" task="{tasks:[{id:64c87bd3-b597-45b4-86f9-623364073c51,name:windows测试任务2,user_id:test1,time_format:2021-05-08 21:00:00,command:cd C:\\\\Users\\\\ASUS\\\\Desktop\\\\毕设 \\u0026 test.exe,host:192.168.196.1:8888,timeout:0,alone:false,once:true,repeat:false,system:true,share:false,off:false}]}" url=/acceptTask
+time="2021-05-08 20:58:34" level=info msg="设置任务完成" 任务数量=1
+time="2021-05-08 20:58:34" level=info msg="接收任务结束" local_host:="192.168.196.1:8888" remote_host="192.168.196.1:51198" url=/acceptTask
+time="2021-05-08 21:22:34" level=info msg="接收到发送任务日志请求" local_host:="192.168.196.1:8888" remote_host="192.168.196.1:54236" taskId=64c87bd3-b597-45b4-86f9-623364073c51 url="/sendLog?taskId=64c87bd3-b597-45b4-86f9-623364073c51"
+time="2021-05-08 21:22:34" level=info msg="发送任务日志结束" local_host:="192.168.196.1:8888" remote_host="192.168.196.1:54236" url="/sendLog?taskId=64c87bd3-b597-45b4-86f9-623364073c51"

@@ -1,0 +1,770 @@
+time="2021-05-08T20:24:38+08:00" level=info msg="连接数据库成功"
+time="2021-05-08T20:24:38+08:00" level=info msg="出现新的leader调度器：192.168.196.1:8080"
+time="2021-05-08T20:24:38+08:00" level=info msg="http配置成功"
+time="2021-05-08T20:24:38+08:00" level=info msg="http服务启动" host=192.168.196.1 post=8080
+time="2021-05-08T20:24:38+08:00" level=info msg="调度器启动"
+time="2021-05-08T20:24:48+08:00" level=info msg="出现新的任务节点：192.168.196.1:8888"
+time="2021-05-08T20:24:58+08:00" level=info msg="查看任务节点列表" remote_host="192.168.196.1:50638"
+time="2021-05-08T20:24:58+08:00" level=info msg="获取用户任务主机列表" user_id=test1
+time="2021-05-08T20:24:58+08:00" level=info msg="查询节点任务数据" host="192.168.196.1:8888"
+time="2021-05-08T20:24:58+08:00" level=info msg="查询节点任务数据" host="192.168.196.1:8888" 数据数量=0
+time="2021-05-08T20:24:58+08:00" level=info msg="该节点目前没有要执行的任务" host="192.168.196.1:8888"
+time="2021-05-08T20:24:59+08:00" level=info msg="查看任务列表" remote_host="192.168.196.1:50638"
+time="2021-05-08T20:24:59+08:00" level=info msg="查询用户任务数据" user=test1
+time="2021-05-08T20:24:59+08:00" level=info msg="查看任务节点列表" remote_host="192.168.196.1:50639"
+time="2021-05-08T20:24:59+08:00" level=info msg="获取用户任务主机列表" user_id=test1
+time="2021-05-08T20:24:59+08:00" level=info msg="查询用户任务数据" user=test1 数据数量=0
+time="2021-05-08T20:25:01+08:00" level=info msg="查看任务节点列表" remote_host="192.168.196.1:50639"
+time="2021-05-08T20:25:01+08:00" level=info msg="获取用户任务主机列表" user_id=test1
+time="2021-05-08T20:27:17+08:00" level=info msg="生成新任务id" local_host:="192.168.196.1:8080" remote_host="192.168.196.1:50639" taskId=086d46ce-b0cb-4a63-a953-2c547bdee2e7 url=/acceptTask
+time="2021-05-08T20:27:17+08:00" level=info msg="接收到新任务请求" local_host:="192.168.196.1:8080" remote_host="192.168.196.1:50639" task="{id:086d46ce-b0cb-4a63-a953-2c547bdee2e7,name:windows节点测试任务1,user_id:test1,time_format:30 * * * * *,command:cd C:\\\\Users\\\\ASUS\\\\Desktop\\\\毕设 \\u0026 test.exe,host:192.168.196.1:8888,timeout:0,alone:true,once:false,repeat:false,system:true,share:true,off:false}" url=/acceptTask
+time="2021-05-08T20:27:17+08:00" level=info msg="调度器下发任务成功" local_host:="192.168.196.1:8080" remote_host="192.168.196.1:50639" url=/acceptTask
+time="2021-05-08T20:27:17+08:00" level=info msg="任务数据入库" task="{id:086d46ce-b0cb-4a63-a953-2c547bdee2e7,name:windows节点测试任务1,user_id:test1,time_format:30 * * * * *,command:cd C:\\\\Users\\\\ASUS\\\\Desktop\\\\毕设 \\u0026 test.exe,host:192.168.196.1:8888,timeout:0,alone:true,once:false,repeat:false,system:true,share:true,off:false}"
+time="2021-05-08T20:27:17+08:00" level=info msg="任务数据入库成功" local_host:="192.168.196.1:8080" remote_host="192.168.196.1:50639" url=/acceptTask
+time="2021-05-08T20:27:19+08:00" level=info msg="查看任务列表" remote_host="192.168.196.1:50639"
+time="2021-05-08T20:27:19+08:00" level=info msg="查询用户任务数据" user=test1
+time="2021-05-08T20:27:19+08:00" level=info msg="查看任务节点列表" remote_host="192.168.196.1:50638"
+time="2021-05-08T20:27:19+08:00" level=info msg="获取用户任务主机列表" user_id=test1
+time="2021-05-08T20:27:19+08:00" level=info msg="查询用户任务数据" user=test1 数据数量=1
+time="2021-05-08T20:27:30+08:00" level=info msg="任务执行状态数据入库" status_info="{task_id:086d46ce-b0cb-4a63-a953-2c547bdee2e7,name:,host:192.168.196.1:8888,start:2021-05-08 20:27:30,end:2021-05-08 20:27:30,status:,error:,numbers:0}"
+time="2021-05-08T20:27:30+08:00" level=info msg="任务执行数据入库成功" local_host:="192.168.196.1:8080" remote_host="192.168.196.1:51056" url=/acceptStatus
+time="2021-05-08T20:28:30+08:00" level=info msg="任务执行状态数据入库" status_info="{task_id:086d46ce-b0cb-4a63-a953-2c547bdee2e7,name:,host:192.168.196.1:8888,start:2021-05-08 20:28:30,end:2021-05-08 20:28:30,status:,error:,numbers:0}"
+time="2021-05-08T20:28:30+08:00" level=info msg="任务执行数据入库成功" local_host:="192.168.196.1:8080" remote_host="192.168.196.1:51056" url=/acceptStatus
+time="2021-05-08T20:29:30+08:00" level=info msg="任务执行状态数据入库" status_info="{task_id:086d46ce-b0cb-4a63-a953-2c547bdee2e7,name:,host:192.168.196.1:8888,start:2021-05-08 20:29:30,end:2021-05-08 20:29:30,status:,error:,numbers:0}"
+time="2021-05-08T20:29:30+08:00" level=info msg="任务执行数据入库成功" local_host:="192.168.196.1:8080" remote_host="192.168.196.1:51056" url=/acceptStatus
+time="2021-05-08T20:30:30+08:00" level=info msg="任务执行状态数据入库" status_info="{task_id:086d46ce-b0cb-4a63-a953-2c547bdee2e7,name:,host:192.168.196.1:8888,start:2021-05-08 20:30:30,end:2021-05-08 20:30:30,status:,error:,numbers:0}"
+time="2021-05-08T20:30:30+08:00" level=info msg="任务执行数据入库成功" local_host:="192.168.196.1:8080" remote_host="192.168.196.1:51056" url=/acceptStatus
+time="2021-05-08T20:31:30+08:00" level=info msg="任务执行状态数据入库" status_info="{task_id:086d46ce-b0cb-4a63-a953-2c547bdee2e7,name:,host:192.168.196.1:8888,start:2021-05-08 20:31:30,end:2021-05-08 20:31:30,status:,error:,numbers:0}"
+time="2021-05-08T20:31:30+08:00" level=info msg="任务执行数据入库成功" local_host:="192.168.196.1:8080" remote_host="192.168.196.1:51056" url=/acceptStatus
+time="2021-05-08T20:32:30+08:00" level=info msg="任务执行状态数据入库" status_info="{task_id:086d46ce-b0cb-4a63-a953-2c547bdee2e7,name:,host:192.168.196.1:8888,start:2021-05-08 20:32:30,end:2021-05-08 20:32:30,status:,error:,numbers:0}"
+time="2021-05-08T20:32:30+08:00" level=info msg="任务执行数据入库成功" local_host:="192.168.196.1:8080" remote_host="192.168.196.1:51056" url=/acceptStatus
+time="2021-05-08T20:33:30+08:00" level=info msg="任务执行状态数据入库" status_info="{task_id:086d46ce-b0cb-4a63-a953-2c547bdee2e7,name:,host:192.168.196.1:8888,start:2021-05-08 20:33:30,end:2021-05-08 20:33:30,status:,error:,numbers:0}"
+time="2021-05-08T20:33:30+08:00" level=info msg="任务执行数据入库成功" local_host:="192.168.196.1:8080" remote_host="192.168.196.1:51056" url=/acceptStatus
+time="2021-05-08T20:34:30+08:00" level=info msg="任务执行状态数据入库" status_info="{task_id:086d46ce-b0cb-4a63-a953-2c547bdee2e7,name:,host:192.168.196.1:8888,start:2021-05-08 20:34:30,end:2021-05-08 20:34:30,status:,error:,numbers:0}"
+time="2021-05-08T20:34:30+08:00" level=info msg="任务执行数据入库成功" local_host:="192.168.196.1:8080" remote_host="192.168.196.1:51056" url=/acceptStatus
+time="2021-05-08T20:35:30+08:00" level=info msg="任务执行状态数据入库" status_info="{task_id:086d46ce-b0cb-4a63-a953-2c547bdee2e7,name:,host:192.168.196.1:8888,start:2021-05-08 20:35:30,end:2021-05-08 20:35:30,status:,error:,numbers:0}"
+time="2021-05-08T20:35:30+08:00" level=info msg="任务执行数据入库成功" local_host:="192.168.196.1:8080" remote_host="192.168.196.1:51056" url=/acceptStatus
+time="2021-05-08T20:36:30+08:00" level=info msg="任务执行状态数据入库" status_info="{task_id:086d46ce-b0cb-4a63-a953-2c547bdee2e7,name:,host:192.168.196.1:8888,start:2021-05-08 20:36:30,end:2021-05-08 20:36:30,status:,error:,numbers:0}"
+time="2021-05-08T20:36:30+08:00" level=info msg="任务执行数据入库成功" local_host:="192.168.196.1:8080" remote_host="192.168.196.1:51056" url=/acceptStatus
+time="2021-05-08T20:37:30+08:00" level=info msg="任务执行状态数据入库" status_info="{task_id:086d46ce-b0cb-4a63-a953-2c547bdee2e7,name:,host:192.168.196.1:8888,start:2021-05-08 20:37:30,end:2021-05-08 20:37:30,status:,error:,numbers:0}"
+time="2021-05-08T20:37:30+08:00" level=info msg="任务执行数据入库成功" local_host:="192.168.196.1:8080" remote_host="192.168.196.1:51056" url=/acceptStatus
+time="2021-05-08T20:38:30+08:00" level=info msg="任务执行状态数据入库" status_info="{task_id:086d46ce-b0cb-4a63-a953-2c547bdee2e7,name:,host:192.168.196.1:8888,start:2021-05-08 20:38:30,end:2021-05-08 20:38:30,status:,error:,numbers:0}"
+time="2021-05-08T20:38:30+08:00" level=info msg="任务执行数据入库成功" local_host:="192.168.196.1:8080" remote_host="192.168.196.1:51056" url=/acceptStatus
+time="2021-05-08T20:39:30+08:00" level=info msg="任务执行状态数据入库" status_info="{task_id:086d46ce-b0cb-4a63-a953-2c547bdee2e7,name:,host:192.168.196.1:8888,start:2021-05-08 20:39:30,end:2021-05-08 20:39:30,status:,error:,numbers:0}"
+time="2021-05-08T20:39:30+08:00" level=info msg="任务执行数据入库成功" local_host:="192.168.196.1:8080" remote_host="192.168.196.1:51056" url=/acceptStatus
+time="2021-05-08T20:40:30+08:00" level=info msg="任务执行状态数据入库" status_info="{task_id:086d46ce-b0cb-4a63-a953-2c547bdee2e7,name:,host:192.168.196.1:8888,start:2021-05-08 20:40:30,end:2021-05-08 20:40:30,status:,error:,numbers:0}"
+time="2021-05-08T20:40:30+08:00" level=info msg="任务执行数据入库成功" local_host:="192.168.196.1:8080" remote_host="192.168.196.1:51056" url=/acceptStatus
+time="2021-05-08T20:41:30+08:00" level=info msg="任务执行状态数据入库" status_info="{task_id:086d46ce-b0cb-4a63-a953-2c547bdee2e7,name:,host:192.168.196.1:8888,start:2021-05-08 20:41:30,end:2021-05-08 20:41:30,status:,error:,numbers:0}"
+time="2021-05-08T20:41:30+08:00" level=info msg="任务执行数据入库成功" local_host:="192.168.196.1:8080" remote_host="192.168.196.1:51056" url=/acceptStatus
+time="2021-05-08T20:42:30+08:00" level=info msg="任务执行状态数据入库" status_info="{task_id:086d46ce-b0cb-4a63-a953-2c547bdee2e7,name:,host:192.168.196.1:8888,start:2021-05-08 20:42:30,end:2021-05-08 20:42:30,status:,error:,numbers:0}"
+time="2021-05-08T20:42:30+08:00" level=info msg="任务执行数据入库成功" local_host:="192.168.196.1:8080" remote_host="192.168.196.1:51056" url=/acceptStatus
+time="2021-05-08T20:43:30+08:00" level=info msg="任务执行状态数据入库" status_info="{task_id:086d46ce-b0cb-4a63-a953-2c547bdee2e7,name:,host:192.168.196.1:8888,start:2021-05-08 20:43:30,end:2021-05-08 20:43:30,status:,error:,numbers:0}"
+time="2021-05-08T20:43:30+08:00" level=info msg="任务执行数据入库成功" local_host:="192.168.196.1:8080" remote_host="192.168.196.1:51056" url=/acceptStatus
+time="2021-05-08T20:44:30+08:00" level=info msg="任务执行状态数据入库" status_info="{task_id:086d46ce-b0cb-4a63-a953-2c547bdee2e7,name:,host:192.168.196.1:8888,start:2021-05-08 20:44:30,end:2021-05-08 20:44:30,status:,error:,numbers:0}"
+time="2021-05-08T20:44:30+08:00" level=info msg="任务执行数据入库成功" local_host:="192.168.196.1:8080" remote_host="192.168.196.1:51056" url=/acceptStatus
+time="2021-05-08T20:45:30+08:00" level=info msg="任务执行状态数据入库" status_info="{task_id:086d46ce-b0cb-4a63-a953-2c547bdee2e7,name:,host:192.168.196.1:8888,start:2021-05-08 20:45:30,end:2021-05-08 20:45:30,status:,error:,numbers:0}"
+time="2021-05-08T20:45:30+08:00" level=info msg="任务执行数据入库成功" local_host:="192.168.196.1:8080" remote_host="192.168.196.1:51056" url=/acceptStatus
+time="2021-05-08T20:46:30+08:00" level=info msg="任务执行状态数据入库" status_info="{task_id:086d46ce-b0cb-4a63-a953-2c547bdee2e7,name:,host:192.168.196.1:8888,start:2021-05-08 20:46:30,end:2021-05-08 20:46:30,status:,error:,numbers:0}"
+time="2021-05-08T20:46:30+08:00" level=info msg="任务执行数据入库成功" local_host:="192.168.196.1:8080" remote_host="192.168.196.1:51056" url=/acceptStatus
+time="2021-05-08T20:47:06+08:00" level=info msg="出现新的任务节点：192.168.227.130:8888"
+time="2021-05-08T20:47:16+08:00" level=info msg="查询节点任务数据" host="192.168.227.130:8888"
+time="2021-05-08T20:47:16+08:00" level=info msg="查询节点任务数据" host="192.168.227.130:8888" 数据数量=0
+time="2021-05-08T20:47:16+08:00" level=info msg="该节点目前没有要执行的任务" host="192.168.227.130:8888"
+time="2021-05-08T20:47:30+08:00" level=info msg="任务执行状态数据入库" status_info="{task_id:086d46ce-b0cb-4a63-a953-2c547bdee2e7,name:,host:192.168.196.1:8888,start:2021-05-08 20:47:30,end:2021-05-08 20:47:30,status:,error:,numbers:0}"
+time="2021-05-08T20:47:30+08:00" level=info msg="任务执行数据入库成功" local_host:="192.168.196.1:8080" remote_host="192.168.196.1:51056" url=/acceptStatus
+time="2021-05-08T20:48:30+08:00" level=info msg="任务执行状态数据入库" status_info="{task_id:086d46ce-b0cb-4a63-a953-2c547bdee2e7,name:,host:192.168.196.1:8888,start:2021-05-08 20:48:30,end:2021-05-08 20:48:30,status:,error:,numbers:0}"
+time="2021-05-08T20:48:30+08:00" level=info msg="任务执行数据入库成功" local_host:="192.168.196.1:8080" remote_host="192.168.196.1:51056" url=/acceptStatus
+time="2021-05-08T20:49:30+08:00" level=info msg="任务执行状态数据入库" status_info="{task_id:086d46ce-b0cb-4a63-a953-2c547bdee2e7,name:,host:192.168.196.1:8888,start:2021-05-08 20:49:30,end:2021-05-08 20:49:30,status:,error:,numbers:0}"
+time="2021-05-08T20:49:30+08:00" level=info msg="任务执行数据入库成功" local_host:="192.168.196.1:8080" remote_host="192.168.196.1:51056" url=/acceptStatus
+time="2021-05-08T20:50:30+08:00" level=info msg="任务执行状态数据入库" status_info="{task_id:086d46ce-b0cb-4a63-a953-2c547bdee2e7,name:,host:192.168.196.1:8888,start:2021-05-08 20:50:30,end:2021-05-08 20:50:30,status:,error:,numbers:0}"
+time="2021-05-08T20:50:30+08:00" level=info msg="任务执行数据入库成功" local_host:="192.168.196.1:8080" remote_host="192.168.196.1:51056" url=/acceptStatus
+time="2021-05-08T20:51:21+08:00" level=info msg="查看任务节点列表" remote_host="192.168.196.1:50098"
+time="2021-05-08T20:51:21+08:00" level=info msg="获取用户任务主机列表" user_id=test1
+time="2021-05-08T20:51:30+08:00" level=info msg="任务执行状态数据入库" status_info="{task_id:086d46ce-b0cb-4a63-a953-2c547bdee2e7,name:,host:192.168.196.1:8888,start:2021-05-08 20:51:30,end:2021-05-08 20:51:30,status:,error:,numbers:0}"
+time="2021-05-08T20:51:30+08:00" level=info msg="任务执行数据入库成功" local_host:="192.168.196.1:8080" remote_host="192.168.196.1:51056" url=/acceptStatus
+time="2021-05-08T20:52:12+08:00" level=info msg="生成新任务id" local_host:="192.168.196.1:8080" remote_host="192.168.196.1:50098" taskId=6c83ab9f-cbad-4515-9416-b60ec0715176 url=/acceptTask
+time="2021-05-08T20:52:12+08:00" level=info msg="接收到新任务请求" local_host:="192.168.196.1:8080" remote_host="192.168.196.1:50098" task="{id:6c83ab9f-cbad-4515-9416-b60ec0715176,name:linux节点测试任务,user_id:test1,time_format:30 * * * * *,command:cd /root/MyProgram;./test,host:192.168.227.130:8888,timeout:0,alone:true,once:false,repeat:false,system:false,share:false,off:false}" url=/acceptTask
+time="2021-05-08T20:52:13+08:00" level=info msg="调度器下发任务成功" local_host:="192.168.196.1:8080" remote_host="192.168.196.1:50098" url=/acceptTask
+time="2021-05-08T20:52:13+08:00" level=info msg="任务数据入库" task="{id:6c83ab9f-cbad-4515-9416-b60ec0715176,name:linux节点测试任务,user_id:test1,time_format:30 * * * * *,command:cd /root/MyProgram;./test,host:192.168.227.130:8888,timeout:0,alone:true,once:false,repeat:false,system:false,share:false,off:false}"
+time="2021-05-08T20:52:13+08:00" level=info msg="任务数据入库成功" local_host:="192.168.196.1:8080" remote_host="192.168.196.1:50098" url=/acceptTask
+time="2021-05-08T20:52:14+08:00" level=info msg="查看任务列表" remote_host="192.168.196.1:50098"
+time="2021-05-08T20:52:14+08:00" level=info msg="查询用户任务数据" user=test1
+time="2021-05-08T20:52:14+08:00" level=info msg="查看任务节点列表" remote_host="192.168.196.1:50234"
+time="2021-05-08T20:52:14+08:00" level=info msg="获取用户任务主机列表" user_id=test1
+time="2021-05-08T20:52:14+08:00" level=info msg="查询用户任务数据" user=test1 数据数量=2
+time="2021-05-08T20:52:30+08:00" level=info msg="任务执行状态数据入库" status_info="{task_id:086d46ce-b0cb-4a63-a953-2c547bdee2e7,name:,host:192.168.196.1:8888,start:2021-05-08 20:52:30,end:2021-05-08 20:52:30,status:,error:,numbers:0}"
+time="2021-05-08T20:52:30+08:00" level=info msg="任务执行数据入库成功" local_host:="192.168.196.1:8080" remote_host="192.168.196.1:51056" url=/acceptStatus
+time="2021-05-08T20:52:31+08:00" level=info msg="任务执行状态数据入库" status_info="{task_id:6c83ab9f-cbad-4515-9416-b60ec0715176,name:,host:192.168.227.130:8888,start:2021-05-08 20:53:30,end:2021-05-08 20:53:30,status:,error:,numbers:0}"
+time="2021-05-08T20:52:31+08:00" level=info msg="任务执行数据入库成功" local_host:="192.168.196.1:8080" remote_host="192.168.196.1:50275" url=/acceptStatus
+time="2021-05-08T20:53:30+08:00" level=info msg="任务执行状态数据入库" status_info="{task_id:086d46ce-b0cb-4a63-a953-2c547bdee2e7,name:,host:192.168.196.1:8888,start:2021-05-08 20:53:30,end:2021-05-08 20:53:30,status:,error:,numbers:0}"
+time="2021-05-08T20:53:30+08:00" level=info msg="任务执行数据入库成功" local_host:="192.168.196.1:8080" remote_host="192.168.196.1:51056" url=/acceptStatus
+time="2021-05-08T20:53:31+08:00" level=info msg="任务执行状态数据入库" status_info="{task_id:6c83ab9f-cbad-4515-9416-b60ec0715176,name:,host:192.168.227.130:8888,start:2021-05-08 20:54:30,end:2021-05-08 20:54:30,status:,error:,numbers:0}"
+time="2021-05-08T20:53:31+08:00" level=info msg="任务执行数据入库成功" local_host:="192.168.196.1:8080" remote_host="192.168.196.1:50275" url=/acceptStatus
+time="2021-05-08T20:53:34+08:00" level=error msg="一个任务节点退出：/AgentList/192.168.227.130"
+time="2021-05-08T20:53:39+08:00" level=info msg="出现新的任务节点：192.168.227.130:8888"
+time="2021-05-08T20:53:49+08:00" level=info msg="查询节点任务数据" host="192.168.227.130:8888"
+time="2021-05-08T20:53:49+08:00" level=info msg="查询节点任务数据" host="192.168.227.130:8888" 数据数量=1
+time="2021-05-08T20:53:49+08:00" level=info msg="新节点任务下发完成"
+time="2021-05-08T20:54:30+08:00" level=info msg="任务执行状态数据入库" status_info="{task_id:086d46ce-b0cb-4a63-a953-2c547bdee2e7,name:,host:192.168.196.1:8888,start:2021-05-08 20:54:30,end:2021-05-08 20:54:30,status:,error:,numbers:0}"
+time="2021-05-08T20:54:30+08:00" level=info msg="任务执行数据入库成功" local_host:="192.168.196.1:8080" remote_host="192.168.196.1:51056" url=/acceptStatus
+time="2021-05-08T20:54:31+08:00" level=info msg="任务执行状态数据入库" status_info="{task_id:6c83ab9f-cbad-4515-9416-b60ec0715176,name:,host:192.168.227.130:8888,start:2021-05-08 20:55:30,end:2021-05-08 20:55:30,status:,error:,numbers:0}"
+time="2021-05-08T20:54:31+08:00" level=info msg="任务执行数据入库成功" local_host:="192.168.196.1:8080" remote_host="192.168.196.1:50585" url=/acceptStatus
+time="2021-05-08T20:55:30+08:00" level=info msg="任务执行状态数据入库" status_info="{task_id:086d46ce-b0cb-4a63-a953-2c547bdee2e7,name:,host:192.168.196.1:8888,start:2021-05-08 20:55:30,end:2021-05-08 20:55:30,status:,error:,numbers:0}"
+time="2021-05-08T20:55:30+08:00" level=info msg="任务执行数据入库成功" local_host:="192.168.196.1:8080" remote_host="192.168.196.1:51056" url=/acceptStatus
+time="2021-05-08T20:55:31+08:00" level=info msg="任务执行状态数据入库" status_info="{task_id:6c83ab9f-cbad-4515-9416-b60ec0715176,name:,host:192.168.227.130:8888,start:2021-05-08 20:56:30,end:2021-05-08 20:56:30,status:,error:,numbers:0}"
+time="2021-05-08T20:55:31+08:00" level=info msg="任务执行数据入库成功" local_host:="192.168.196.1:8080" remote_host="192.168.196.1:50585" url=/acceptStatus
+time="2021-05-08T20:56:30+08:00" level=info msg="任务执行状态数据入库" status_info="{task_id:086d46ce-b0cb-4a63-a953-2c547bdee2e7,name:,host:192.168.196.1:8888,start:2021-05-08 20:56:30,end:2021-05-08 20:56:30,status:,error:,numbers:0}"
+time="2021-05-08T20:56:30+08:00" level=info msg="任务执行数据入库成功" local_host:="192.168.196.1:8080" remote_host="192.168.196.1:51056" url=/acceptStatus
+time="2021-05-08T20:56:31+08:00" level=info msg="任务执行状态数据入库" status_info="{task_id:6c83ab9f-cbad-4515-9416-b60ec0715176,name:,host:192.168.227.130:8888,start:2021-05-08 20:57:30,end:2021-05-08 20:57:30,status:,error:,numbers:0}"
+time="2021-05-08T20:56:31+08:00" level=info msg="任务执行数据入库成功" local_host:="192.168.196.1:8080" remote_host="192.168.196.1:50585" url=/acceptStatus
+time="2021-05-08T20:57:30+08:00" level=info msg="任务执行状态数据入库" status_info="{task_id:086d46ce-b0cb-4a63-a953-2c547bdee2e7,name:,host:192.168.196.1:8888,start:2021-05-08 20:57:30,end:2021-05-08 20:57:30,status:,error:,numbers:0}"
+time="2021-05-08T20:57:30+08:00" level=info msg="任务执行数据入库成功" local_host:="192.168.196.1:8080" remote_host="192.168.196.1:51056" url=/acceptStatus
+time="2021-05-08T20:57:31+08:00" level=info msg="任务执行状态数据入库" status_info="{task_id:6c83ab9f-cbad-4515-9416-b60ec0715176,name:,host:192.168.227.130:8888,start:2021-05-08 20:58:30,end:2021-05-08 20:58:30,status:,error:,numbers:0}"
+time="2021-05-08T20:57:31+08:00" level=info msg="任务执行数据入库成功" local_host:="192.168.196.1:8080" remote_host="192.168.196.1:50585" url=/acceptStatus
+time="2021-05-08T20:57:56+08:00" level=info msg="查看任务节点列表" remote_host="192.168.196.1:51102"
+time="2021-05-08T20:57:56+08:00" level=info msg="获取用户任务主机列表" user_id=test1
+time="2021-05-08T20:58:30+08:00" level=info msg="任务执行状态数据入库" status_info="{task_id:086d46ce-b0cb-4a63-a953-2c547bdee2e7,name:,host:192.168.196.1:8888,start:2021-05-08 20:58:30,end:2021-05-08 20:58:30,status:,error:,numbers:0}"
+time="2021-05-08T20:58:30+08:00" level=info msg="任务执行数据入库成功" local_host:="192.168.196.1:8080" remote_host="192.168.196.1:51056" url=/acceptStatus
+time="2021-05-08T20:58:31+08:00" level=info msg="任务执行状态数据入库" status_info="{task_id:6c83ab9f-cbad-4515-9416-b60ec0715176,name:,host:192.168.227.130:8888,start:2021-05-08 20:59:30,end:2021-05-08 20:59:30,status:,error:,numbers:0}"
+time="2021-05-08T20:58:31+08:00" level=info msg="任务执行数据入库成功" local_host:="192.168.196.1:8080" remote_host="192.168.196.1:50585" url=/acceptStatus
+time="2021-05-08T20:58:34+08:00" level=info msg="生成新任务id" local_host:="192.168.196.1:8080" remote_host="192.168.196.1:51102" taskId=64c87bd3-b597-45b4-86f9-623364073c51 url=/acceptTask
+time="2021-05-08T20:58:34+08:00" level=info msg="接收到新任务请求" local_host:="192.168.196.1:8080" remote_host="192.168.196.1:51102" task="{id:64c87bd3-b597-45b4-86f9-623364073c51,name:windows测试任务2,user_id:test1,time_format:2021-05-08 21:00:00,command:cd C:\\\\Users\\\\ASUS\\\\Desktop\\\\毕设 \\u0026 test.exe,host:192.168.196.1:8888,timeout:0,alone:false,once:true,repeat:false,system:true,share:false,off:false}" url=/acceptTask
+time="2021-05-08T20:58:34+08:00" level=info msg="调度器下发任务成功" local_host:="192.168.196.1:8080" remote_host="192.168.196.1:51102" url=/acceptTask
+time="2021-05-08T20:58:34+08:00" level=info msg="任务数据入库" task="{id:64c87bd3-b597-45b4-86f9-623364073c51,name:windows测试任务2,user_id:test1,time_format:2021-05-08 21:00:00,command:cd C:\\\\Users\\\\ASUS\\\\Desktop\\\\毕设 \\u0026 test.exe,host:192.168.196.1:8888,timeout:0,alone:false,once:true,repeat:false,system:true,share:false,off:false}"
+time="2021-05-08T20:58:34+08:00" level=info msg="任务数据入库成功" local_host:="192.168.196.1:8080" remote_host="192.168.196.1:51102" url=/acceptTask
+time="2021-05-08T20:58:39+08:00" level=info msg="查看任务列表" remote_host="192.168.196.1:51102"
+time="2021-05-08T20:58:39+08:00" level=info msg="查询用户任务数据" user=test1
+time="2021-05-08T20:58:39+08:00" level=info msg="查看任务节点列表" remote_host="192.168.196.1:51209"
+time="2021-05-08T20:58:39+08:00" level=info msg="获取用户任务主机列表" user_id=test1
+time="2021-05-08T20:58:39+08:00" level=info msg="查询用户任务数据" user=test1 数据数量=3
+time="2021-05-08T20:58:41+08:00" level=info msg="接收到查询任务请求" local_host:="192.168.196.1:8080" remote_host="192.168.196.1:51209" url=/queryTask
+time="2021-05-08T20:58:41+08:00" level=info msg="查询节点任务数据" alone=2 host= name= off=2 once=2 repeat=2 share=2 system=2 timeout=0
+time="2021-05-08T20:58:42+08:00" level=info msg="查询节点任务数据" alone=2 host= name= off=2 once=2 repeat=2 share=2 system=2 timeout=0 数据数量=3
+time="2021-05-08T20:58:42+08:00" level=info msg="查询任务数据成功" local_host:="192.168.196.1:8080" remote_host="192.168.196.1:51209" url=/queryTask
+time="2021-05-08T20:58:52+08:00" level=info msg="查看任务节点列表" remote_host="192.168.196.1:51209"
+time="2021-05-08T20:58:52+08:00" level=info msg="获取用户任务主机列表" user_id=test1
+time="2021-05-08T20:59:11+08:00" level=error msg="任务数据缺失" local_host:="192.168.196.1:8080" remote_host="192.168.196.1:51209" task="{id:,name:linux节点测试任务2,user_id:test1,time_format:2021-05-08 21:00:00,command:cd /root/MyProgram;./test,host:,timeout:0,alone:false,once:true,repeat:false,system:false,share:false,off:false}" url=/acceptTask
+time="2021-05-08T20:59:17+08:00" level=info msg="生成新任务id" local_host:="192.168.196.1:8080" remote_host="192.168.196.1:51209" taskId=4c57bd66-d08a-45ac-bab5-164dec29d632 url=/acceptTask
+time="2021-05-08T20:59:17+08:00" level=info msg="接收到新任务请求" local_host:="192.168.196.1:8080" remote_host="192.168.196.1:51209" task="{id:4c57bd66-d08a-45ac-bab5-164dec29d632,name:linux节点测试任务2,user_id:test1,time_format:2021-05-08 21:00:00,command:cd /root/MyProgram;./test,host:192.168.227.130:8888,timeout:0,alone:false,once:true,repeat:false,system:false,share:false,off:false}" url=/acceptTask
+time="2021-05-08T20:59:17+08:00" level=error msg="节点接收任务出错：WARN: \n出现重复任务，丢弃，任务命令为：cd /root/MyProgram;./test;"
+time="2021-05-08T20:59:17+08:00" level=error msg="调度器下发任务出错：WARN: \n出现重复任务，丢弃，任务命令为：cd /root/MyProgram;./test;" local_host:="192.168.196.1:8080" remote_host="192.168.196.1:51209" task="{id:4c57bd66-d08a-45ac-bab5-164dec29d632,name:linux节点测试任务2,user_id:test1,time_format:2021-05-08 21:00:00,command:cd /root/MyProgram;./test,host:192.168.227.130:8888,timeout:0,alone:false,once:true,repeat:false,system:false,share:false,off:false}" url=/acceptTask
+time="2021-05-08T20:59:30+08:00" level=info msg="任务执行状态数据入库" status_info="{task_id:086d46ce-b0cb-4a63-a953-2c547bdee2e7,name:,host:192.168.196.1:8888,start:2021-05-08 20:59:30,end:2021-05-08 20:59:30,status:,error:,numbers:0}"
+time="2021-05-08T20:59:30+08:00" level=info msg="任务执行数据入库成功" local_host:="192.168.196.1:8080" remote_host="192.168.196.1:51056" url=/acceptStatus
+time="2021-05-08T20:59:31+08:00" level=info msg="任务执行状态数据入库" status_info="{task_id:6c83ab9f-cbad-4515-9416-b60ec0715176,name:,host:192.168.227.130:8888,start:2021-05-08 21:00:30,end:2021-05-08 21:00:30,status:,error:,numbers:0}"
+time="2021-05-08T20:59:31+08:00" level=info msg="任务执行数据入库成功" local_host:="192.168.196.1:8080" remote_host="192.168.196.1:50585" url=/acceptStatus
+time="2021-05-08T20:59:40+08:00" level=info msg="生成新任务id" local_host:="192.168.196.1:8080" remote_host="192.168.196.1:51209" taskId=0ab229e0-3b93-4258-afd9-b35f16c90e50 url=/acceptTask
+time="2021-05-08T20:59:40+08:00" level=info msg="接收到新任务请求" local_host:="192.168.196.1:8080" remote_host="192.168.196.1:51209" task="{id:0ab229e0-3b93-4258-afd9-b35f16c90e50,name:linux节点测试任务2,user_id:test1,time_format:2021-05-08 21:00:00,command:cd /root/MyProgram;./test,host:192.168.227.130:8888,timeout:0,alone:false,once:true,repeat:false,system:false,share:false,off:false}" url=/acceptTask
+time="2021-05-08T20:59:40+08:00" level=error msg="节点接收任务出错：WARN: \n出现重复任务，丢弃，任务命令为：cd /root/MyProgram;./test;"
+time="2021-05-08T20:59:40+08:00" level=error msg="调度器下发任务出错：WARN: \n出现重复任务，丢弃，任务命令为：cd /root/MyProgram;./test;" local_host:="192.168.196.1:8080" remote_host="192.168.196.1:51209" task="{id:0ab229e0-3b93-4258-afd9-b35f16c90e50,name:linux节点测试任务2,user_id:test1,time_format:2021-05-08 21:00:00,command:cd /root/MyProgram;./test,host:192.168.227.130:8888,timeout:0,alone:false,once:true,repeat:false,system:false,share:false,off:false}" url=/acceptTask
+time="2021-05-08T20:59:52+08:00" level=info msg="查看任务列表" remote_host="192.168.196.1:51209"
+time="2021-05-08T20:59:52+08:00" level=info msg="查询用户任务数据" user=test1
+time="2021-05-08T20:59:52+08:00" level=info msg="查看任务节点列表" remote_host="192.168.196.1:51102"
+time="2021-05-08T20:59:52+08:00" level=info msg="获取用户任务主机列表" user_id=test1
+time="2021-05-08T20:59:52+08:00" level=info msg="查询用户任务数据" user=test1 数据数量=3
+time="2021-05-08T21:00:00+08:00" level=info msg="任务执行状态数据入库" status_info="{task_id:64c87bd3-b597-45b4-86f9-623364073c51,name:,host:192.168.196.1:8888,start:2021-05-08 21:00:00,end:2021-05-08 21:00:00,status:,error:,numbers:0}"
+time="2021-05-08T21:00:00+08:00" level=info msg="任务执行数据入库成功" local_host:="192.168.196.1:8080" remote_host="192.168.196.1:51056" url=/acceptStatus
+time="2021-05-08T21:00:30+08:00" level=info msg="任务执行状态数据入库" status_info="{task_id:086d46ce-b0cb-4a63-a953-2c547bdee2e7,name:,host:192.168.196.1:8888,start:2021-05-08 21:00:30,end:2021-05-08 21:00:30,status:,error:,numbers:0}"
+time="2021-05-08T21:00:30+08:00" level=info msg="任务执行数据入库成功" local_host:="192.168.196.1:8080" remote_host="192.168.196.1:51056" url=/acceptStatus
+time="2021-05-08T21:00:31+08:00" level=info msg="任务执行状态数据入库" status_info="{task_id:6c83ab9f-cbad-4515-9416-b60ec0715176,name:,host:192.168.227.130:8888,start:2021-05-08 21:01:30,end:2021-05-08 21:01:30,status:,error:,numbers:0}"
+time="2021-05-08T21:00:31+08:00" level=info msg="任务执行数据入库成功" local_host:="192.168.196.1:8080" remote_host="192.168.196.1:50585" url=/acceptStatus
+time="2021-05-08T21:01:30+08:00" level=info msg="任务执行状态数据入库" status_info="{task_id:086d46ce-b0cb-4a63-a953-2c547bdee2e7,name:,host:192.168.196.1:8888,start:2021-05-08 21:01:30,end:2021-05-08 21:01:30,status:,error:,numbers:0}"
+time="2021-05-08T21:01:30+08:00" level=info msg="任务执行数据入库成功" local_host:="192.168.196.1:8080" remote_host="192.168.196.1:51056" url=/acceptStatus
+time="2021-05-08T21:01:31+08:00" level=info msg="任务执行状态数据入库" status_info="{task_id:6c83ab9f-cbad-4515-9416-b60ec0715176,name:,host:192.168.227.130:8888,start:2021-05-08 21:02:30,end:2021-05-08 21:02:30,status:,error:,numbers:0}"
+time="2021-05-08T21:01:31+08:00" level=info msg="任务执行数据入库成功" local_host:="192.168.196.1:8080" remote_host="192.168.196.1:50585" url=/acceptStatus
+time="2021-05-08T21:01:37+08:00" level=info msg="查看任务节点列表" remote_host="192.168.196.1:51102"
+time="2021-05-08T21:01:37+08:00" level=info msg="获取用户任务主机列表" user_id=test1
+time="2021-05-08T21:02:19+08:00" level=info msg="查看共享命令列表" remote_host="192.168.196.1:51102"
+time="2021-05-08T21:02:30+08:00" level=info msg="任务执行状态数据入库" status_info="{task_id:086d46ce-b0cb-4a63-a953-2c547bdee2e7,name:,host:192.168.196.1:8888,start:2021-05-08 21:02:30,end:2021-05-08 21:02:30,status:,error:,numbers:0}"
+time="2021-05-08T21:02:30+08:00" level=info msg="任务执行数据入库成功" local_host:="192.168.196.1:8080" remote_host="192.168.196.1:51056" url=/acceptStatus
+time="2021-05-08T21:02:31+08:00" level=info msg="任务执行状态数据入库" status_info="{task_id:6c83ab9f-cbad-4515-9416-b60ec0715176,name:,host:192.168.227.130:8888,start:2021-05-08 21:03:30,end:2021-05-08 21:03:30,status:,error:,numbers:0}"
+time="2021-05-08T21:02:31+08:00" level=info msg="任务执行数据入库成功" local_host:="192.168.196.1:8080" remote_host="192.168.196.1:50585" url=/acceptStatus
+time="2021-05-08T21:03:30+08:00" level=info msg="任务执行状态数据入库" status_info="{task_id:086d46ce-b0cb-4a63-a953-2c547bdee2e7,name:,host:192.168.196.1:8888,start:2021-05-08 21:03:30,end:2021-05-08 21:03:30,status:,error:,numbers:0}"
+time="2021-05-08T21:03:30+08:00" level=info msg="任务执行数据入库成功" local_host:="192.168.196.1:8080" remote_host="192.168.196.1:51056" url=/acceptStatus
+time="2021-05-08T21:03:31+08:00" level=info msg="任务执行状态数据入库" status_info="{task_id:6c83ab9f-cbad-4515-9416-b60ec0715176,name:,host:192.168.227.130:8888,start:2021-05-08 21:04:30,end:2021-05-08 21:04:30,status:,error:,numbers:0}"
+time="2021-05-08T21:03:31+08:00" level=info msg="任务执行数据入库成功" local_host:="192.168.196.1:8080" remote_host="192.168.196.1:50585" url=/acceptStatus
+time="2021-05-08T21:04:30+08:00" level=info msg="任务执行状态数据入库" status_info="{task_id:086d46ce-b0cb-4a63-a953-2c547bdee2e7,name:,host:192.168.196.1:8888,start:2021-05-08 21:04:30,end:2021-05-08 21:04:30,status:,error:,numbers:0}"
+time="2021-05-08T21:04:30+08:00" level=info msg="任务执行数据入库成功" local_host:="192.168.196.1:8080" remote_host="192.168.196.1:51056" url=/acceptStatus
+time="2021-05-08T21:04:31+08:00" level=info msg="任务执行状态数据入库" status_info="{task_id:6c83ab9f-cbad-4515-9416-b60ec0715176,name:,host:192.168.227.130:8888,start:2021-05-08 21:05:30,end:2021-05-08 21:05:30,status:,error:,numbers:0}"
+time="2021-05-08T21:04:31+08:00" level=info msg="任务执行数据入库成功" local_host:="192.168.196.1:8080" remote_host="192.168.196.1:50585" url=/acceptStatus
+time="2021-05-08T21:04:33+08:00" level=info msg="查看任务列表" remote_host="192.168.196.1:51102"
+time="2021-05-08T21:04:33+08:00" level=info msg="查询用户任务数据" user=test1
+time="2021-05-08T21:04:33+08:00" level=info msg="查看任务节点列表" remote_host="192.168.196.1:51209"
+time="2021-05-08T21:04:33+08:00" level=info msg="获取用户任务主机列表" user_id=test1
+time="2021-05-08T21:04:33+08:00" level=info msg="查询用户任务数据" user=test1 数据数量=3
+time="2021-05-08T21:04:34+08:00" level=info msg="查看任务节点列表" remote_host="192.168.196.1:51209"
+time="2021-05-08T21:04:34+08:00" level=info msg="获取用户任务主机列表" user_id=test1
+time="2021-05-08T21:05:30+08:00" level=info msg="任务执行状态数据入库" status_info="{task_id:086d46ce-b0cb-4a63-a953-2c547bdee2e7,name:,host:192.168.196.1:8888,start:2021-05-08 21:05:30,end:2021-05-08 21:05:30,status:,error:,numbers:0}"
+time="2021-05-08T21:05:30+08:00" level=info msg="任务执行数据入库成功" local_host:="192.168.196.1:8080" remote_host="192.168.196.1:51056" url=/acceptStatus
+time="2021-05-08T21:05:31+08:00" level=info msg="任务执行状态数据入库" status_info="{task_id:6c83ab9f-cbad-4515-9416-b60ec0715176,name:,host:192.168.227.130:8888,start:2021-05-08 21:06:30,end:2021-05-08 21:06:30,status:,error:,numbers:0}"
+time="2021-05-08T21:05:31+08:00" level=info msg="任务执行数据入库成功" local_host:="192.168.196.1:8080" remote_host="192.168.196.1:50585" url=/acceptStatus
+time="2021-05-08T21:06:30+08:00" level=info msg="任务执行状态数据入库" status_info="{task_id:086d46ce-b0cb-4a63-a953-2c547bdee2e7,name:,host:192.168.196.1:8888,start:2021-05-08 21:06:30,end:2021-05-08 21:06:30,status:,error:,numbers:0}"
+time="2021-05-08T21:06:30+08:00" level=info msg="任务执行数据入库成功" local_host:="192.168.196.1:8080" remote_host="192.168.196.1:51056" url=/acceptStatus
+time="2021-05-08T21:06:31+08:00" level=info msg="任务执行状态数据入库" status_info="{task_id:6c83ab9f-cbad-4515-9416-b60ec0715176,name:,host:192.168.227.130:8888,start:2021-05-08 21:07:30,end:2021-05-08 21:07:30,status:,error:,numbers:0}"
+time="2021-05-08T21:06:31+08:00" level=info msg="任务执行数据入库成功" local_host:="192.168.196.1:8080" remote_host="192.168.196.1:50585" url=/acceptStatus
+time="2021-05-08T21:07:30+08:00" level=info msg="任务执行状态数据入库" status_info="{task_id:086d46ce-b0cb-4a63-a953-2c547bdee2e7,name:,host:192.168.196.1:8888,start:2021-05-08 21:07:30,end:2021-05-08 21:07:30,status:,error:,numbers:0}"
+time="2021-05-08T21:07:30+08:00" level=info msg="任务执行数据入库成功" local_host:="192.168.196.1:8080" remote_host="192.168.196.1:51056" url=/acceptStatus
+time="2021-05-08T21:07:31+08:00" level=info msg="任务执行状态数据入库" status_info="{task_id:6c83ab9f-cbad-4515-9416-b60ec0715176,name:,host:192.168.227.130:8888,start:2021-05-08 21:08:30,end:2021-05-08 21:08:30,status:,error:,numbers:0}"
+time="2021-05-08T21:07:31+08:00" level=info msg="任务执行数据入库成功" local_host:="192.168.196.1:8080" remote_host="192.168.196.1:50585" url=/acceptStatus
+time="2021-05-08T21:08:15+08:00" level=info msg="生成新任务id" local_host:="192.168.196.1:8080" remote_host="192.168.196.1:51209" taskId=f7338d11-e989-497d-90d8-9711d8653c1f url=/acceptTask
+time="2021-05-08T21:08:15+08:00" level=info msg="接收到新任务请求" local_host:="192.168.196.1:8080" remote_host="192.168.196.1:51209" task="{id:f7338d11-e989-497d-90d8-9711d8653c1f,name:linux节点测试任务2,user_id:test1,time_format:2021-05-08 21:10:00,command: tail -n 1 /root/work/go_crontab/log/node20210508.log ,host:192.168.227.130:8888,timeout:0,alone:true,once:true,repeat:false,system:false,share:false,off:false}" url=/acceptTask
+time="2021-05-08T21:08:15+08:00" level=info msg="调度器下发任务成功" local_host:="192.168.196.1:8080" remote_host="192.168.196.1:51209" url=/acceptTask
+time="2021-05-08T21:08:15+08:00" level=info msg="任务数据入库" task="{id:f7338d11-e989-497d-90d8-9711d8653c1f,name:linux节点测试任务2,user_id:test1,time_format:2021-05-08 21:10:00,command: tail -n 1 /root/work/go_crontab/log/node20210508.log ,host:192.168.227.130:8888,timeout:0,alone:true,once:true,repeat:false,system:false,share:false,off:false}"
+time="2021-05-08T21:08:15+08:00" level=info msg="任务数据入库成功" local_host:="192.168.196.1:8080" remote_host="192.168.196.1:51209" url=/acceptTask
+time="2021-05-08T21:08:17+08:00" level=info msg="查看任务列表" remote_host="192.168.196.1:51209"
+time="2021-05-08T21:08:17+08:00" level=info msg="查询用户任务数据" user=test1
+time="2021-05-08T21:08:17+08:00" level=info msg="查看任务节点列表" remote_host="192.168.196.1:51102"
+time="2021-05-08T21:08:17+08:00" level=info msg="获取用户任务主机列表" user_id=test1
+time="2021-05-08T21:08:17+08:00" level=info msg="查询用户任务数据" user=test1 数据数量=4
+time="2021-05-08T21:08:30+08:00" level=info msg="任务执行状态数据入库" status_info="{task_id:086d46ce-b0cb-4a63-a953-2c547bdee2e7,name:,host:192.168.196.1:8888,start:2021-05-08 21:08:30,end:2021-05-08 21:08:30,status:,error:,numbers:0}"
+time="2021-05-08T21:08:30+08:00" level=info msg="任务执行数据入库成功" local_host:="192.168.196.1:8080" remote_host="192.168.196.1:51056" url=/acceptStatus
+time="2021-05-08T21:08:31+08:00" level=info msg="任务执行状态数据入库" status_info="{task_id:6c83ab9f-cbad-4515-9416-b60ec0715176,name:,host:192.168.227.130:8888,start:2021-05-08 21:09:30,end:2021-05-08 21:09:30,status:,error:,numbers:0}"
+time="2021-05-08T21:08:31+08:00" level=info msg="任务执行数据入库成功" local_host:="192.168.196.1:8080" remote_host="192.168.196.1:50585" url=/acceptStatus
+time="2021-05-08T21:09:01+08:00" level=info msg="任务执行状态数据入库" status_info="{task_id:f7338d11-e989-497d-90d8-9711d8653c1f,name:,host:192.168.227.130:8888,start:2021-05-08 21:10:00,end:2021-05-08 21:10:00,status:,error:,numbers:0}"
+time="2021-05-08T21:09:01+08:00" level=info msg="任务执行数据入库成功" local_host:="192.168.196.1:8080" remote_host="192.168.196.1:50585" url=/acceptStatus
+time="2021-05-08T21:09:30+08:00" level=info msg="任务执行状态数据入库" status_info="{task_id:086d46ce-b0cb-4a63-a953-2c547bdee2e7,name:,host:192.168.196.1:8888,start:2021-05-08 21:09:30,end:2021-05-08 21:09:30,status:,error:,numbers:0}"
+time="2021-05-08T21:09:30+08:00" level=info msg="任务执行数据入库成功" local_host:="192.168.196.1:8080" remote_host="192.168.196.1:51056" url=/acceptStatus
+time="2021-05-08T21:09:31+08:00" level=info msg="任务执行状态数据入库" status_info="{task_id:6c83ab9f-cbad-4515-9416-b60ec0715176,name:,host:192.168.227.130:8888,start:2021-05-08 21:10:30,end:2021-05-08 21:10:30,status:,error:,numbers:0}"
+time="2021-05-08T21:09:31+08:00" level=info msg="任务执行数据入库成功" local_host:="192.168.196.1:8080" remote_host="192.168.196.1:50585" url=/acceptStatus
+time="2021-05-08T21:10:30+08:00" level=info msg="任务执行状态数据入库" status_info="{task_id:086d46ce-b0cb-4a63-a953-2c547bdee2e7,name:,host:192.168.196.1:8888,start:2021-05-08 21:10:30,end:2021-05-08 21:10:30,status:,error:,numbers:0}"
+time="2021-05-08T21:10:30+08:00" level=info msg="任务执行数据入库成功" local_host:="192.168.196.1:8080" remote_host="192.168.196.1:51056" url=/acceptStatus
+time="2021-05-08T21:10:31+08:00" level=info msg="任务执行状态数据入库" status_info="{task_id:6c83ab9f-cbad-4515-9416-b60ec0715176,name:,host:192.168.227.130:8888,start:2021-05-08 21:11:30,end:2021-05-08 21:11:30,status:,error:,numbers:0}"
+time="2021-05-08T21:10:31+08:00" level=info msg="任务执行数据入库成功" local_host:="192.168.196.1:8080" remote_host="192.168.196.1:50585" url=/acceptStatus
+time="2021-05-08T21:10:55+08:00" level=info msg="查看任务日志" remote_host="192.168.196.1:51102"
+time="2021-05-08T21:10:59+08:00" level=info msg="查看调度器列表" remote_host="192.168.196.1:51102"
+time="2021-05-08T21:10:59+08:00" level=info msg="查看任务列表" remote_host="192.168.196.1:51102"
+time="2021-05-08T21:10:59+08:00" level=info msg="查询用户任务数据" user=test1
+time="2021-05-08T21:10:59+08:00" level=info msg="查看任务节点列表" remote_host="192.168.196.1:51209"
+time="2021-05-08T21:10:59+08:00" level=info msg="获取用户任务主机列表" user_id=test1
+time="2021-05-08T21:10:59+08:00" level=info msg="查询用户任务数据" user=test1 数据数量=4
+time="2021-05-08T21:11:11+08:00" level=info msg="查看任务日志" remote_host="192.168.196.1:51209"
+time="2021-05-08T21:11:12+08:00" level=info msg="查看任务列表" remote_host="192.168.196.1:51209"
+time="2021-05-08T21:11:12+08:00" level=info msg="查询用户任务数据" user=test1
+time="2021-05-08T21:11:12+08:00" level=info msg="查看任务节点列表" remote_host="192.168.196.1:51102"
+time="2021-05-08T21:11:12+08:00" level=info msg="获取用户任务主机列表" user_id=test1
+time="2021-05-08T21:11:12+08:00" level=info msg="查询用户任务数据" user=test1 数据数量=4
+time="2021-05-08T21:11:14+08:00" level=info msg="查看任务执行状态" remote_host="192.168.196.1:51102"
+time="2021-05-08T21:11:14+08:00" level=info msg="查询任务执行状态表" sql="select task_id,t.name,s.host,start_time,end_time,status,error from StatusTable s,TaskTable t where t.id=? and t.id=s.task_id order by start_time desc;" task_id=f7338d11-e989-497d-90d8-9711d8653c1f
+time="2021-05-08T21:11:19+08:00" level=info msg="查看任务列表" remote_host="192.168.196.1:51102"
+time="2021-05-08T21:11:19+08:00" level=info msg="查询用户任务数据" user=test1
+time="2021-05-08T21:11:19+08:00" level=info msg="查看任务节点列表" remote_host="192.168.196.1:51209"
+time="2021-05-08T21:11:19+08:00" level=info msg="获取用户任务主机列表" user_id=test1
+time="2021-05-08T21:11:19+08:00" level=info msg="查询用户任务数据" user=test1 数据数量=4
+time="2021-05-08T21:11:21+08:00" level=info msg="查看任务日志" remote_host="192.168.196.1:51209"
+time="2021-05-08T21:11:30+08:00" level=info msg="任务执行状态数据入库" status_info="{task_id:086d46ce-b0cb-4a63-a953-2c547bdee2e7,name:,host:192.168.196.1:8888,start:2021-05-08 21:11:30,end:2021-05-08 21:11:30,status:,error:,numbers:0}"
+time="2021-05-08T21:11:30+08:00" level=info msg="任务执行数据入库成功" local_host:="192.168.196.1:8080" remote_host="192.168.196.1:51056" url=/acceptStatus
+time="2021-05-08T21:11:31+08:00" level=info msg="任务执行状态数据入库" status_info="{task_id:6c83ab9f-cbad-4515-9416-b60ec0715176,name:,host:192.168.227.130:8888,start:2021-05-08 21:12:30,end:2021-05-08 21:12:30,status:,error:,numbers:0}"
+time="2021-05-08T21:11:31+08:00" level=info msg="任务执行数据入库成功" local_host:="192.168.196.1:8080" remote_host="192.168.196.1:50585" url=/acceptStatus
+time="2021-05-08T21:12:30+08:00" level=info msg="任务执行状态数据入库" status_info="{task_id:086d46ce-b0cb-4a63-a953-2c547bdee2e7,name:,host:192.168.196.1:8888,start:2021-05-08 21:12:30,end:2021-05-08 21:12:30,status:,error:,numbers:0}"
+time="2021-05-08T21:12:30+08:00" level=info msg="任务执行数据入库成功" local_host:="192.168.196.1:8080" remote_host="192.168.196.1:51056" url=/acceptStatus
+time="2021-05-08T21:12:31+08:00" level=info msg="任务执行状态数据入库" status_info="{task_id:6c83ab9f-cbad-4515-9416-b60ec0715176,name:,host:192.168.227.130:8888,start:2021-05-08 21:13:30,end:2021-05-08 21:13:30,status:,error:,numbers:0}"
+time="2021-05-08T21:12:31+08:00" level=info msg="任务执行数据入库成功" local_host:="192.168.196.1:8080" remote_host="192.168.196.1:50585" url=/acceptStatus
+time="2021-05-08T21:13:04+08:00" level=info msg="查看任务列表" remote_host="192.168.196.1:51209"
+time="2021-05-08T21:13:04+08:00" level=info msg="查询用户任务数据" user=test1
+time="2021-05-08T21:13:04+08:00" level=info msg="查看任务节点列表" remote_host="192.168.196.1:51102"
+time="2021-05-08T21:13:04+08:00" level=info msg="获取用户任务主机列表" user_id=test1
+time="2021-05-08T21:13:04+08:00" level=info msg="查询用户任务数据" user=test1 数据数量=4
+time="2021-05-08T21:13:28+08:00" level=info msg="接收到更新任务请求" local_host:="192.168.196.1:8080" remote_host="192.168.196.1:51102" task="{id:f7338d11-e989-497d-90d8-9711d8653c1f,name:linux节点测试任务2,user_id:test1,time_format:2021-05-08 21:15:00,command: tail -n 1 /root/work/go_crontab/log/node20210508.log ,host:192.168.227.130:8888,timeout:0,alone:true,once:true,repeat:false,system:false,share:false,off:false}" url=/updateTask
+time="2021-05-08T21:13:28+08:00" level=info msg="校验任务数据" task_id=f7338d11-e989-497d-90d8-9711d8653c1f
+time="2021-05-08T21:13:30+08:00" level=info msg="任务执行状态数据入库" status_info="{task_id:086d46ce-b0cb-4a63-a953-2c547bdee2e7,name:,host:192.168.196.1:8888,start:2021-05-08 21:13:30,end:2021-05-08 21:13:30,status:,error:,numbers:0}"
+time="2021-05-08T21:13:30+08:00" level=info msg="任务执行数据入库成功" local_host:="192.168.196.1:8080" remote_host="192.168.196.1:51056" url=/acceptStatus
+time="2021-05-08T21:13:31+08:00" level=info msg="任务执行状态数据入库" status_info="{task_id:6c83ab9f-cbad-4515-9416-b60ec0715176,name:,host:192.168.227.130:8888,start:2021-05-08 21:14:30,end:2021-05-08 21:14:30,status:,error:,numbers:0}"
+time="2021-05-08T21:13:31+08:00" level=info msg="任务执行数据入库成功" local_host:="192.168.196.1:8080" remote_host="192.168.196.1:50585" url=/acceptStatus
+time="2021-05-08T21:13:39+08:00" level=error msg="一个任务节点退出：/AgentList/192.168.227.130"
+time="2021-05-08T21:13:46+08:00" level=info msg="出现新的任务节点：192.168.227.130:8888"
+time="2021-05-08T21:13:48+08:00" level=error msg="调度器下发更新任务出错：Post \"http://192.168.227.130:8888/updateTask\": context deadline exceeded (Client.Timeout exceeded while awaiting headers)" local_host:="192.168.196.1:8080" remote_host="192.168.196.1:51102" url=/updateTask
+time="2021-05-08T21:13:55+08:00" level=info msg="接收到更新任务数据请求" local_host:="192.168.196.1:8080" remote_host="192.168.196.1:51102" task="{id:f7338d11-e989-497d-90d8-9711d8653c1f,name:linux节点测试任务2,user_id:test1,time_format:2021-05-08 21:15:00,command: tail -n 1 /root/work/go_crontab/log/node20210508.log ,host:192.168.227.130:8888,timeout:0,alone:true,once:true,repeat:false,system:false,share:false,off:false}" url=/updateTaskData
+time="2021-05-08T21:13:55+08:00" level=info msg="更新任务数据" task="{id:f7338d11-e989-497d-90d8-9711d8653c1f,name:linux节点测试任务2,user_id:test1,time_format:2021-05-08 21:15:00,command: tail -n 1 /root/work/go_crontab/log/node20210508.log ,host:192.168.227.130:8888,timeout:0,alone:true,once:true,repeat:false,system:false,share:false,off:true}"
+time="2021-05-08T21:13:55+08:00" level=info msg="删除任务数据" task_id=f7338d11-e989-497d-90d8-9711d8653c1f
+time="2021-05-08T21:13:55+08:00" level=info msg="任务数据入库" task="{id:f7338d11-e989-497d-90d8-9711d8653c1f,name:linux节点测试任务2,user_id:test1,time_format:2021-05-08 21:15:00,command: tail -n 1 /root/work/go_crontab/log/node20210508.log ,host:192.168.227.130:8888,timeout:0,alone:true,once:true,repeat:false,system:false,share:false,off:true}"
+time="2021-05-08T21:13:56+08:00" level=info msg="查询节点任务数据" host="192.168.227.130:8888"
+time="2021-05-08T21:13:56+08:00" level=info msg="查询节点任务数据" host="192.168.227.130:8888" 数据数量=2
+time="2021-05-08T21:13:57+08:00" level=info msg="新节点任务下发完成"
+time="2021-05-08T21:13:57+08:00" level=info msg="查看任务列表" remote_host="192.168.196.1:51102"
+time="2021-05-08T21:13:57+08:00" level=info msg="查询用户任务数据" user=test1
+time="2021-05-08T21:13:57+08:00" level=info msg="查看任务节点列表" remote_host="192.168.196.1:51209"
+time="2021-05-08T21:13:57+08:00" level=info msg="获取用户任务主机列表" user_id=test1
+time="2021-05-08T21:13:57+08:00" level=info msg="查询用户任务数据" user=test1 数据数量=4
+time="2021-05-08T21:14:00+08:00" level=info msg="接收到开启任务请求" local_host:="192.168.196.1:8080" remote_host="192.168.196.1:51209" task="{id:f7338d11-e989-497d-90d8-9711d8653c1f,name:linux节点测试任务2,user_id:test1,time_format:2021-05-08 21:15:00,command: tail -n 1 /root/work/go_crontab/log/node20210508.log ,host:192.168.227.130:8888,timeout:0,alone:true,once:true,repeat:false,system:false,share:false,off:true}" url=/openOrCloseTask
+time="2021-05-08T21:14:01+08:00" level=error msg="节点接收任务出错：WARN: \n该单机任务指令已在运行， 丢弃，任务id为：f7338d11-e989-497d-90d8-9711d8653c1f，任务命令为： tail -n 1 /root/work/go_crontab/log/node20210508.log ，可查看共享任务指令表;"
+time="2021-05-08T21:14:01+08:00" level=error msg="调度器开启任务出错：WARN: \n该单机任务指令已在运行， 丢弃，任务id为：f7338d11-e989-497d-90d8-9711d8653c1f，任务命令为： tail -n 1 /root/work/go_crontab/log/node20210508.log ，可查看共享任务指令表;" local_host:="192.168.196.1:8080" remote_host="192.168.196.1:51209" task="{id:f7338d11-e989-497d-90d8-9711d8653c1f,name:linux节点测试任务2,user_id:test1,time_format:2021-05-08 21:15:00,command: tail -n 1 /root/work/go_crontab/log/node20210508.log ,host:192.168.227.130:8888,timeout:0,alone:true,once:true,repeat:false,system:false,share:false,off:true}" url=/openOrCloseTask
+time="2021-05-08T21:14:01+08:00" level=info msg="任务执行状态数据入库" status_info="{task_id:f7338d11-e989-497d-90d8-9711d8653c1f,name:,host:192.168.227.130:8888,start:2021-05-08 21:15:00,end:2021-05-08 21:15:00,status:,error:,numbers:0}"
+time="2021-05-08T21:14:01+08:00" level=info msg="任务执行数据入库成功" local_host:="192.168.196.1:8080" remote_host="192.168.196.1:53637" url=/acceptStatus
+time="2021-05-08T21:14:13+08:00" level=info msg="查看共享命令列表" remote_host="192.168.196.1:51209"
+time="2021-05-08T21:14:14+08:00" level=info msg="查看任务列表" remote_host="192.168.196.1:51209"
+time="2021-05-08T21:14:14+08:00" level=info msg="查询用户任务数据" user=test1
+time="2021-05-08T21:14:14+08:00" level=info msg="查看任务节点列表" remote_host="192.168.196.1:51102"
+time="2021-05-08T21:14:14+08:00" level=info msg="获取用户任务主机列表" user_id=test1
+time="2021-05-08T21:14:14+08:00" level=info msg="查询用户任务数据" user=test1 数据数量=4
+time="2021-05-08T21:14:16+08:00" level=info msg="接收到开启任务请求" local_host:="192.168.196.1:8080" remote_host="192.168.196.1:51102" task="{id:f7338d11-e989-497d-90d8-9711d8653c1f,name:linux节点测试任务2,user_id:test1,time_format:2021-05-08 21:15:00,command: tail -n 1 /root/work/go_crontab/log/node20210508.log ,host:192.168.227.130:8888,timeout:0,alone:true,once:true,repeat:false,system:false,share:false,off:true}" url=/openOrCloseTask
+time="2021-05-08T21:14:16+08:00" level=error msg="节点接收任务出错：WARN: \n单次定时任务出错，丢弃，任务id为：f7338d11-e989-497d-90d8-9711d8653c1f,任务时间为：2021-05-08 21:15:00，error=任务时间失效;"
+time="2021-05-08T21:14:16+08:00" level=error msg="调度器开启任务出错：WARN: \n单次定时任务出错，丢弃，任务id为：f7338d11-e989-497d-90d8-9711d8653c1f,任务时间为：2021-05-08 21:15:00，error=任务时间失效;" local_host:="192.168.196.1:8080" remote_host="192.168.196.1:51102" task="{id:f7338d11-e989-497d-90d8-9711d8653c1f,name:linux节点测试任务2,user_id:test1,time_format:2021-05-08 21:15:00,command: tail -n 1 /root/work/go_crontab/log/node20210508.log ,host:192.168.227.130:8888,timeout:0,alone:true,once:true,repeat:false,system:false,share:false,off:true}" url=/openOrCloseTask
+time="2021-05-08T21:14:26+08:00" level=info msg="接收到开启任务请求" local_host:="192.168.196.1:8080" remote_host="192.168.196.1:51102" task="{id:f7338d11-e989-497d-90d8-9711d8653c1f,name:linux节点测试任务2,user_id:test1,time_format:2021-05-08 21:15:00,command: tail -n 1 /root/work/go_crontab/log/node20210508.log ,host:192.168.227.130:8888,timeout:0,alone:true,once:true,repeat:false,system:false,share:false,off:true}" url=/openOrCloseTask
+time="2021-05-08T21:14:26+08:00" level=error msg="节点接收任务出错：WARN: \n单次定时任务出错，丢弃，任务id为：f7338d11-e989-497d-90d8-9711d8653c1f,任务时间为：2021-05-08 21:15:00，error=任务时间失效;"
+time="2021-05-08T21:14:26+08:00" level=error msg="调度器开启任务出错：WARN: \n单次定时任务出错，丢弃，任务id为：f7338d11-e989-497d-90d8-9711d8653c1f,任务时间为：2021-05-08 21:15:00，error=任务时间失效;" local_host:="192.168.196.1:8080" remote_host="192.168.196.1:51102" task="{id:f7338d11-e989-497d-90d8-9711d8653c1f,name:linux节点测试任务2,user_id:test1,time_format:2021-05-08 21:15:00,command: tail -n 1 /root/work/go_crontab/log/node20210508.log ,host:192.168.227.130:8888,timeout:0,alone:true,once:true,repeat:false,system:false,share:false,off:true}" url=/openOrCloseTask
+time="2021-05-08T21:14:30+08:00" level=info msg="任务执行状态数据入库" status_info="{task_id:086d46ce-b0cb-4a63-a953-2c547bdee2e7,name:,host:192.168.196.1:8888,start:2021-05-08 21:14:30,end:2021-05-08 21:14:30,status:,error:,numbers:0}"
+time="2021-05-08T21:14:30+08:00" level=info msg="任务执行数据入库成功" local_host:="192.168.196.1:8080" remote_host="192.168.196.1:51056" url=/acceptStatus
+time="2021-05-08T21:14:31+08:00" level=info msg="任务执行状态数据入库" status_info="{task_id:6c83ab9f-cbad-4515-9416-b60ec0715176,name:,host:192.168.227.130:8888,start:2021-05-08 21:15:30,end:2021-05-08 21:15:30,status:,error:,numbers:0}"
+time="2021-05-08T21:14:31+08:00" level=info msg="任务执行数据入库成功" local_host:="192.168.196.1:8080" remote_host="192.168.196.1:53637" url=/acceptStatus
+time="2021-05-08T21:14:45+08:00" level=info msg="接收到更新任务请求" local_host:="192.168.196.1:8080" remote_host="192.168.196.1:51102" task="{id:f7338d11-e989-497d-90d8-9711d8653c1f,name:linux节点测试任务2,user_id:test1,time_format:2021-05-08 21:20:00,command: tail -n 1 /root/work/go_crontab/log/node20210508.log ,host:192.168.227.130:8888,timeout:0,alone:true,once:true,repeat:false,system:false,share:false,off:false}" url=/updateTask
+time="2021-05-08T21:14:45+08:00" level=info msg="校验任务数据" task_id=f7338d11-e989-497d-90d8-9711d8653c1f
+time="2021-05-08T21:14:56+08:00" level=info msg="接收到更新任务请求" local_host:="192.168.196.1:8080" remote_host="192.168.196.1:51209" task="{id:f7338d11-e989-497d-90d8-9711d8653c1f,name:linux节点测试任务2,user_id:test1,time_format:2021-05-08 21:20:00,command: tail -n 1 /root/work/go_crontab/log/node20210508.log ,host:192.168.227.130:8888,timeout:0,alone:true,once:true,repeat:false,system:false,share:false,off:false}" url=/updateTask
+time="2021-05-08T21:14:56+08:00" level=info msg="校验任务数据" task_id=f7338d11-e989-497d-90d8-9711d8653c1f
+time="2021-05-08T21:15:05+08:00" level=error msg="调度器下发更新任务出错：Post \"http://192.168.227.130:8888/updateTask\": context deadline exceeded (Client.Timeout exceeded while awaiting headers)" local_host:="192.168.196.1:8080" remote_host="192.168.196.1:51102" url=/updateTask
+time="2021-05-08T21:15:11+08:00" level=info msg="接收到更新任务数据请求" local_host:="192.168.196.1:8080" remote_host="192.168.196.1:51102" task="{id:f7338d11-e989-497d-90d8-9711d8653c1f,name:linux节点测试任务2,user_id:test1,time_format:2021-05-08 21:20:00,command: tail -n 1 /root/work/go_crontab/log/node20210508.log ,host:192.168.227.130:8888,timeout:0,alone:true,once:true,repeat:false,system:false,share:false,off:false}" url=/updateTaskData
+time="2021-05-08T21:15:11+08:00" level=info msg="更新任务数据" task="{id:f7338d11-e989-497d-90d8-9711d8653c1f,name:linux节点测试任务2,user_id:test1,time_format:2021-05-08 21:20:00,command: tail -n 1 /root/work/go_crontab/log/node20210508.log ,host:192.168.227.130:8888,timeout:0,alone:true,once:true,repeat:false,system:false,share:false,off:true}"
+time="2021-05-08T21:15:11+08:00" level=info msg="删除任务数据" task_id=f7338d11-e989-497d-90d8-9711d8653c1f
+time="2021-05-08T21:15:11+08:00" level=info msg="任务数据入库" task="{id:f7338d11-e989-497d-90d8-9711d8653c1f,name:linux节点测试任务2,user_id:test1,time_format:2021-05-08 21:20:00,command: tail -n 1 /root/work/go_crontab/log/node20210508.log ,host:192.168.227.130:8888,timeout:0,alone:true,once:true,repeat:false,system:false,share:false,off:true}"
+time="2021-05-08T21:15:13+08:00" level=info msg="查看任务列表" remote_host="192.168.196.1:51102"
+time="2021-05-08T21:15:13+08:00" level=info msg="查询用户任务数据" user=test1
+time="2021-05-08T21:15:13+08:00" level=info msg="查看任务节点列表" remote_host="192.168.196.1:53859"
+time="2021-05-08T21:15:13+08:00" level=info msg="查询用户任务数据" user=test1 数据数量=4
+time="2021-05-08T21:15:13+08:00" level=info msg="获取用户任务主机列表" user_id=test1
+time="2021-05-08T21:15:15+08:00" level=info msg="接收到开启任务请求" local_host:="192.168.196.1:8080" remote_host="192.168.196.1:53859" task="{id:f7338d11-e989-497d-90d8-9711d8653c1f,name:linux节点测试任务2,user_id:test1,time_format:2021-05-08 21:20:00,command: tail -n 1 /root/work/go_crontab/log/node20210508.log ,host:192.168.227.130:8888,timeout:0,alone:true,once:true,repeat:false,system:false,share:false,off:true}" url=/openOrCloseTask
+time="2021-05-08T21:15:15+08:00" level=info msg="调度器开启任务成功" local_host:="192.168.196.1:8080" remote_host="192.168.196.1:53859" url=/openOrCloseTask
+time="2021-05-08T21:15:15+08:00" level=info msg="修改任务开关属性" off=false task_id=f7338d11-e989-497d-90d8-9711d8653c1f
+time="2021-05-08T21:15:16+08:00" level=info msg="更新任务数据入库成功" local_host:="192.168.196.1:8080" remote_host="192.168.196.1:53859" url=/openOrCloseTask
+time="2021-05-08T21:15:16+08:00" level=error msg="调度器下发更新任务出错：Post \"http://192.168.227.130:8888/updateTask\": context deadline exceeded (Client.Timeout exceeded while awaiting headers)" local_host:="192.168.196.1:8080" remote_host="192.168.196.1:51209" url=/updateTask
+time="2021-05-08T21:15:17+08:00" level=info msg="查看任务列表" remote_host="192.168.196.1:53859"
+time="2021-05-08T21:15:17+08:00" level=info msg="查询用户任务数据" user=test1
+time="2021-05-08T21:15:17+08:00" level=info msg="查看任务节点列表" remote_host="192.168.196.1:51102"
+time="2021-05-08T21:15:17+08:00" level=info msg="获取用户任务主机列表" user_id=test1
+time="2021-05-08T21:15:17+08:00" level=info msg="查询用户任务数据" user=test1 数据数量=4
+time="2021-05-08T21:15:30+08:00" level=info msg="任务执行状态数据入库" status_info="{task_id:086d46ce-b0cb-4a63-a953-2c547bdee2e7,name:,host:192.168.196.1:8888,start:2021-05-08 21:15:30,end:2021-05-08 21:15:30,status:,error:,numbers:0}"
+time="2021-05-08T21:15:30+08:00" level=info msg="任务执行数据入库成功" local_host:="192.168.196.1:8080" remote_host="192.168.196.1:51056" url=/acceptStatus
+time="2021-05-08T21:15:31+08:00" level=info msg="任务执行状态数据入库" status_info="{task_id:6c83ab9f-cbad-4515-9416-b60ec0715176,name:,host:192.168.227.130:8888,start:2021-05-08 21:16:30,end:2021-05-08 21:16:30,status:,error:,numbers:0}"
+time="2021-05-08T21:15:31+08:00" level=info msg="任务执行数据入库成功" local_host:="192.168.196.1:8080" remote_host="192.168.196.1:53637" url=/acceptStatus
+time="2021-05-08T21:15:31+08:00" level=info msg="接收到删除任务请求" local_host:="192.168.196.1:8080" remote_host="192.168.196.1:51102" task="{id:f7338d11-e989-497d-90d8-9711d8653c1f,name:,user_id:test1,time_format:,command:,host:192.168.227.130:8888,timeout:0,alone:true,once:true,repeat:false,system:false,share:false,off:false}" url=/deleteTask
+time="2021-05-08T21:15:31+08:00" level=info msg="校验任务数据" task_id=f7338d11-e989-497d-90d8-9711d8653c1f
+time="2021-05-08T21:15:32+08:00" level=info msg="调度器删除任务成功" local_host:="192.168.196.1:8080" remote_host="192.168.196.1:51102" url=/deleteTask
+time="2021-05-08T21:15:32+08:00" level=info msg="删除任务数据" task_id=f7338d11-e989-497d-90d8-9711d8653c1f
+time="2021-05-08T21:15:32+08:00" level=info msg="获取任务数据" task_id=f7338d11-e989-497d-90d8-9711d8653c1f
+time="2021-05-08T21:15:32+08:00" level=info msg="删除任务数据成功" local_host:="192.168.196.1:8080" remote_host="192.168.196.1:51102" url=/deleteTask
+time="2021-05-08T21:15:33+08:00" level=info msg="查看任务列表" remote_host="192.168.196.1:51102"
+time="2021-05-08T21:15:33+08:00" level=info msg="查询用户任务数据" user=test1
+time="2021-05-08T21:15:33+08:00" level=info msg="查看任务节点列表" remote_host="192.168.196.1:53859"
+time="2021-05-08T21:15:33+08:00" level=info msg="获取用户任务主机列表" user_id=test1
+time="2021-05-08T21:15:33+08:00" level=info msg="查询用户任务数据" user=test1 数据数量=3
+time="2021-05-08T21:15:34+08:00" level=info msg="查看任务节点列表" remote_host="192.168.196.1:53859"
+time="2021-05-08T21:15:34+08:00" level=info msg="获取用户任务主机列表" user_id=test1
+time="2021-05-08T21:16:30+08:00" level=info msg="任务执行状态数据入库" status_info="{task_id:086d46ce-b0cb-4a63-a953-2c547bdee2e7,name:,host:192.168.196.1:8888,start:2021-05-08 21:16:30,end:2021-05-08 21:16:30,status:,error:,numbers:0}"
+time="2021-05-08T21:16:30+08:00" level=info msg="任务执行数据入库成功" local_host:="192.168.196.1:8080" remote_host="192.168.196.1:51056" url=/acceptStatus
+time="2021-05-08T21:16:31+08:00" level=info msg="任务执行状态数据入库" status_info="{task_id:6c83ab9f-cbad-4515-9416-b60ec0715176,name:,host:192.168.227.130:8888,start:2021-05-08 21:17:30,end:2021-05-08 21:17:30,status:,error:,numbers:0}"
+time="2021-05-08T21:16:31+08:00" level=info msg="任务执行数据入库成功" local_host:="192.168.196.1:8080" remote_host="192.168.196.1:53637" url=/acceptStatus
+time="2021-05-08T21:16:45+08:00" level=info msg="生成新任务id" local_host:="192.168.196.1:8080" remote_host="192.168.196.1:53859" taskId=8926ba37-f9d0-4ded-be60-becec24f0f56 url=/acceptTask
+time="2021-05-08T21:16:45+08:00" level=info msg="接收到新任务请求" local_host:="192.168.196.1:8080" remote_host="192.168.196.1:53859" task="{id:8926ba37-f9d0-4ded-be60-becec24f0f56,name:linux节点测试任务2,user_id:test1,time_format:2021-05-08 21:20:00,command:tail -n 1 /root/work/go_crontab/log/node20210508.log \\n,host:192.168.227.130:8888,timeout:0,alone:false,once:true,repeat:false,system:false,share:false,off:false}" url=/acceptTask
+time="2021-05-08T21:16:45+08:00" level=info msg="调度器下发任务成功" local_host:="192.168.196.1:8080" remote_host="192.168.196.1:53859" url=/acceptTask
+time="2021-05-08T21:16:45+08:00" level=info msg="任务数据入库" task="{id:8926ba37-f9d0-4ded-be60-becec24f0f56,name:linux节点测试任务2,user_id:test1,time_format:2021-05-08 21:20:00,command:tail -n 1 /root/work/go_crontab/log/node20210508.log \\n,host:192.168.227.130:8888,timeout:0,alone:false,once:true,repeat:false,system:false,share:false,off:false}"
+time="2021-05-08T21:16:45+08:00" level=info msg="任务数据入库成功" local_host:="192.168.196.1:8080" remote_host="192.168.196.1:53859" url=/acceptTask
+time="2021-05-08T21:16:46+08:00" level=info msg="查看任务列表" remote_host="192.168.196.1:53859"
+time="2021-05-08T21:16:46+08:00" level=info msg="查询用户任务数据" user=test1
+time="2021-05-08T21:16:46+08:00" level=info msg="查看任务节点列表" remote_host="192.168.196.1:51102"
+time="2021-05-08T21:16:46+08:00" level=info msg="获取用户任务主机列表" user_id=test1
+time="2021-05-08T21:16:46+08:00" level=info msg="查询用户任务数据" user=test1 数据数量=4
+time="2021-05-08T21:17:30+08:00" level=info msg="任务执行状态数据入库" status_info="{task_id:086d46ce-b0cb-4a63-a953-2c547bdee2e7,name:,host:192.168.196.1:8888,start:2021-05-08 21:17:30,end:2021-05-08 21:17:30,status:,error:,numbers:0}"
+time="2021-05-08T21:17:30+08:00" level=info msg="任务执行数据入库成功" local_host:="192.168.196.1:8080" remote_host="192.168.196.1:51056" url=/acceptStatus
+time="2021-05-08T21:17:31+08:00" level=info msg="任务执行状态数据入库" status_info="{task_id:6c83ab9f-cbad-4515-9416-b60ec0715176,name:,host:192.168.227.130:8888,start:2021-05-08 21:18:30,end:2021-05-08 21:18:30,status:,error:,numbers:0}"
+time="2021-05-08T21:17:31+08:00" level=info msg="任务执行数据入库成功" local_host:="192.168.196.1:8080" remote_host="192.168.196.1:53637" url=/acceptStatus
+time="2021-05-08T21:18:30+08:00" level=info msg="任务执行状态数据入库" status_info="{task_id:086d46ce-b0cb-4a63-a953-2c547bdee2e7,name:,host:192.168.196.1:8888,start:2021-05-08 21:18:30,end:2021-05-08 21:18:30,status:,error:,numbers:0}"
+time="2021-05-08T21:18:30+08:00" level=info msg="任务执行数据入库成功" local_host:="192.168.196.1:8080" remote_host="192.168.196.1:51056" url=/acceptStatus
+time="2021-05-08T21:18:31+08:00" level=info msg="任务执行状态数据入库" status_info="{task_id:6c83ab9f-cbad-4515-9416-b60ec0715176,name:,host:192.168.227.130:8888,start:2021-05-08 21:19:30,end:2021-05-08 21:19:30,status:,error:,numbers:0}"
+time="2021-05-08T21:18:31+08:00" level=info msg="任务执行数据入库成功" local_host:="192.168.196.1:8080" remote_host="192.168.196.1:53637" url=/acceptStatus
+time="2021-05-08T21:19:01+08:00" level=info msg="任务执行状态数据入库" status_info="{task_id:8926ba37-f9d0-4ded-be60-becec24f0f56,name:,host:192.168.227.130:8888,start:2021-05-08 21:20:00,end:2021-05-08 21:20:00,status:,error:,numbers:0}"
+time="2021-05-08T21:19:01+08:00" level=info msg="任务执行数据入库成功" local_host:="192.168.196.1:8080" remote_host="192.168.196.1:53637" url=/acceptStatus
+time="2021-05-08T21:19:30+08:00" level=info msg="任务执行状态数据入库" status_info="{task_id:086d46ce-b0cb-4a63-a953-2c547bdee2e7,name:,host:192.168.196.1:8888,start:2021-05-08 21:19:30,end:2021-05-08 21:19:30,status:,error:,numbers:0}"
+time="2021-05-08T21:19:30+08:00" level=info msg="任务执行数据入库成功" local_host:="192.168.196.1:8080" remote_host="192.168.196.1:51056" url=/acceptStatus
+time="2021-05-08T21:19:31+08:00" level=info msg="任务执行状态数据入库" status_info="{task_id:6c83ab9f-cbad-4515-9416-b60ec0715176,name:,host:192.168.227.130:8888,start:2021-05-08 21:20:30,end:2021-05-08 21:20:30,status:,error:,numbers:0}"
+time="2021-05-08T21:19:31+08:00" level=info msg="任务执行数据入库成功" local_host:="192.168.196.1:8080" remote_host="192.168.196.1:53637" url=/acceptStatus
+time="2021-05-08T21:20:30+08:00" level=info msg="任务执行状态数据入库" status_info="{task_id:086d46ce-b0cb-4a63-a953-2c547bdee2e7,name:,host:192.168.196.1:8888,start:2021-05-08 21:20:30,end:2021-05-08 21:20:30,status:,error:,numbers:0}"
+time="2021-05-08T21:20:30+08:00" level=info msg="任务执行数据入库成功" local_host:="192.168.196.1:8080" remote_host="192.168.196.1:51056" url=/acceptStatus
+time="2021-05-08T21:20:31+08:00" level=info msg="任务执行状态数据入库" status_info="{task_id:6c83ab9f-cbad-4515-9416-b60ec0715176,name:,host:192.168.227.130:8888,start:2021-05-08 21:21:30,end:2021-05-08 21:21:30,status:,error:,numbers:0}"
+time="2021-05-08T21:20:31+08:00" level=info msg="任务执行数据入库成功" local_host:="192.168.196.1:8080" remote_host="192.168.196.1:53637" url=/acceptStatus
+time="2021-05-08T21:20:40+08:00" level=info msg="查看任务执行状态" remote_host="192.168.196.1:51102"
+time="2021-05-08T21:20:40+08:00" level=info msg="查询任务执行状态表" sql="select task_id,t.name,s.host,start_time,end_time,status,error from StatusTable s,TaskTable t where t.id=? and t.id=s.task_id order by start_time desc;" task_id=8926ba37-f9d0-4ded-be60-becec24f0f56
+time="2021-05-08T21:21:03+08:00" level=info msg="查看任务列表" remote_host="192.168.196.1:51102"
+time="2021-05-08T21:21:03+08:00" level=info msg="查询用户任务数据" user=test1
+time="2021-05-08T21:21:03+08:00" level=info msg="查看任务节点列表" remote_host="192.168.196.1:53859"
+time="2021-05-08T21:21:03+08:00" level=info msg="获取用户任务主机列表" user_id=test1
+time="2021-05-08T21:21:03+08:00" level=info msg="查询用户任务数据" user=test1 数据数量=4
+time="2021-05-08T21:21:07+08:00" level=info msg="查看任务日志" remote_host="192.168.196.1:53859"
+time="2021-05-08T21:21:30+08:00" level=info msg="任务执行状态数据入库" status_info="{task_id:086d46ce-b0cb-4a63-a953-2c547bdee2e7,name:,host:192.168.196.1:8888,start:2021-05-08 21:21:30,end:2021-05-08 21:21:30,status:,error:,numbers:0}"
+time="2021-05-08T21:21:30+08:00" level=info msg="任务执行数据入库成功" local_host:="192.168.196.1:8080" remote_host="192.168.196.1:51056" url=/acceptStatus
+time="2021-05-08T21:21:31+08:00" level=info msg="任务执行状态数据入库" status_info="{task_id:6c83ab9f-cbad-4515-9416-b60ec0715176,name:,host:192.168.227.130:8888,start:2021-05-08 21:22:30,end:2021-05-08 21:22:30,status:,error:,numbers:0}"
+time="2021-05-08T21:21:31+08:00" level=info msg="任务执行数据入库成功" local_host:="192.168.196.1:8080" remote_host="192.168.196.1:53637" url=/acceptStatus
+time="2021-05-08T21:21:39+08:00" level=info msg="查看任务列表" remote_host="192.168.196.1:53859"
+time="2021-05-08T21:21:39+08:00" level=info msg="查询用户任务数据" user=test1
+time="2021-05-08T21:21:39+08:00" level=info msg="查看任务节点列表" remote_host="192.168.196.1:51102"
+time="2021-05-08T21:21:39+08:00" level=info msg="获取用户任务主机列表" user_id=test1
+time="2021-05-08T21:21:39+08:00" level=info msg="查询用户任务数据" user=test1 数据数量=4
+time="2021-05-08T21:22:13+08:00" level=info msg="查看任务日志" remote_host="192.168.196.1:51102"
+time="2021-05-08T21:22:28+08:00" level=info msg="查看任务列表" remote_host="192.168.196.1:51102"
+time="2021-05-08T21:22:28+08:00" level=info msg="查询用户任务数据" user=test1
+time="2021-05-08T21:22:28+08:00" level=info msg="查看任务节点列表" remote_host="192.168.196.1:53859"
+time="2021-05-08T21:22:28+08:00" level=info msg="获取用户任务主机列表" user_id=test1
+time="2021-05-08T21:22:28+08:00" level=info msg="查询用户任务数据" user=test1 数据数量=4
+time="2021-05-08T21:22:30+08:00" level=info msg="任务执行状态数据入库" status_info="{task_id:086d46ce-b0cb-4a63-a953-2c547bdee2e7,name:,host:192.168.196.1:8888,start:2021-05-08 21:22:30,end:2021-05-08 21:22:30,status:,error:,numbers:0}"
+time="2021-05-08T21:22:30+08:00" level=info msg="任务执行数据入库成功" local_host:="192.168.196.1:8080" remote_host="192.168.196.1:51056" url=/acceptStatus
+time="2021-05-08T21:22:31+08:00" level=info msg="任务执行状态数据入库" status_info="{task_id:6c83ab9f-cbad-4515-9416-b60ec0715176,name:,host:192.168.227.130:8888,start:2021-05-08 21:23:30,end:2021-05-08 21:23:30,status:,error:,numbers:0}"
+time="2021-05-08T21:22:31+08:00" level=info msg="任务执行数据入库成功" local_host:="192.168.196.1:8080" remote_host="192.168.196.1:53637" url=/acceptStatus
+time="2021-05-08T21:22:31+08:00" level=info msg="查看任务日志" remote_host="192.168.196.1:53859"
+time="2021-05-08T21:22:33+08:00" level=info msg="查看任务列表" remote_host="192.168.196.1:53859"
+time="2021-05-08T21:22:33+08:00" level=info msg="查询用户任务数据" user=test1
+time="2021-05-08T21:22:33+08:00" level=info msg="查看任务节点列表" remote_host="192.168.196.1:51102"
+time="2021-05-08T21:22:33+08:00" level=info msg="获取用户任务主机列表" user_id=test1
+time="2021-05-08T21:22:33+08:00" level=info msg="查询用户任务数据" user=test1 数据数量=4
+time="2021-05-08T21:22:34+08:00" level=info msg="查看任务日志" remote_host="192.168.196.1:51102"
+time="2021-05-08T21:22:35+08:00" level=info msg="查看任务列表" remote_host="192.168.196.1:51102"
+time="2021-05-08T21:22:35+08:00" level=info msg="查询用户任务数据" user=test1
+time="2021-05-08T21:22:35+08:00" level=info msg="查看任务节点列表" remote_host="192.168.196.1:53859"
+time="2021-05-08T21:22:35+08:00" level=info msg="获取用户任务主机列表" user_id=test1
+time="2021-05-08T21:22:35+08:00" level=info msg="查询用户任务数据" user=test1 数据数量=4
+time="2021-05-08T21:22:38+08:00" level=info msg="查看任务日志" remote_host="192.168.196.1:53859"
+time="2021-05-08T21:23:30+08:00" level=info msg="任务执行状态数据入库" status_info="{task_id:086d46ce-b0cb-4a63-a953-2c547bdee2e7,name:,host:192.168.196.1:8888,start:2021-05-08 21:23:30,end:2021-05-08 21:23:30,status:,error:,numbers:0}"
+time="2021-05-08T21:23:30+08:00" level=info msg="任务执行数据入库成功" local_host:="192.168.196.1:8080" remote_host="192.168.196.1:51056" url=/acceptStatus
+time="2021-05-08T21:23:31+08:00" level=info msg="任务执行状态数据入库" status_info="{task_id:6c83ab9f-cbad-4515-9416-b60ec0715176,name:,host:192.168.227.130:8888,start:2021-05-08 21:24:30,end:2021-05-08 21:24:30,status:,error:,numbers:0}"
+time="2021-05-08T21:23:31+08:00" level=info msg="任务执行数据入库成功" local_host:="192.168.196.1:8080" remote_host="192.168.196.1:53637" url=/acceptStatus
+time="2021-05-08T21:24:30+08:00" level=info msg="任务执行状态数据入库" status_info="{task_id:086d46ce-b0cb-4a63-a953-2c547bdee2e7,name:,host:192.168.196.1:8888,start:2021-05-08 21:24:30,end:2021-05-08 21:24:30,status:,error:,numbers:0}"
+time="2021-05-08T21:24:30+08:00" level=info msg="任务执行数据入库成功" local_host:="192.168.196.1:8080" remote_host="192.168.196.1:51056" url=/acceptStatus
+time="2021-05-08T21:24:31+08:00" level=info msg="任务执行状态数据入库" status_info="{task_id:6c83ab9f-cbad-4515-9416-b60ec0715176,name:,host:192.168.227.130:8888,start:2021-05-08 21:25:30,end:2021-05-08 21:25:30,status:,error:,numbers:0}"
+time="2021-05-08T21:24:31+08:00" level=info msg="任务执行数据入库成功" local_host:="192.168.196.1:8080" remote_host="192.168.196.1:53637" url=/acceptStatus
+time="2021-05-08T21:25:30+08:00" level=info msg="任务执行状态数据入库" status_info="{task_id:086d46ce-b0cb-4a63-a953-2c547bdee2e7,name:,host:192.168.196.1:8888,start:2021-05-08 21:25:30,end:2021-05-08 21:25:30,status:,error:,numbers:0}"
+time="2021-05-08T21:25:30+08:00" level=info msg="任务执行数据入库成功" local_host:="192.168.196.1:8080" remote_host="192.168.196.1:51056" url=/acceptStatus
+time="2021-05-08T21:25:31+08:00" level=info msg="任务执行状态数据入库" status_info="{task_id:6c83ab9f-cbad-4515-9416-b60ec0715176,name:,host:192.168.227.130:8888,start:2021-05-08 21:26:30,end:2021-05-08 21:26:30,status:,error:,numbers:0}"
+time="2021-05-08T21:25:31+08:00" level=info msg="任务执行数据入库成功" local_host:="192.168.196.1:8080" remote_host="192.168.196.1:53637" url=/acceptStatus
+time="2021-05-08T21:26:30+08:00" level=info msg="任务执行状态数据入库" status_info="{task_id:086d46ce-b0cb-4a63-a953-2c547bdee2e7,name:,host:192.168.196.1:8888,start:2021-05-08 21:26:30,end:2021-05-08 21:26:30,status:,error:,numbers:0}"
+time="2021-05-08T21:26:30+08:00" level=info msg="任务执行数据入库成功" local_host:="192.168.196.1:8080" remote_host="192.168.196.1:51056" url=/acceptStatus
+time="2021-05-08T21:26:31+08:00" level=info msg="任务执行状态数据入库" status_info="{task_id:6c83ab9f-cbad-4515-9416-b60ec0715176,name:,host:192.168.227.130:8888,start:2021-05-08 21:27:30,end:2021-05-08 21:27:30,status:,error:,numbers:0}"
+time="2021-05-08T21:26:31+08:00" level=info msg="任务执行数据入库成功" local_host:="192.168.196.1:8080" remote_host="192.168.196.1:53637" url=/acceptStatus
+time="2021-05-08T21:26:43+08:00" level=error msg="一个任务节点退出：/AgentList/192.168.227.130"
+time="2021-05-08T21:27:27+08:00" level=info msg="出现新的任务节点：192.168.227.130:8888"
+time="2021-05-08T21:27:30+08:00" level=info msg="任务执行状态数据入库" status_info="{task_id:086d46ce-b0cb-4a63-a953-2c547bdee2e7,name:,host:192.168.196.1:8888,start:2021-05-08 21:27:30,end:2021-05-08 21:27:30,status:,error:,numbers:0}"
+time="2021-05-08T21:27:30+08:00" level=info msg="任务执行数据入库成功" local_host:="192.168.196.1:8080" remote_host="192.168.196.1:51056" url=/acceptStatus
+time="2021-05-08T21:27:31+08:00" level=info msg="查看任务列表" remote_host="192.168.196.1:53859"
+time="2021-05-08T21:27:31+08:00" level=info msg="查询用户任务数据" user=test1
+time="2021-05-08T21:27:31+08:00" level=info msg="查看任务节点列表" remote_host="192.168.196.1:51102"
+time="2021-05-08T21:27:31+08:00" level=info msg="获取用户任务主机列表" user_id=test1
+time="2021-05-08T21:27:31+08:00" level=info msg="查询用户任务数据" user=test1 数据数量=4
+time="2021-05-08T21:27:37+08:00" level=info msg="查询节点任务数据" host="192.168.227.130:8888"
+time="2021-05-08T21:27:37+08:00" level=info msg="查询节点任务数据" host="192.168.227.130:8888" 数据数量=2
+time="2021-05-08T21:27:37+08:00" level=error msg="节点接收任务出错：WARN: \n单次定时任务出错，丢弃，任务id为：8926ba37-f9d0-4ded-be60-becec24f0f56,任务时间为：2021-05-08 21:20:00，error=任务时间失效;"
+time="2021-05-08T21:27:37+08:00" level=error msg="任务下发出错：WARN: \n单次定时任务出错，丢弃，任务id为：8926ba37-f9d0-4ded-be60-becec24f0f56,任务时间为：2021-05-08 21:20:00，error=任务时间失效;" host="192.168.227.130:8888"
+time="2021-05-08T21:27:37+08:00" level=error msg="对新节点下发任务出错：WARN: \n单次定时任务出错，丢弃，任务id为：8926ba37-f9d0-4ded-be60-becec24f0f56,任务时间为：2021-05-08 21:20:00，error=任务时间失效;"
+time="2021-05-08T21:27:39+08:00" level=info msg="接收到删除任务请求" local_host:="192.168.196.1:8080" remote_host="192.168.196.1:51102" task="{id:8926ba37-f9d0-4ded-be60-becec24f0f56,name:,user_id:test1,time_format:,command:,host:192.168.227.130:8888,timeout:0,alone:false,once:true,repeat:false,system:false,share:false,off:false}" url=/deleteTask
+time="2021-05-08T21:27:39+08:00" level=info msg="校验任务数据" task_id=8926ba37-f9d0-4ded-be60-becec24f0f56
+time="2021-05-08T21:27:39+08:00" level=error msg="节点接收任务出错：no such task\n"
+time="2021-05-08T21:27:39+08:00" level=error msg="调度器删除任务出错：no such task\n" local_host:="192.168.196.1:8080" remote_host="192.168.196.1:51102" url=/deleteTask
+time="2021-05-08T21:27:40+08:00" level=info msg="接收到删除任务数据请求" id=8926ba37-f9d0-4ded-be60-becec24f0f56 local_host:="192.168.196.1:8080" remote_host="192.168.196.1:51102" url=/deleteTaskData
+time="2021-05-08T21:27:40+08:00" level=info msg="删除任务数据" task_id=8926ba37-f9d0-4ded-be60-becec24f0f56
+time="2021-05-08T21:27:41+08:00" level=info msg="查看任务列表" remote_host="192.168.196.1:51102"
+time="2021-05-08T21:27:41+08:00" level=info msg="查询用户任务数据" user=test1
+time="2021-05-08T21:27:41+08:00" level=info msg="查看任务节点列表" remote_host="192.168.196.1:53859"
+time="2021-05-08T21:27:41+08:00" level=info msg="获取用户任务主机列表" user_id=test1
+time="2021-05-08T21:27:41+08:00" level=info msg="查询用户任务数据" user=test1 数据数量=3
+time="2021-05-08T21:27:42+08:00" level=info msg="查看任务节点列表" remote_host="192.168.196.1:53859"
+time="2021-05-08T21:27:42+08:00" level=info msg="获取用户任务主机列表" user_id=test1
+time="2021-05-08T21:28:12+08:00" level=info msg="生成新任务id" local_host:="192.168.196.1:8080" remote_host="192.168.196.1:53859" taskId=3773d79a-4842-41bc-afe3-21bb7670e8ad url=/acceptTask
+time="2021-05-08T21:28:12+08:00" level=info msg="接收到新任务请求" local_host:="192.168.196.1:8080" remote_host="192.168.196.1:53859" task="{id:3773d79a-4842-41bc-afe3-21bb7670e8ad,name:linux节点测试任务3,user_id:test1,time_format:2021-05-08 21:29:04,command:tail -n 1 /root/work/go_crontab/log/node20210508.log,host:192.168.227.130:8888,timeout:0,alone:false,once:true,repeat:false,system:false,share:false,off:false}" url=/acceptTask
+time="2021-05-08T21:28:12+08:00" level=error msg="节点接收任务出错：WARN: \n单次定时任务出错，丢弃，任务id为：3773d79a-4842-41bc-afe3-21bb7670e8ad,任务时间为：2021-05-08 21:29:04，error=任务时间失效;"
+time="2021-05-08T21:28:12+08:00" level=error msg="调度器下发任务出错：WARN: \n单次定时任务出错，丢弃，任务id为：3773d79a-4842-41bc-afe3-21bb7670e8ad,任务时间为：2021-05-08 21:29:04，error=任务时间失效;" local_host:="192.168.196.1:8080" remote_host="192.168.196.1:53859" task="{id:3773d79a-4842-41bc-afe3-21bb7670e8ad,name:linux节点测试任务3,user_id:test1,time_format:2021-05-08 21:29:04,command:tail -n 1 /root/work/go_crontab/log/node20210508.log,host:192.168.227.130:8888,timeout:0,alone:false,once:true,repeat:false,system:false,share:false,off:false}" url=/acceptTask
+time="2021-05-08T21:28:20+08:00" level=info msg="生成新任务id" local_host:="192.168.196.1:8080" remote_host="192.168.196.1:53859" taskId=7c0c9c10-b5cf-4705-866f-98aa9c354ba9 url=/acceptTask
+time="2021-05-08T21:28:20+08:00" level=info msg="接收到新任务请求" local_host:="192.168.196.1:8080" remote_host="192.168.196.1:53859" task="{id:7c0c9c10-b5cf-4705-866f-98aa9c354ba9,name:linux节点测试任务3,user_id:test1,time_format:2021-05-08 21:30:04,command:tail -n 1 /root/work/go_crontab/log/node20210508.log,host:192.168.227.130:8888,timeout:0,alone:false,once:true,repeat:false,system:false,share:false,off:false}" url=/acceptTask
+time="2021-05-08T21:28:20+08:00" level=info msg="调度器下发任务成功" local_host:="192.168.196.1:8080" remote_host="192.168.196.1:53859" url=/acceptTask
+time="2021-05-08T21:28:20+08:00" level=info msg="任务数据入库" task="{id:7c0c9c10-b5cf-4705-866f-98aa9c354ba9,name:linux节点测试任务3,user_id:test1,time_format:2021-05-08 21:30:04,command:tail -n 1 /root/work/go_crontab/log/node20210508.log,host:192.168.227.130:8888,timeout:0,alone:false,once:true,repeat:false,system:false,share:false,off:false}"
+time="2021-05-08T21:28:20+08:00" level=info msg="任务数据入库成功" local_host:="192.168.196.1:8080" remote_host="192.168.196.1:53859" url=/acceptTask
+time="2021-05-08T21:28:22+08:00" level=info msg="查看任务列表" remote_host="192.168.196.1:53859"
+time="2021-05-08T21:28:22+08:00" level=info msg="查询用户任务数据" user=test1
+time="2021-05-08T21:28:22+08:00" level=info msg="查看任务节点列表" remote_host="192.168.196.1:51102"
+time="2021-05-08T21:28:22+08:00" level=info msg="获取用户任务主机列表" user_id=test1
+time="2021-05-08T21:28:22+08:00" level=info msg="查询用户任务数据" user=test1 数据数量=4
+time="2021-05-08T21:28:31+08:00" level=info msg="任务执行状态数据入库" status_info="{task_id:6c83ab9f-cbad-4515-9416-b60ec0715176,name:,host:192.168.227.130:8888,start:2021-05-08 21:29:30,end:2021-05-08 21:29:30,status:,error:,numbers:0}"
+time="2021-05-08T21:28:31+08:00" level=info msg="任务执行数据入库成功" local_host:="192.168.196.1:8080" remote_host="192.168.196.1:55170" url=/acceptStatus
+time="2021-05-08T21:28:31+08:00" level=info msg="任务执行状态数据入库" status_info="{task_id:086d46ce-b0cb-4a63-a953-2c547bdee2e7,name:,host:192.168.196.1:8888,start:2021-05-08 21:28:30,end:2021-05-08 21:28:31,status:,error:,numbers:0}"
+time="2021-05-08T21:28:31+08:00" level=info msg="任务执行数据入库成功" local_host:="192.168.196.1:8080" remote_host="192.168.196.1:51056" url=/acceptStatus
+time="2021-05-08T21:29:05+08:00" level=info msg="任务执行状态数据入库" status_info="{task_id:7c0c9c10-b5cf-4705-866f-98aa9c354ba9,name:,host:192.168.227.130:8888,start:2021-05-08 21:30:04,end:2021-05-08 21:30:04,status:,error:,numbers:0}"
+time="2021-05-08T21:29:05+08:00" level=info msg="任务执行数据入库成功" local_host:="192.168.196.1:8080" remote_host="192.168.196.1:55170" url=/acceptStatus
+time="2021-05-08T21:29:30+08:00" level=info msg="任务执行状态数据入库" status_info="{task_id:086d46ce-b0cb-4a63-a953-2c547bdee2e7,name:,host:192.168.196.1:8888,start:2021-05-08 21:29:30,end:2021-05-08 21:29:30,status:,error:,numbers:0}"
+time="2021-05-08T21:29:30+08:00" level=info msg="任务执行数据入库成功" local_host:="192.168.196.1:8080" remote_host="192.168.196.1:51056" url=/acceptStatus
+time="2021-05-08T21:29:31+08:00" level=info msg="任务执行状态数据入库" status_info="{task_id:6c83ab9f-cbad-4515-9416-b60ec0715176,name:,host:192.168.227.130:8888,start:2021-05-08 21:30:30,end:2021-05-08 21:30:30,status:,error:,numbers:0}"
+time="2021-05-08T21:29:31+08:00" level=info msg="任务执行数据入库成功" local_host:="192.168.196.1:8080" remote_host="192.168.196.1:55170" url=/acceptStatus
+time="2021-05-08T21:30:30+08:00" level=info msg="任务执行状态数据入库" status_info="{task_id:086d46ce-b0cb-4a63-a953-2c547bdee2e7,name:,host:192.168.196.1:8888,start:2021-05-08 21:30:30,end:2021-05-08 21:30:30,status:,error:,numbers:0}"
+time="2021-05-08T21:30:30+08:00" level=info msg="任务执行数据入库成功" local_host:="192.168.196.1:8080" remote_host="192.168.196.1:51056" url=/acceptStatus
+time="2021-05-08T21:30:31+08:00" level=info msg="任务执行状态数据入库" status_info="{task_id:6c83ab9f-cbad-4515-9416-b60ec0715176,name:,host:192.168.227.130:8888,start:2021-05-08 21:31:30,end:2021-05-08 21:31:30,status:,error:,numbers:0}"
+time="2021-05-08T21:30:31+08:00" level=info msg="任务执行数据入库成功" local_host:="192.168.196.1:8080" remote_host="192.168.196.1:55170" url=/acceptStatus
+time="2021-05-08T21:31:30+08:00" level=info msg="任务执行状态数据入库" status_info="{task_id:086d46ce-b0cb-4a63-a953-2c547bdee2e7,name:,host:192.168.196.1:8888,start:2021-05-08 21:31:30,end:2021-05-08 21:31:30,status:,error:,numbers:0}"
+time="2021-05-08T21:31:30+08:00" level=info msg="任务执行数据入库成功" local_host:="192.168.196.1:8080" remote_host="192.168.196.1:51056" url=/acceptStatus
+time="2021-05-08T21:31:31+08:00" level=info msg="任务执行状态数据入库" status_info="{task_id:6c83ab9f-cbad-4515-9416-b60ec0715176,name:,host:192.168.227.130:8888,start:2021-05-08 21:32:30,end:2021-05-08 21:32:30,status:,error:,numbers:0}"
+time="2021-05-08T21:31:31+08:00" level=info msg="任务执行数据入库成功" local_host:="192.168.196.1:8080" remote_host="192.168.196.1:55170" url=/acceptStatus
+time="2021-05-08T21:32:30+08:00" level=info msg="任务执行状态数据入库" status_info="{task_id:086d46ce-b0cb-4a63-a953-2c547bdee2e7,name:,host:192.168.196.1:8888,start:2021-05-08 21:32:30,end:2021-05-08 21:32:30,status:,error:,numbers:0}"
+time="2021-05-08T21:32:30+08:00" level=info msg="任务执行数据入库成功" local_host:="192.168.196.1:8080" remote_host="192.168.196.1:51056" url=/acceptStatus
+time="2021-05-08T21:32:31+08:00" level=info msg="任务执行状态数据入库" status_info="{task_id:6c83ab9f-cbad-4515-9416-b60ec0715176,name:,host:192.168.227.130:8888,start:2021-05-08 21:33:30,end:2021-05-08 21:33:30,status:,error:,numbers:0}"
+time="2021-05-08T21:32:31+08:00" level=info msg="任务执行数据入库成功" local_host:="192.168.196.1:8080" remote_host="192.168.196.1:55170" url=/acceptStatus
+time="2021-05-08T21:33:11+08:00" level=info msg="查看任务日志" remote_host="192.168.196.1:51102"
+time="2021-05-08T21:33:30+08:00" level=info msg="任务执行状态数据入库" status_info="{task_id:086d46ce-b0cb-4a63-a953-2c547bdee2e7,name:,host:192.168.196.1:8888,start:2021-05-08 21:33:30,end:2021-05-08 21:33:30,status:,error:,numbers:0}"
+time="2021-05-08T21:33:30+08:00" level=info msg="任务执行数据入库成功" local_host:="192.168.196.1:8080" remote_host="192.168.196.1:51056" url=/acceptStatus
+time="2021-05-08T21:33:31+08:00" level=info msg="任务执行状态数据入库" status_info="{task_id:6c83ab9f-cbad-4515-9416-b60ec0715176,name:,host:192.168.227.130:8888,start:2021-05-08 21:34:30,end:2021-05-08 21:34:30,status:,error:,numbers:0}"
+time="2021-05-08T21:33:31+08:00" level=info msg="任务执行数据入库成功" local_host:="192.168.196.1:8080" remote_host="192.168.196.1:55170" url=/acceptStatus
+time="2021-05-08T21:34:30+08:00" level=info msg="任务执行状态数据入库" status_info="{task_id:086d46ce-b0cb-4a63-a953-2c547bdee2e7,name:,host:192.168.196.1:8888,start:2021-05-08 21:34:30,end:2021-05-08 21:34:30,status:,error:,numbers:0}"
+time="2021-05-08T21:34:30+08:00" level=info msg="任务执行数据入库成功" local_host:="192.168.196.1:8080" remote_host="192.168.196.1:51056" url=/acceptStatus
+time="2021-05-08T21:34:31+08:00" level=info msg="任务执行状态数据入库" status_info="{task_id:6c83ab9f-cbad-4515-9416-b60ec0715176,name:,host:192.168.227.130:8888,start:2021-05-08 21:35:30,end:2021-05-08 21:35:30,status:,error:,numbers:0}"
+time="2021-05-08T21:34:31+08:00" level=info msg="任务执行数据入库成功" local_host:="192.168.196.1:8080" remote_host="192.168.196.1:55170" url=/acceptStatus
+time="2021-05-08T21:35:30+08:00" level=info msg="任务执行状态数据入库" status_info="{task_id:086d46ce-b0cb-4a63-a953-2c547bdee2e7,name:,host:192.168.196.1:8888,start:2021-05-08 21:35:30,end:2021-05-08 21:35:30,status:,error:,numbers:0}"
+time="2021-05-08T21:35:30+08:00" level=info msg="任务执行数据入库成功" local_host:="192.168.196.1:8080" remote_host="192.168.196.1:51056" url=/acceptStatus
+time="2021-05-08T21:35:31+08:00" level=info msg="任务执行状态数据入库" status_info="{task_id:6c83ab9f-cbad-4515-9416-b60ec0715176,name:,host:192.168.227.130:8888,start:2021-05-08 21:36:30,end:2021-05-08 21:36:30,status:,error:,numbers:0}"
+time="2021-05-08T21:35:31+08:00" level=info msg="任务执行数据入库成功" local_host:="192.168.196.1:8080" remote_host="192.168.196.1:55170" url=/acceptStatus
+time="2021-05-08T21:36:30+08:00" level=info msg="任务执行状态数据入库" status_info="{task_id:086d46ce-b0cb-4a63-a953-2c547bdee2e7,name:,host:192.168.196.1:8888,start:2021-05-08 21:36:30,end:2021-05-08 21:36:30,status:,error:,numbers:0}"
+time="2021-05-08T21:36:30+08:00" level=info msg="任务执行数据入库成功" local_host:="192.168.196.1:8080" remote_host="192.168.196.1:51056" url=/acceptStatus
+time="2021-05-08T21:36:31+08:00" level=info msg="任务执行状态数据入库" status_info="{task_id:6c83ab9f-cbad-4515-9416-b60ec0715176,name:,host:192.168.227.130:8888,start:2021-05-08 21:37:30,end:2021-05-08 21:37:30,status:,error:,numbers:0}"
+time="2021-05-08T21:36:31+08:00" level=info msg="任务执行数据入库成功" local_host:="192.168.196.1:8080" remote_host="192.168.196.1:55170" url=/acceptStatus
+time="2021-05-08T21:37:06+08:00" level=info msg="查看任务列表" remote_host="192.168.196.1:51102"
+time="2021-05-08T21:37:06+08:00" level=info msg="查询用户任务数据" user=test1
+time="2021-05-08T21:37:06+08:00" level=info msg="查看任务节点列表" remote_host="192.168.196.1:56458"
+time="2021-05-08T21:37:06+08:00" level=info msg="查询用户任务数据" user=test1 数据数量=4
+time="2021-05-08T21:37:06+08:00" level=info msg="获取用户任务主机列表" user_id=test1
+time="2021-05-08T21:37:08+08:00" level=info msg="查看任务日志" remote_host="192.168.196.1:56458"
+time="2021-05-08T21:37:30+08:00" level=info msg="任务执行状态数据入库" status_info="{task_id:086d46ce-b0cb-4a63-a953-2c547bdee2e7,name:,host:192.168.196.1:8888,start:2021-05-08 21:37:30,end:2021-05-08 21:37:30,status:,error:,numbers:0}"
+time="2021-05-08T21:37:30+08:00" level=info msg="任务执行数据入库成功" local_host:="192.168.196.1:8080" remote_host="192.168.196.1:51056" url=/acceptStatus
+time="2021-05-08T21:37:31+08:00" level=info msg="任务执行状态数据入库" status_info="{task_id:6c83ab9f-cbad-4515-9416-b60ec0715176,name:,host:192.168.227.130:8888,start:2021-05-08 21:38:30,end:2021-05-08 21:38:30,status:,error:,numbers:0}"
+time="2021-05-08T21:37:31+08:00" level=info msg="任务执行数据入库成功" local_host:="192.168.196.1:8080" remote_host="192.168.196.1:55170" url=/acceptStatus
+time="2021-05-08T21:38:30+08:00" level=info msg="任务执行状态数据入库" status_info="{task_id:086d46ce-b0cb-4a63-a953-2c547bdee2e7,name:,host:192.168.196.1:8888,start:2021-05-08 21:38:30,end:2021-05-08 21:38:30,status:,error:,numbers:0}"
+time="2021-05-08T21:38:30+08:00" level=info msg="任务执行数据入库成功" local_host:="192.168.196.1:8080" remote_host="192.168.196.1:51056" url=/acceptStatus
+time="2021-05-08T21:38:31+08:00" level=info msg="任务执行状态数据入库" status_info="{task_id:6c83ab9f-cbad-4515-9416-b60ec0715176,name:,host:192.168.227.130:8888,start:2021-05-08 21:39:30,end:2021-05-08 21:39:30,status:,error:,numbers:0}"
+time="2021-05-08T21:38:31+08:00" level=info msg="任务执行数据入库成功" local_host:="192.168.196.1:8080" remote_host="192.168.196.1:55170" url=/acceptStatus
+time="2021-05-08T21:39:30+08:00" level=info msg="任务执行状态数据入库" status_info="{task_id:086d46ce-b0cb-4a63-a953-2c547bdee2e7,name:,host:192.168.196.1:8888,start:2021-05-08 21:39:30,end:2021-05-08 21:39:30,status:,error:,numbers:0}"
+time="2021-05-08T21:39:30+08:00" level=info msg="任务执行数据入库成功" local_host:="192.168.196.1:8080" remote_host="192.168.196.1:51056" url=/acceptStatus
+time="2021-05-08T21:39:31+08:00" level=info msg="任务执行状态数据入库" status_info="{task_id:6c83ab9f-cbad-4515-9416-b60ec0715176,name:,host:192.168.227.130:8888,start:2021-05-08 21:40:30,end:2021-05-08 21:40:30,status:,error:,numbers:0}"
+time="2021-05-08T21:39:31+08:00" level=info msg="任务执行数据入库成功" local_host:="192.168.196.1:8080" remote_host="192.168.196.1:55170" url=/acceptStatus
+time="2021-05-08T21:40:06+08:00" level=info msg="查看任务节点列表" remote_host="192.168.196.1:56458"
+time="2021-05-08T21:40:06+08:00" level=info msg="获取用户任务主机列表" user_id=test1
+time="2021-05-08T21:40:08+08:00" level=info msg="查看调度器列表" remote_host="192.168.196.1:56458"
+time="2021-05-08T21:40:09+08:00" level=info msg="查看任务列表" remote_host="192.168.196.1:56458"
+time="2021-05-08T21:40:09+08:00" level=info msg="查询用户任务数据" user=test1
+time="2021-05-08T21:40:09+08:00" level=info msg="查看任务节点列表" remote_host="192.168.196.1:51102"
+time="2021-05-08T21:40:09+08:00" level=info msg="获取用户任务主机列表" user_id=test1
+time="2021-05-08T21:40:09+08:00" level=info msg="查询用户任务数据" user=test1 数据数量=4
+time="2021-05-08T21:40:18+08:00" level=info msg="接收到删除任务请求" local_host:="192.168.196.1:8080" remote_host="192.168.196.1:51102" task="{id:7c0c9c10-b5cf-4705-866f-98aa9c354ba9,name:,user_id:test1,time_format:,command:,host:192.168.227.130:8888,timeout:0,alone:false,once:true,repeat:false,system:false,share:false,off:false}" url=/deleteTask
+time="2021-05-08T21:40:18+08:00" level=info msg="校验任务数据" task_id=7c0c9c10-b5cf-4705-866f-98aa9c354ba9
+time="2021-05-08T21:40:28+08:00" level=info msg="接收到删除任务请求" local_host:="192.168.196.1:8080" remote_host="192.168.196.1:56458" task="{id:7c0c9c10-b5cf-4705-866f-98aa9c354ba9,name:,user_id:test1,time_format:,command:,host:192.168.227.130:8888,timeout:0,alone:false,once:true,repeat:false,system:false,share:false,off:false}" url=/deleteTask
+time="2021-05-08T21:40:28+08:00" level=info msg="校验任务数据" task_id=7c0c9c10-b5cf-4705-866f-98aa9c354ba9
+time="2021-05-08T21:40:30+08:00" level=info msg="任务执行状态数据入库" status_info="{task_id:086d46ce-b0cb-4a63-a953-2c547bdee2e7,name:,host:192.168.196.1:8888,start:2021-05-08 21:40:30,end:2021-05-08 21:40:30,status:,error:,numbers:0}"
+time="2021-05-08T21:40:30+08:00" level=info msg="任务执行数据入库成功" local_host:="192.168.196.1:8080" remote_host="192.168.196.1:51056" url=/acceptStatus
+time="2021-05-08T21:40:31+08:00" level=info msg="任务执行状态数据入库" status_info="{task_id:6c83ab9f-cbad-4515-9416-b60ec0715176,name:,host:192.168.227.130:8888,start:2021-05-08 21:41:30,end:2021-05-08 21:41:30,status:,error:,numbers:0}"
+time="2021-05-08T21:40:31+08:00" level=info msg="任务执行数据入库成功" local_host:="192.168.196.1:8080" remote_host="192.168.196.1:55170" url=/acceptStatus
+time="2021-05-08T21:40:38+08:00" level=error msg="调度器删除任务出错：Post \"http://192.168.227.130:8888/deleteTask\": context deadline exceeded (Client.Timeout exceeded while awaiting headers)" local_host:="192.168.196.1:8080" remote_host="192.168.196.1:51102" url=/deleteTask
+time="2021-05-08T21:40:48+08:00" level=error msg="调度器删除任务出错：Post \"http://192.168.227.130:8888/deleteTask\": context deadline exceeded (Client.Timeout exceeded while awaiting headers)" local_host:="192.168.196.1:8080" remote_host="192.168.196.1:56458" url=/deleteTask
+time="2021-05-08T21:41:19+08:00" level=error msg="一个任务节点退出：/AgentList/192.168.227.130"
+time="2021-05-08T21:41:30+08:00" level=info msg="任务执行状态数据入库" status_info="{task_id:086d46ce-b0cb-4a63-a953-2c547bdee2e7,name:,host:192.168.196.1:8888,start:2021-05-08 21:41:30,end:2021-05-08 21:41:30,status:,error:,numbers:0}"
+time="2021-05-08T21:41:30+08:00" level=info msg="任务执行数据入库成功" local_host:="192.168.196.1:8080" remote_host="192.168.196.1:51056" url=/acceptStatus
+time="2021-05-08T21:42:00+08:00" level=info msg="出现新的任务节点：192.168.227.130:8888"
+time="2021-05-08T21:42:07+08:00" level=info msg="接收到删除任务数据请求" id=7c0c9c10-b5cf-4705-866f-98aa9c354ba9 local_host:="192.168.196.1:8080" remote_host="192.168.196.1:56458" url=/deleteTaskData
+time="2021-05-08T21:42:07+08:00" level=info msg="删除任务数据" task_id=7c0c9c10-b5cf-4705-866f-98aa9c354ba9
+time="2021-05-08T21:42:08+08:00" level=info msg="查看任务列表" remote_host="192.168.196.1:56458"
+time="2021-05-08T21:42:08+08:00" level=info msg="查询用户任务数据" user=test1
+time="2021-05-08T21:42:08+08:00" level=info msg="查看任务节点列表" remote_host="192.168.196.1:51102"
+time="2021-05-08T21:42:08+08:00" level=info msg="获取用户任务主机列表" user_id=test1
+time="2021-05-08T21:42:08+08:00" level=info msg="查询用户任务数据" user=test1 数据数量=3
+time="2021-05-08T21:42:09+08:00" level=info msg="查看任务节点列表" remote_host="192.168.196.1:51102"
+time="2021-05-08T21:42:09+08:00" level=info msg="获取用户任务主机列表" user_id=test1
+time="2021-05-08T21:42:10+08:00" level=info msg="查询节点任务数据" host="192.168.227.130:8888"
+time="2021-05-08T21:42:10+08:00" level=info msg="查询节点任务数据" host="192.168.227.130:8888" 数据数量=1
+time="2021-05-08T21:42:10+08:00" level=info msg="新节点任务下发完成"
+time="2021-05-08T21:42:11+08:00" level=info msg="通知任务节点删除多余任务日志" remote_host="192.168.196.1:51102"
+time="2021-05-08T21:42:11+08:00" level=info msg="查询节点任务数据" host="192.168.227.130:8888"
+time="2021-05-08T21:42:11+08:00" level=info msg="查询节点任务数据" host="192.168.227.130:8888" 数据数量=1
+time="2021-05-08T21:42:12+08:00" level=info msg="查看任务节点列表" remote_host="192.168.196.1:51102"
+time="2021-05-08T21:42:12+08:00" level=info msg="获取用户任务主机列表" user_id=test1
+time="2021-05-08T21:42:13+08:00" level=info msg="查看共享命令列表" remote_host="192.168.196.1:51102"
+time="2021-05-08T21:42:14+08:00" level=info msg="查看任务列表" remote_host="192.168.196.1:51102"
+time="2021-05-08T21:42:14+08:00" level=info msg="查询用户任务数据" user=test1
+time="2021-05-08T21:42:14+08:00" level=info msg="查看任务节点列表" remote_host="192.168.196.1:56458"
+time="2021-05-08T21:42:14+08:00" level=info msg="获取用户任务主机列表" user_id=test1
+time="2021-05-08T21:42:14+08:00" level=info msg="查询用户任务数据" user=test1 数据数量=3
+time="2021-05-08T21:42:15+08:00" level=info msg="查看任务节点列表" remote_host="192.168.196.1:56458"
+time="2021-05-08T21:42:15+08:00" level=info msg="获取用户任务主机列表" user_id=test1
+time="2021-05-08T21:42:30+08:00" level=info msg="任务执行状态数据入库" status_info="{task_id:086d46ce-b0cb-4a63-a953-2c547bdee2e7,name:,host:192.168.196.1:8888,start:2021-05-08 21:42:30,end:2021-05-08 21:42:30,status:,error:,numbers:0}"
+time="2021-05-08T21:42:30+08:00" level=info msg="任务执行数据入库成功" local_host:="192.168.196.1:8080" remote_host="192.168.196.1:51056" url=/acceptStatus
+time="2021-05-08T21:42:31+08:00" level=info msg="任务执行状态数据入库" status_info="{task_id:6c83ab9f-cbad-4515-9416-b60ec0715176,name:,host:192.168.227.130:8888,start:2021-05-08 21:43:30,end:2021-05-08 21:43:30,status:,error:,numbers:0}"
+time="2021-05-08T21:42:31+08:00" level=info msg="任务执行数据入库成功" local_host:="192.168.196.1:8080" remote_host="192.168.196.1:57279" url=/acceptStatus
+time="2021-05-08T21:43:05+08:00" level=info msg="生成新任务id" local_host:="192.168.196.1:8080" remote_host="192.168.196.1:56458" taskId=17c82d27-febc-4c43-984b-e6e38eda1102 url=/acceptTask
+time="2021-05-08T21:43:05+08:00" level=info msg="接收到新任务请求" local_host:="192.168.196.1:8080" remote_host="192.168.196.1:56458" task="{id:17c82d27-febc-4c43-984b-e6e38eda1102,name:linux节点测试任务2,user_id:test1,time_format:2021-05-08 21:45:00,command:tail -n 1 /root/work/go_crontab/log/node20210508.log,host:192.168.227.130:8888,timeout:0,alone:true,once:true,repeat:false,system:false,share:false,off:false}" url=/acceptTask
+time="2021-05-08T21:43:05+08:00" level=info msg="调度器下发任务成功" local_host:="192.168.196.1:8080" remote_host="192.168.196.1:56458" url=/acceptTask
+time="2021-05-08T21:43:05+08:00" level=info msg="任务数据入库" task="{id:17c82d27-febc-4c43-984b-e6e38eda1102,name:linux节点测试任务2,user_id:test1,time_format:2021-05-08 21:45:00,command:tail -n 1 /root/work/go_crontab/log/node20210508.log,host:192.168.227.130:8888,timeout:0,alone:true,once:true,repeat:false,system:false,share:false,off:false}"
+time="2021-05-08T21:43:05+08:00" level=info msg="任务数据入库成功" local_host:="192.168.196.1:8080" remote_host="192.168.196.1:56458" url=/acceptTask
+time="2021-05-08T21:43:07+08:00" level=info msg="查看任务列表" remote_host="192.168.196.1:56458"
+time="2021-05-08T21:43:07+08:00" level=info msg="查询用户任务数据" user=test1
+time="2021-05-08T21:43:07+08:00" level=info msg="查看任务节点列表" remote_host="192.168.196.1:51102"
+time="2021-05-08T21:43:07+08:00" level=info msg="获取用户任务主机列表" user_id=test1
+time="2021-05-08T21:43:07+08:00" level=info msg="查询用户任务数据" user=test1 数据数量=4
+time="2021-05-08T21:43:30+08:00" level=info msg="任务执行状态数据入库" status_info="{task_id:086d46ce-b0cb-4a63-a953-2c547bdee2e7,name:,host:192.168.196.1:8888,start:2021-05-08 21:43:30,end:2021-05-08 21:43:30,status:,error:,numbers:0}"
+time="2021-05-08T21:43:30+08:00" level=info msg="任务执行数据入库成功" local_host:="192.168.196.1:8080" remote_host="192.168.196.1:51056" url=/acceptStatus
+time="2021-05-08T21:43:31+08:00" level=info msg="任务执行状态数据入库" status_info="{task_id:6c83ab9f-cbad-4515-9416-b60ec0715176,name:,host:192.168.227.130:8888,start:2021-05-08 21:44:30,end:2021-05-08 21:44:30,status:,error:,numbers:0}"
+time="2021-05-08T21:43:31+08:00" level=info msg="任务执行数据入库成功" local_host:="192.168.196.1:8080" remote_host="192.168.196.1:57279" url=/acceptStatus
+time="2021-05-08T21:43:54+08:00" level=info msg="查看共享命令列表" remote_host="192.168.196.1:51102"
+time="2021-05-08T21:44:01+08:00" level=info msg="任务执行状态数据入库" status_info="{task_id:17c82d27-febc-4c43-984b-e6e38eda1102,name:,host:192.168.227.130:8888,start:2021-05-08 21:45:00,end:2021-05-08 21:45:00,status:,error:,numbers:0}"
+time="2021-05-08T21:44:01+08:00" level=info msg="任务执行数据入库成功" local_host:="192.168.196.1:8080" remote_host="192.168.196.1:57279" url=/acceptStatus
+time="2021-05-08T21:44:30+08:00" level=info msg="任务执行状态数据入库" status_info="{task_id:086d46ce-b0cb-4a63-a953-2c547bdee2e7,name:,host:192.168.196.1:8888,start:2021-05-08 21:44:30,end:2021-05-08 21:44:30,status:,error:,numbers:0}"
+time="2021-05-08T21:44:30+08:00" level=info msg="任务执行数据入库成功" local_host:="192.168.196.1:8080" remote_host="192.168.196.1:51056" url=/acceptStatus
+time="2021-05-08T21:44:31+08:00" level=info msg="任务执行状态数据入库" status_info="{task_id:6c83ab9f-cbad-4515-9416-b60ec0715176,name:,host:192.168.227.130:8888,start:2021-05-08 21:45:30,end:2021-05-08 21:45:30,status:,error:,numbers:0}"
+time="2021-05-08T21:44:31+08:00" level=info msg="任务执行数据入库成功" local_host:="192.168.196.1:8080" remote_host="192.168.196.1:57279" url=/acceptStatus
+time="2021-05-08T21:45:30+08:00" level=info msg="任务执行状态数据入库" status_info="{task_id:086d46ce-b0cb-4a63-a953-2c547bdee2e7,name:,host:192.168.196.1:8888,start:2021-05-08 21:45:30,end:2021-05-08 21:45:30,status:,error:,numbers:0}"
+time="2021-05-08T21:45:30+08:00" level=info msg="任务执行数据入库成功" local_host:="192.168.196.1:8080" remote_host="192.168.196.1:51056" url=/acceptStatus
+time="2021-05-08T21:45:31+08:00" level=info msg="任务执行状态数据入库" status_info="{task_id:6c83ab9f-cbad-4515-9416-b60ec0715176,name:,host:192.168.227.130:8888,start:2021-05-08 21:46:30,end:2021-05-08 21:46:30,status:,error:,numbers:0}"
+time="2021-05-08T21:45:31+08:00" level=info msg="任务执行数据入库成功" local_host:="192.168.196.1:8080" remote_host="192.168.196.1:57279" url=/acceptStatus
+time="2021-05-08T21:46:30+08:00" level=info msg="任务执行状态数据入库" status_info="{task_id:086d46ce-b0cb-4a63-a953-2c547bdee2e7,name:,host:192.168.196.1:8888,start:2021-05-08 21:46:30,end:2021-05-08 21:46:30,status:,error:,numbers:0}"
+time="2021-05-08T21:46:30+08:00" level=info msg="任务执行数据入库成功" local_host:="192.168.196.1:8080" remote_host="192.168.196.1:51056" url=/acceptStatus
+time="2021-05-08T21:46:31+08:00" level=info msg="任务执行状态数据入库" status_info="{task_id:6c83ab9f-cbad-4515-9416-b60ec0715176,name:,host:192.168.227.130:8888,start:2021-05-08 21:47:30,end:2021-05-08 21:47:30,status:,error:,numbers:0}"
+time="2021-05-08T21:46:31+08:00" level=info msg="任务执行数据入库成功" local_host:="192.168.196.1:8080" remote_host="192.168.196.1:57279" url=/acceptStatus
+time="2021-05-08T21:47:30+08:00" level=info msg="任务执行状态数据入库" status_info="{task_id:086d46ce-b0cb-4a63-a953-2c547bdee2e7,name:,host:192.168.196.1:8888,start:2021-05-08 21:47:30,end:2021-05-08 21:47:30,status:,error:,numbers:0}"
+time="2021-05-08T21:47:30+08:00" level=info msg="任务执行数据入库成功" local_host:="192.168.196.1:8080" remote_host="192.168.196.1:51056" url=/acceptStatus
+time="2021-05-08T21:47:31+08:00" level=info msg="任务执行状态数据入库" status_info="{task_id:6c83ab9f-cbad-4515-9416-b60ec0715176,name:,host:192.168.227.130:8888,start:2021-05-08 21:48:30,end:2021-05-08 21:48:30,status:,error:,numbers:0}"
+time="2021-05-08T21:47:31+08:00" level=info msg="任务执行数据入库成功" local_host:="192.168.196.1:8080" remote_host="192.168.196.1:57279" url=/acceptStatus
+time="2021-05-08T21:48:30+08:00" level=info msg="任务执行状态数据入库" status_info="{task_id:086d46ce-b0cb-4a63-a953-2c547bdee2e7,name:,host:192.168.196.1:8888,start:2021-05-08 21:48:30,end:2021-05-08 21:48:30,status:,error:,numbers:0}"
+time="2021-05-08T21:48:30+08:00" level=info msg="任务执行数据入库成功" local_host:="192.168.196.1:8080" remote_host="192.168.196.1:51056" url=/acceptStatus
+time="2021-05-08T21:48:31+08:00" level=info msg="任务执行状态数据入库" status_info="{task_id:6c83ab9f-cbad-4515-9416-b60ec0715176,name:,host:192.168.227.130:8888,start:2021-05-08 21:49:30,end:2021-05-08 21:49:30,status:,error:,numbers:0}"
+time="2021-05-08T21:48:31+08:00" level=info msg="任务执行数据入库成功" local_host:="192.168.196.1:8080" remote_host="192.168.196.1:57279" url=/acceptStatus
+time="2021-05-08T21:49:30+08:00" level=info msg="任务执行状态数据入库" status_info="{task_id:086d46ce-b0cb-4a63-a953-2c547bdee2e7,name:,host:192.168.196.1:8888,start:2021-05-08 21:49:30,end:2021-05-08 21:49:30,status:,error:,numbers:0}"
+time="2021-05-08T21:49:30+08:00" level=info msg="任务执行数据入库成功" local_host:="192.168.196.1:8080" remote_host="192.168.196.1:51056" url=/acceptStatus
+time="2021-05-08T21:49:31+08:00" level=info msg="任务执行状态数据入库" status_info="{task_id:6c83ab9f-cbad-4515-9416-b60ec0715176,name:,host:192.168.227.130:8888,start:2021-05-08 21:50:30,end:2021-05-08 21:50:30,status:,error:,numbers:0}"
+time="2021-05-08T21:49:31+08:00" level=info msg="任务执行数据入库成功" local_host:="192.168.196.1:8080" remote_host="192.168.196.1:57279" url=/acceptStatus
+time="2021-05-08T21:50:10+08:00" level=error msg="一个任务节点退出：/AgentList/192.168.227.130"
+time="2021-05-08T21:50:30+08:00" level=info msg="任务执行状态数据入库" status_info="{task_id:086d46ce-b0cb-4a63-a953-2c547bdee2e7,name:,host:192.168.196.1:8888,start:2021-05-08 21:50:30,end:2021-05-08 21:50:30,status:,error:,numbers:0}"
+time="2021-05-08T21:50:30+08:00" level=info msg="任务执行数据入库成功" local_host:="192.168.196.1:8080" remote_host="192.168.196.1:51056" url=/acceptStatus
+time="2021-05-08T21:50:57+08:00" level=info msg="出现新的任务节点：192.168.227.130:8888"
+time="2021-05-08T21:51:07+08:00" level=info msg="查询节点任务数据" host="192.168.227.130:8888"
+time="2021-05-08T21:51:07+08:00" level=info msg="查询节点任务数据" host="192.168.227.130:8888" 数据数量=2
+time="2021-05-08T21:51:07+08:00" level=error msg="节点接收任务出错：WARN: \n单次定时任务出错，丢弃，任务id为：17c82d27-febc-4c43-984b-e6e38eda1102,任务时间为：2021-05-08 21:45:00，error=任务时间失效;"
+time="2021-05-08T21:51:07+08:00" level=error msg="任务下发出错：WARN: \n单次定时任务出错，丢弃，任务id为：17c82d27-febc-4c43-984b-e6e38eda1102,任务时间为：2021-05-08 21:45:00，error=任务时间失效;" host="192.168.227.130:8888"
+time="2021-05-08T21:51:07+08:00" level=error msg="对新节点下发任务出错：WARN: \n单次定时任务出错，丢弃，任务id为：17c82d27-febc-4c43-984b-e6e38eda1102,任务时间为：2021-05-08 21:45:00，error=任务时间失效;"
+time="2021-05-08T21:51:11+08:00" level=info msg="查看任务列表" remote_host="192.168.196.1:58645"
+time="2021-05-08T21:51:11+08:00" level=info msg="查询用户任务数据" user=test1
+time="2021-05-08T21:51:11+08:00" level=info msg="查看任务节点列表" remote_host="192.168.196.1:58646"
+time="2021-05-08T21:51:11+08:00" level=info msg="查询用户任务数据" user=test1 数据数量=4
+time="2021-05-08T21:51:11+08:00" level=info msg="获取用户任务主机列表" user_id=test1
+time="2021-05-08T21:51:14+08:00" level=info msg="查看任务日志" remote_host="192.168.196.1:58646"
+time="2021-05-08T21:51:16+08:00" level=info msg="查看任务列表" remote_host="192.168.196.1:58646"
+time="2021-05-08T21:51:16+08:00" level=info msg="查询用户任务数据" user=test1
+time="2021-05-08T21:51:16+08:00" level=info msg="查看任务节点列表" remote_host="192.168.196.1:58645"
+time="2021-05-08T21:51:16+08:00" level=info msg="获取用户任务主机列表" user_id=test1
+time="2021-05-08T21:51:16+08:00" level=info msg="查询用户任务数据" user=test1 数据数量=4
+time="2021-05-08T21:51:18+08:00" level=info msg="查看任务执行状态" remote_host="192.168.196.1:58645"
+time="2021-05-08T21:51:18+08:00" level=info msg="查询任务执行状态表" sql="select task_id,t.name,s.host,start_time,end_time,status,error from StatusTable s,TaskTable t where t.id=? and t.id=s.task_id order by start_time desc;" task_id=64c87bd3-b597-45b4-86f9-623364073c51
+time="2021-05-08T21:51:30+08:00" level=info msg="任务执行状态数据入库" status_info="{task_id:086d46ce-b0cb-4a63-a953-2c547bdee2e7,name:,host:192.168.196.1:8888,start:2021-05-08 21:51:30,end:2021-05-08 21:51:30,status:,error:,numbers:0}"
+time="2021-05-08T21:51:30+08:00" level=info msg="任务执行数据入库成功" local_host:="192.168.196.1:8080" remote_host="192.168.196.1:51056" url=/acceptStatus
+time="2021-05-08T21:51:31+08:00" level=info msg="任务执行状态数据入库" status_info="{task_id:6c83ab9f-cbad-4515-9416-b60ec0715176,name:,host:192.168.227.130:8888,start:2021-05-08 21:52:30,end:2021-05-08 21:52:30,status:,error:,numbers:0}"
+time="2021-05-08T21:51:31+08:00" level=info msg="任务执行数据入库成功" local_host:="192.168.196.1:8080" remote_host="192.168.196.1:58701" url=/acceptStatus
+time="2021-05-08T21:51:49+08:00" level=info msg="查看任务列表" remote_host="192.168.196.1:58645"
+time="2021-05-08T21:51:49+08:00" level=info msg="查询用户任务数据" user=test1
+time="2021-05-08T21:51:49+08:00" level=info msg="查看任务节点列表" remote_host="192.168.196.1:58646"
+time="2021-05-08T21:51:49+08:00" level=info msg="获取用户任务主机列表" user_id=test1
+time="2021-05-08T21:51:49+08:00" level=info msg="查询用户任务数据" user=test1 数据数量=4
+time="2021-05-08T21:51:53+08:00" level=info msg="查看任务日志" remote_host="192.168.196.1:58646"
+time="2021-05-08T21:52:30+08:00" level=info msg="任务执行状态数据入库" status_info="{task_id:086d46ce-b0cb-4a63-a953-2c547bdee2e7,name:,host:192.168.196.1:8888,start:2021-05-08 21:52:30,end:2021-05-08 21:52:30,status:,error:,numbers:0}"
+time="2021-05-08T21:52:30+08:00" level=info msg="任务执行数据入库成功" local_host:="192.168.196.1:8080" remote_host="192.168.196.1:51056" url=/acceptStatus
+time="2021-05-08T21:52:31+08:00" level=info msg="任务执行状态数据入库" status_info="{task_id:6c83ab9f-cbad-4515-9416-b60ec0715176,name:,host:192.168.227.130:8888,start:2021-05-08 21:53:30,end:2021-05-08 21:53:30,status:,error:,numbers:0}"
+time="2021-05-08T21:52:31+08:00" level=info msg="任务执行数据入库成功" local_host:="192.168.196.1:8080" remote_host="192.168.196.1:58701" url=/acceptStatus
+time="2021-05-08T21:52:31+08:00" level=info msg="查看共享命令列表" remote_host="192.168.196.1:58646"
+time="2021-05-08T21:52:55+08:00" level=info msg="查看任务列表" remote_host="192.168.196.1:58646"
+time="2021-05-08T21:52:55+08:00" level=info msg="查询用户任务数据" user=test1
+time="2021-05-08T21:52:55+08:00" level=info msg="查看任务节点列表" remote_host="192.168.196.1:58645"
+time="2021-05-08T21:52:55+08:00" level=info msg="获取用户任务主机列表" user_id=test1
+time="2021-05-08T21:52:55+08:00" level=info msg="查询用户任务数据" user=test1 数据数量=4
+time="2021-05-08T21:53:11+08:00" level=info msg="接收到更新任务请求" local_host:="192.168.196.1:8080" remote_host="192.168.196.1:58645" task="{id:17c82d27-febc-4c43-984b-e6e38eda1102,name:linux节点测试任务2,user_id:test1,time_format:2021-05-08 21:55:04,command:tail -n 1 /root/work/go_crontab/log/node20210508.log,host:192.168.227.130:8888,timeout:0,alone:true,once:true,repeat:false,system:false,share:false,off:false}" url=/updateTask
+time="2021-05-08T21:53:11+08:00" level=info msg="校验任务数据" task_id=17c82d27-febc-4c43-984b-e6e38eda1102
+time="2021-05-08T21:53:11+08:00" level=error msg="节点接收任务出错：主机上没有这个任务,ID=17c82d27-febc-4c43-984b-e6e38eda1102\n"
+time="2021-05-08T21:53:11+08:00" level=error msg="调度器下发更新任务出错：主机上没有这个任务,ID=17c82d27-febc-4c43-984b-e6e38eda1102\n" local_host:="192.168.196.1:8080" remote_host="192.168.196.1:58645" url=/updateTask
+time="2021-05-08T21:53:13+08:00" level=info msg="接收到更新任务数据请求" local_host:="192.168.196.1:8080" remote_host="192.168.196.1:58645" task="{id:17c82d27-febc-4c43-984b-e6e38eda1102,name:linux节点测试任务2,user_id:test1,time_format:2021-05-08 21:55:04,command:tail -n 1 /root/work/go_crontab/log/node20210508.log,host:192.168.227.130:8888,timeout:0,alone:true,once:true,repeat:false,system:false,share:false,off:false}" url=/updateTaskData
+time="2021-05-08T21:53:13+08:00" level=info msg="更新任务数据" task="{id:17c82d27-febc-4c43-984b-e6e38eda1102,name:linux节点测试任务2,user_id:test1,time_format:2021-05-08 21:55:04,command:tail -n 1 /root/work/go_crontab/log/node20210508.log,host:192.168.227.130:8888,timeout:0,alone:true,once:true,repeat:false,system:false,share:false,off:true}"
+time="2021-05-08T21:53:13+08:00" level=info msg="删除任务数据" task_id=17c82d27-febc-4c43-984b-e6e38eda1102
+time="2021-05-08T21:53:13+08:00" level=info msg="任务数据入库" task="{id:17c82d27-febc-4c43-984b-e6e38eda1102,name:linux节点测试任务2,user_id:test1,time_format:2021-05-08 21:55:04,command:tail -n 1 /root/work/go_crontab/log/node20210508.log,host:192.168.227.130:8888,timeout:0,alone:true,once:true,repeat:false,system:false,share:false,off:true}"
+time="2021-05-08T21:53:14+08:00" level=info msg="查看任务列表" remote_host="192.168.196.1:58645"
+time="2021-05-08T21:53:14+08:00" level=info msg="查询用户任务数据" user=test1
+time="2021-05-08T21:53:14+08:00" level=info msg="查看任务节点列表" remote_host="192.168.196.1:58646"
+time="2021-05-08T21:53:14+08:00" level=info msg="获取用户任务主机列表" user_id=test1
+time="2021-05-08T21:53:14+08:00" level=info msg="查询用户任务数据" user=test1 数据数量=4
+time="2021-05-08T21:53:16+08:00" level=info msg="接收到开启任务请求" local_host:="192.168.196.1:8080" remote_host="192.168.196.1:58646" task="{id:17c82d27-febc-4c43-984b-e6e38eda1102,name:linux节点测试任务2,user_id:test1,time_format:2021-05-08 21:55:04,command:tail -n 1 /root/work/go_crontab/log/node20210508.log,host:192.168.227.130:8888,timeout:0,alone:true,once:true,repeat:false,system:false,share:false,off:true}" url=/openOrCloseTask
+time="2021-05-08T21:53:17+08:00" level=info msg="调度器开启任务成功" local_host:="192.168.196.1:8080" remote_host="192.168.196.1:58646" url=/openOrCloseTask
+time="2021-05-08T21:53:17+08:00" level=info msg="修改任务开关属性" off=false task_id=17c82d27-febc-4c43-984b-e6e38eda1102
+time="2021-05-08T21:53:17+08:00" level=info msg="更新任务数据入库成功" local_host:="192.168.196.1:8080" remote_host="192.168.196.1:58646" url=/openOrCloseTask
+time="2021-05-08T21:53:18+08:00" level=info msg="查看任务列表" remote_host="192.168.196.1:58646"
+time="2021-05-08T21:53:18+08:00" level=info msg="查询用户任务数据" user=test1
+time="2021-05-08T21:53:18+08:00" level=info msg="查看任务节点列表" remote_host="192.168.196.1:58645"
+time="2021-05-08T21:53:18+08:00" level=info msg="获取用户任务主机列表" user_id=test1
+time="2021-05-08T21:53:18+08:00" level=info msg="查询用户任务数据" user=test1 数据数量=4
+time="2021-05-08T21:53:19+08:00" level=info msg="查看共享命令列表" remote_host="192.168.196.1:58645"
+time="2021-05-08T21:53:26+08:00" level=info msg="查看任务列表" remote_host="192.168.196.1:59005"
+time="2021-05-08T21:53:26+08:00" level=info msg="查询用户任务数据" user=test1
+time="2021-05-08T21:53:26+08:00" level=info msg="查看任务节点列表" remote_host="192.168.196.1:59006"
+time="2021-05-08T21:53:26+08:00" level=info msg="获取用户任务主机列表" user_id=test1
+time="2021-05-08T21:53:26+08:00" level=info msg="查询用户任务数据" user=test1 数据数量=4
+time="2021-05-08T21:53:30+08:00" level=info msg="任务执行状态数据入库" status_info="{task_id:086d46ce-b0cb-4a63-a953-2c547bdee2e7,name:,host:192.168.196.1:8888,start:2021-05-08 21:53:30,end:2021-05-08 21:53:30,status:,error:,numbers:0}"
+time="2021-05-08T21:53:30+08:00" level=info msg="任务执行数据入库成功" local_host:="192.168.196.1:8080" remote_host="192.168.196.1:51056" url=/acceptStatus
+time="2021-05-08T21:53:31+08:00" level=info msg="任务执行状态数据入库" status_info="{task_id:6c83ab9f-cbad-4515-9416-b60ec0715176,name:,host:192.168.227.130:8888,start:2021-05-08 21:54:30,end:2021-05-08 21:54:30,status:,error:,numbers:0}"
+time="2021-05-08T21:53:31+08:00" level=info msg="任务执行数据入库成功" local_host:="192.168.196.1:8080" remote_host="192.168.196.1:58701" url=/acceptStatus
+time="2021-05-08T21:53:32+08:00" level=info msg="接收到关闭任务请求" local_host:="192.168.196.1:8080" remote_host="192.168.196.1:59006" task="{id:17c82d27-febc-4c43-984b-e6e38eda1102,name:linux节点测试任务2,user_id:test1,time_format:2021-05-08 21:55:04,command:tail -n 1 /root/work/go_crontab/log/node20210508.log,host:192.168.227.130:8888,timeout:0,alone:true,once:true,repeat:false,system:false,share:false,off:false}" url=/openOrCloseTask
+time="2021-05-08T21:53:32+08:00" level=info msg="调度器关闭任务成功" local_host:="192.168.196.1:8080" remote_host="192.168.196.1:59006" url=/openOrCloseTask
+time="2021-05-08T21:53:32+08:00" level=info msg="修改任务开关属性" off=true task_id=17c82d27-febc-4c43-984b-e6e38eda1102
+time="2021-05-08T21:53:32+08:00" level=info msg="更新任务数据入库成功" local_host:="192.168.196.1:8080" remote_host="192.168.196.1:59006" url=/openOrCloseTask
+time="2021-05-08T21:53:34+08:00" level=info msg="查看任务列表" remote_host="192.168.196.1:59006"
+time="2021-05-08T21:53:34+08:00" level=info msg="查询用户任务数据" user=test1
+time="2021-05-08T21:53:34+08:00" level=info msg="查看任务节点列表" remote_host="192.168.196.1:59005"
+time="2021-05-08T21:53:34+08:00" level=info msg="获取用户任务主机列表" user_id=test1
+time="2021-05-08T21:53:34+08:00" level=info msg="查询用户任务数据" user=test1 数据数量=4
+time="2021-05-08T21:53:44+08:00" level=error msg="任务数据缺失" local_host:="192.168.196.1:8080" remote_host="192.168.196.1:59005" task="{id:17c82d27-febc-4c43-984b-e6e38eda1102,name:linux节点测试任务2,user_id:test1,time_format:,command:tail -n 1 /root/work/go_crontab/log/node20210508.log,host:192.168.227.130:8888,timeout:0,alone:true,once:true,repeat:false,system:false,share:true,off:false}" url=/updateTask
+time="2021-05-08T21:53:45+08:00" level=info msg="接收到更新任务数据请求" local_host:="192.168.196.1:8080" remote_host="192.168.196.1:59005" task="{id:17c82d27-febc-4c43-984b-e6e38eda1102,name:linux节点测试任务2,user_id:test1,time_format:,command:tail -n 1 /root/work/go_crontab/log/node20210508.log,host:192.168.227.130:8888,timeout:0,alone:true,once:true,repeat:false,system:false,share:true,off:false}" url=/updateTaskData
+time="2021-05-08T21:53:45+08:00" level=info msg="更新任务数据" task="{id:17c82d27-febc-4c43-984b-e6e38eda1102,name:linux节点测试任务2,user_id:test1,time_format:,command:tail -n 1 /root/work/go_crontab/log/node20210508.log,host:192.168.227.130:8888,timeout:0,alone:true,once:true,repeat:false,system:false,share:true,off:true}"
+time="2021-05-08T21:53:45+08:00" level=info msg="删除任务数据" task_id=17c82d27-febc-4c43-984b-e6e38eda1102
+time="2021-05-08T21:53:45+08:00" level=info msg="任务数据入库" task="{id:17c82d27-febc-4c43-984b-e6e38eda1102,name:linux节点测试任务2,user_id:test1,time_format:,command:tail -n 1 /root/work/go_crontab/log/node20210508.log,host:192.168.227.130:8888,timeout:0,alone:true,once:true,repeat:false,system:false,share:true,off:true}"
+time="2021-05-08T21:53:46+08:00" level=info msg="查看任务列表" remote_host="192.168.196.1:59005"
+time="2021-05-08T21:53:46+08:00" level=info msg="查询用户任务数据" user=test1
+time="2021-05-08T21:53:46+08:00" level=info msg="查看任务节点列表" remote_host="192.168.196.1:59006"
+time="2021-05-08T21:53:46+08:00" level=info msg="获取用户任务主机列表" user_id=test1
+time="2021-05-08T21:53:46+08:00" level=info msg="查询用户任务数据" user=test1 数据数量=4
+time="2021-05-08T21:53:48+08:00" level=error msg="任务数据缺失" local_host:="192.168.196.1:8080" remote_host="192.168.196.1:59006" task="{id:17c82d27-febc-4c43-984b-e6e38eda1102,name:linux节点测试任务2,user_id:test1,time_format:,command:tail -n 1 /root/work/go_crontab/log/node20210508.log,host:192.168.227.130:8888,timeout:0,alone:true,once:true,repeat:false,system:false,share:true,off:true}" url=/openOrCloseTask
+time="2021-05-08T21:53:51+08:00" level=error msg="任务数据缺失" local_host:="192.168.196.1:8080" remote_host="192.168.196.1:59006" task="{id:17c82d27-febc-4c43-984b-e6e38eda1102,name:linux节点测试任务2,user_id:test1,time_format:,command:tail -n 1 /root/work/go_crontab/log/node20210508.log,host:192.168.227.130:8888,timeout:0,alone:true,once:true,repeat:false,system:false,share:true,off:true}" url=/openOrCloseTask
+time="2021-05-08T21:53:58+08:00" level=info msg="查看任务执行状态" remote_host="192.168.196.1:59006"
+time="2021-05-08T21:53:58+08:00" level=info msg="查询任务执行状态表" sql="select task_id,t.name,s.host,start_time,end_time,status,error from StatusTable s,TaskTable t where t.id=? and t.id=s.task_id order by start_time desc;" task_id=17c82d27-febc-4c43-984b-e6e38eda1102
+time="2021-05-08T21:54:00+08:00" level=info msg="查看任务列表" remote_host="192.168.196.1:59006"
+time="2021-05-08T21:54:00+08:00" level=info msg="查询用户任务数据" user=test1
+time="2021-05-08T21:54:00+08:00" level=info msg="查看任务节点列表" remote_host="192.168.196.1:59005"
+time="2021-05-08T21:54:00+08:00" level=info msg="获取用户任务主机列表" user_id=test1
+time="2021-05-08T21:54:00+08:00" level=info msg="查询用户任务数据" user=test1 数据数量=4
+time="2021-05-08T21:54:17+08:00" level=info msg="接收到更新任务请求" local_host:="192.168.196.1:8080" remote_host="192.168.196.1:59005" task="{id:17c82d27-febc-4c43-984b-e6e38eda1102,name:linux节点测试任务2,user_id:test1,time_format:2021-05-08 21:56:09,command:tail -n 1 /root/work/go_crontab/log/node20210508.log,host:192.168.227.130:8888,timeout:0,alone:true,once:true,repeat:false,system:false,share:true,off:false}" url=/updateTask
+time="2021-05-08T21:54:17+08:00" level=info msg="校验任务数据" task_id=17c82d27-febc-4c43-984b-e6e38eda1102
+time="2021-05-08T21:54:17+08:00" level=error msg="节点接收任务出错：主机上没有这个任务,ID=17c82d27-febc-4c43-984b-e6e38eda1102\n"
+time="2021-05-08T21:54:17+08:00" level=error msg="调度器下发更新任务出错：主机上没有这个任务,ID=17c82d27-febc-4c43-984b-e6e38eda1102\n" local_host:="192.168.196.1:8080" remote_host="192.168.196.1:59005" url=/updateTask
+time="2021-05-08T21:54:18+08:00" level=info msg="接收到更新任务数据请求" local_host:="192.168.196.1:8080" remote_host="192.168.196.1:59005" task="{id:17c82d27-febc-4c43-984b-e6e38eda1102,name:linux节点测试任务2,user_id:test1,time_format:2021-05-08 21:56:09,command:tail -n 1 /root/work/go_crontab/log/node20210508.log,host:192.168.227.130:8888,timeout:0,alone:true,once:true,repeat:false,system:false,share:true,off:false}" url=/updateTaskData
+time="2021-05-08T21:54:18+08:00" level=info msg="更新任务数据" task="{id:17c82d27-febc-4c43-984b-e6e38eda1102,name:linux节点测试任务2,user_id:test1,time_format:2021-05-08 21:56:09,command:tail -n 1 /root/work/go_crontab/log/node20210508.log,host:192.168.227.130:8888,timeout:0,alone:true,once:true,repeat:false,system:false,share:true,off:true}"
+time="2021-05-08T21:54:18+08:00" level=info msg="删除任务数据" task_id=17c82d27-febc-4c43-984b-e6e38eda1102
+time="2021-05-08T21:54:18+08:00" level=info msg="任务数据入库" task="{id:17c82d27-febc-4c43-984b-e6e38eda1102,name:linux节点测试任务2,user_id:test1,time_format:2021-05-08 21:56:09,command:tail -n 1 /root/work/go_crontab/log/node20210508.log,host:192.168.227.130:8888,timeout:0,alone:true,once:true,repeat:false,system:false,share:true,off:true}"
+time="2021-05-08T21:54:20+08:00" level=info msg="查看任务列表" remote_host="192.168.196.1:59005"
+time="2021-05-08T21:54:20+08:00" level=info msg="查询用户任务数据" user=test1
+time="2021-05-08T21:54:20+08:00" level=info msg="查看任务节点列表" remote_host="192.168.196.1:59006"
+time="2021-05-08T21:54:20+08:00" level=info msg="获取用户任务主机列表" user_id=test1
+time="2021-05-08T21:54:20+08:00" level=info msg="查询用户任务数据" user=test1 数据数量=4
+time="2021-05-08T21:54:21+08:00" level=info msg="接收到开启任务请求" local_host:="192.168.196.1:8080" remote_host="192.168.196.1:59006" task="{id:17c82d27-febc-4c43-984b-e6e38eda1102,name:linux节点测试任务2,user_id:test1,time_format:2021-05-08 21:56:09,command:tail -n 1 /root/work/go_crontab/log/node20210508.log,host:192.168.227.130:8888,timeout:0,alone:true,once:true,repeat:false,system:false,share:true,off:true}" url=/openOrCloseTask
+time="2021-05-08T21:54:21+08:00" level=info msg="调度器开启任务成功" local_host:="192.168.196.1:8080" remote_host="192.168.196.1:59006" url=/openOrCloseTask
+time="2021-05-08T21:54:21+08:00" level=info msg="修改任务开关属性" off=false task_id=17c82d27-febc-4c43-984b-e6e38eda1102
+time="2021-05-08T21:54:21+08:00" level=info msg="更新任务数据入库成功" local_host:="192.168.196.1:8080" remote_host="192.168.196.1:59006" url=/openOrCloseTask
+time="2021-05-08T21:54:23+08:00" level=info msg="查看任务列表" remote_host="192.168.196.1:59006"
+time="2021-05-08T21:54:23+08:00" level=info msg="查询用户任务数据" user=test1
+time="2021-05-08T21:54:23+08:00" level=info msg="查看任务节点列表" remote_host="192.168.196.1:59005"
+time="2021-05-08T21:54:23+08:00" level=info msg="获取用户任务主机列表" user_id=test1
+time="2021-05-08T21:54:23+08:00" level=info msg="查询用户任务数据" user=test1 数据数量=4
+time="2021-05-08T21:54:23+08:00" level=info msg="查看共享命令列表" remote_host="192.168.196.1:59005"
+time="2021-05-08T21:54:30+08:00" level=info msg="任务执行状态数据入库" status_info="{task_id:086d46ce-b0cb-4a63-a953-2c547bdee2e7,name:,host:192.168.196.1:8888,start:2021-05-08 21:54:30,end:2021-05-08 21:54:30,status:,error:,numbers:0}"
+time="2021-05-08T21:54:30+08:00" level=info msg="任务执行数据入库成功" local_host:="192.168.196.1:8080" remote_host="192.168.196.1:51056" url=/acceptStatus
+time="2021-05-08T21:54:31+08:00" level=info msg="任务执行状态数据入库" status_info="{task_id:6c83ab9f-cbad-4515-9416-b60ec0715176,name:,host:192.168.227.130:8888,start:2021-05-08 21:55:30,end:2021-05-08 21:55:30,status:,error:,numbers:0}"
+time="2021-05-08T21:54:31+08:00" level=info msg="任务执行数据入库成功" local_host:="192.168.196.1:8080" remote_host="192.168.196.1:58701" url=/acceptStatus
+time="2021-05-08T21:55:10+08:00" level=info msg="任务执行状态数据入库" status_info="{task_id:17c82d27-febc-4c43-984b-e6e38eda1102,name:,host:192.168.227.130:8888,start:2021-05-08 21:56:09,end:2021-05-08 21:56:09,status:,error:,numbers:0}"
+time="2021-05-08T21:55:10+08:00" level=info msg="任务执行数据入库成功" local_host:="192.168.196.1:8080" remote_host="192.168.196.1:58701" url=/acceptStatus
+time="2021-05-08T21:55:30+08:00" level=info msg="任务执行状态数据入库" status_info="{task_id:086d46ce-b0cb-4a63-a953-2c547bdee2e7,name:,host:192.168.196.1:8888,start:2021-05-08 21:55:30,end:2021-05-08 21:55:30,status:,error:,numbers:0}"
+time="2021-05-08T21:55:30+08:00" level=info msg="任务执行数据入库成功" local_host:="192.168.196.1:8080" remote_host="192.168.196.1:51056" url=/acceptStatus
+time="2021-05-08T21:55:31+08:00" level=info msg="任务执行状态数据入库" status_info="{task_id:6c83ab9f-cbad-4515-9416-b60ec0715176,name:,host:192.168.227.130:8888,start:2021-05-08 21:56:30,end:2021-05-08 21:56:30,status:,error:,numbers:0}"
+time="2021-05-08T21:55:31+08:00" level=info msg="任务执行数据入库成功" local_host:="192.168.196.1:8080" remote_host="192.168.196.1:58701" url=/acceptStatus
+time="2021-05-08T21:56:12+08:00" level=info msg="系统加入了新的调度器：192.168.227.130:8080"
+time="2021-05-08T21:56:30+08:00" level=info msg="任务执行状态数据入库" status_info="{task_id:086d46ce-b0cb-4a63-a953-2c547bdee2e7,name:,host:192.168.196.1:8888,start:2021-05-08 21:56:30,end:2021-05-08 21:56:30,status:,error:,numbers:0}"
+time="2021-05-08T21:56:30+08:00" level=info msg="任务执行数据入库成功" local_host:="192.168.196.1:8080" remote_host="192.168.196.1:51056" url=/acceptStatus
+time="2021-05-08T21:56:31+08:00" level=info msg="任务执行状态数据入库" status_info="{task_id:6c83ab9f-cbad-4515-9416-b60ec0715176,name:,host:192.168.227.130:8888,start:2021-05-08 21:57:30,end:2021-05-08 21:57:30,status:,error:,numbers:0}"
+time="2021-05-08T21:56:31+08:00" level=info msg="任务执行数据入库成功" local_host:="192.168.196.1:8080" remote_host="192.168.196.1:58701" url=/acceptStatus
+time="2021-05-08T21:57:30+08:00" level=info msg="任务执行状态数据入库" status_info="{task_id:086d46ce-b0cb-4a63-a953-2c547bdee2e7,name:,host:192.168.196.1:8888,start:2021-05-08 21:57:30,end:2021-05-08 21:57:30,status:,error:,numbers:0}"
+time="2021-05-08T21:57:30+08:00" level=info msg="任务执行数据入库成功" local_host:="192.168.196.1:8080" remote_host="192.168.196.1:51056" url=/acceptStatus
+time="2021-05-08T21:57:31+08:00" level=info msg="任务执行状态数据入库" status_info="{task_id:6c83ab9f-cbad-4515-9416-b60ec0715176,name:,host:192.168.227.130:8888,start:2021-05-08 21:58:30,end:2021-05-08 21:58:30,status:,error:,numbers:0}"
+time="2021-05-08T21:57:31+08:00" level=info msg="任务执行数据入库成功" local_host:="192.168.196.1:8080" remote_host="192.168.196.1:58701" url=/acceptStatus

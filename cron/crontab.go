@@ -61,7 +61,7 @@ func (c *Crontab) AddTask(tasks []*model.Task) (string, error) {
 		if task.Alone {
 			n := &etcd.NodeEtcd{}
 			//分布式锁
-			value := task.Host + ":" + task.Command + ":" + task.UserId + ":" + task.UserId
+			value := task.Host + ":" + task.Command + ":" + task.UserId
 			if !task.Share {
 				value = value + ":" + "User Layer"
 			} else {

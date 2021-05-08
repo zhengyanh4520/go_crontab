@@ -1,0 +1,520 @@
+time="2021-05-08 20:27:30" level=info msg="开始执行任务"
+time="2021-05-08 20:27:30" level=info msg="任务执行成功" 任务输出=
+time="2021-05-08 20:27:30" level=info msg="任务运行结束"
+time="2021-05-08 20:27:30" level=info msg="通知调度器任务执行状态" status_info="{task_id:086d46ce-b0cb-4a63-a953-2c547bdee2e7,name:,host:192.168.196.1:8888,start:2021-05-08 20:27:30,end:2021-05-08 20:27:30,status:,error:,numbers:0}"
+time="2021-05-08 20:27:30" level=info msg="调度器接收任务状态成功"
+time="2021-05-08 20:28:30" level=info msg="开始执行任务"
+time="2021-05-08 20:28:30" level=info msg="任务执行成功" 任务输出=
+time="2021-05-08 20:28:30" level=info msg="任务运行结束"
+time="2021-05-08 20:28:30" level=info msg="通知调度器任务执行状态" status_info="{task_id:086d46ce-b0cb-4a63-a953-2c547bdee2e7,name:,host:192.168.196.1:8888,start:2021-05-08 20:28:30,end:2021-05-08 20:28:30,status:,error:,numbers:0}"
+time="2021-05-08 20:28:30" level=info msg="调度器接收任务状态成功"
+time="2021-05-08 20:29:30" level=info msg="开始执行任务"
+time="2021-05-08 20:29:30" level=info msg="任务执行成功" 任务输出=
+time="2021-05-08 20:29:30" level=info msg="任务运行结束"
+time="2021-05-08 20:29:30" level=info msg="通知调度器任务执行状态" status_info="{task_id:086d46ce-b0cb-4a63-a953-2c547bdee2e7,name:,host:192.168.196.1:8888,start:2021-05-08 20:29:30,end:2021-05-08 20:29:30,status:,error:,numbers:0}"
+time="2021-05-08 20:29:30" level=info msg="调度器接收任务状态成功"
+time="2021-05-08 20:30:30" level=info msg="开始执行任务"
+time="2021-05-08 20:30:30" level=info msg="任务执行成功" 任务输出=
+time="2021-05-08 20:30:30" level=info msg="任务运行结束"
+time="2021-05-08 20:30:30" level=info msg="通知调度器任务执行状态" status_info="{task_id:086d46ce-b0cb-4a63-a953-2c547bdee2e7,name:,host:192.168.196.1:8888,start:2021-05-08 20:30:30,end:2021-05-08 20:30:30,status:,error:,numbers:0}"
+time="2021-05-08 20:30:30" level=info msg="调度器接收任务状态成功"
+time="2021-05-08 20:31:30" level=info msg="开始执行任务"
+time="2021-05-08 20:31:30" level=info msg="任务执行成功" 任务输出=
+time="2021-05-08 20:31:30" level=info msg="任务运行结束"
+time="2021-05-08 20:31:30" level=info msg="通知调度器任务执行状态" status_info="{task_id:086d46ce-b0cb-4a63-a953-2c547bdee2e7,name:,host:192.168.196.1:8888,start:2021-05-08 20:31:30,end:2021-05-08 20:31:30,status:,error:,numbers:0}"
+time="2021-05-08 20:31:30" level=info msg="调度器接收任务状态成功"
+time="2021-05-08 20:32:30" level=info msg="开始执行任务"
+time="2021-05-08 20:32:30" level=info msg="任务执行成功" 任务输出=
+time="2021-05-08 20:32:30" level=info msg="任务运行结束"
+time="2021-05-08 20:32:30" level=info msg="通知调度器任务执行状态" status_info="{task_id:086d46ce-b0cb-4a63-a953-2c547bdee2e7,name:,host:192.168.196.1:8888,start:2021-05-08 20:32:30,end:2021-05-08 20:32:30,status:,error:,numbers:0}"
+time="2021-05-08 20:32:30" level=info msg="调度器接收任务状态成功"
+time="2021-05-08 20:33:30" level=info msg="开始执行任务"
+time="2021-05-08 20:33:30" level=info msg="任务执行成功" 任务输出=
+time="2021-05-08 20:33:30" level=info msg="任务运行结束"
+time="2021-05-08 20:33:30" level=info msg="通知调度器任务执行状态" status_info="{task_id:086d46ce-b0cb-4a63-a953-2c547bdee2e7,name:,host:192.168.196.1:8888,start:2021-05-08 20:33:30,end:2021-05-08 20:33:30,status:,error:,numbers:0}"
+time="2021-05-08 20:33:30" level=info msg="调度器接收任务状态成功"
+time="2021-05-08 20:34:30" level=info msg="开始执行任务"
+time="2021-05-08 20:34:30" level=info msg="任务执行成功" 任务输出=
+time="2021-05-08 20:34:30" level=info msg="任务运行结束"
+time="2021-05-08 20:34:30" level=info msg="通知调度器任务执行状态" status_info="{task_id:086d46ce-b0cb-4a63-a953-2c547bdee2e7,name:,host:192.168.196.1:8888,start:2021-05-08 20:34:30,end:2021-05-08 20:34:30,status:,error:,numbers:0}"
+time="2021-05-08 20:34:30" level=info msg="调度器接收任务状态成功"
+time="2021-05-08 20:35:30" level=info msg="开始执行任务"
+time="2021-05-08 20:35:30" level=info msg="任务执行成功" 任务输出=
+time="2021-05-08 20:35:30" level=info msg="任务运行结束"
+time="2021-05-08 20:35:30" level=info msg="通知调度器任务执行状态" status_info="{task_id:086d46ce-b0cb-4a63-a953-2c547bdee2e7,name:,host:192.168.196.1:8888,start:2021-05-08 20:35:30,end:2021-05-08 20:35:30,status:,error:,numbers:0}"
+time="2021-05-08 20:35:30" level=info msg="调度器接收任务状态成功"
+time="2021-05-08 20:36:30" level=info msg="开始执行任务"
+time="2021-05-08 20:36:30" level=info msg="任务执行成功" 任务输出=
+time="2021-05-08 20:36:30" level=info msg="任务运行结束"
+time="2021-05-08 20:36:30" level=info msg="通知调度器任务执行状态" status_info="{task_id:086d46ce-b0cb-4a63-a953-2c547bdee2e7,name:,host:192.168.196.1:8888,start:2021-05-08 20:36:30,end:2021-05-08 20:36:30,status:,error:,numbers:0}"
+time="2021-05-08 20:36:30" level=info msg="调度器接收任务状态成功"
+time="2021-05-08 20:37:30" level=info msg="开始执行任务"
+time="2021-05-08 20:37:30" level=info msg="任务执行成功" 任务输出=
+time="2021-05-08 20:37:30" level=info msg="任务运行结束"
+time="2021-05-08 20:37:30" level=info msg="通知调度器任务执行状态" status_info="{task_id:086d46ce-b0cb-4a63-a953-2c547bdee2e7,name:,host:192.168.196.1:8888,start:2021-05-08 20:37:30,end:2021-05-08 20:37:30,status:,error:,numbers:0}"
+time="2021-05-08 20:37:30" level=info msg="调度器接收任务状态成功"
+time="2021-05-08 20:38:30" level=info msg="开始执行任务"
+time="2021-05-08 20:38:30" level=info msg="任务执行成功" 任务输出=
+time="2021-05-08 20:38:30" level=info msg="任务运行结束"
+time="2021-05-08 20:38:30" level=info msg="通知调度器任务执行状态" status_info="{task_id:086d46ce-b0cb-4a63-a953-2c547bdee2e7,name:,host:192.168.196.1:8888,start:2021-05-08 20:38:30,end:2021-05-08 20:38:30,status:,error:,numbers:0}"
+time="2021-05-08 20:38:30" level=info msg="调度器接收任务状态成功"
+time="2021-05-08 20:39:30" level=info msg="开始执行任务"
+time="2021-05-08 20:39:30" level=info msg="任务执行成功" 任务输出=
+time="2021-05-08 20:39:30" level=info msg="任务运行结束"
+time="2021-05-08 20:39:30" level=info msg="通知调度器任务执行状态" status_info="{task_id:086d46ce-b0cb-4a63-a953-2c547bdee2e7,name:,host:192.168.196.1:8888,start:2021-05-08 20:39:30,end:2021-05-08 20:39:30,status:,error:,numbers:0}"
+time="2021-05-08 20:39:30" level=info msg="调度器接收任务状态成功"
+time="2021-05-08 20:40:30" level=info msg="开始执行任务"
+time="2021-05-08 20:40:30" level=info msg="任务执行成功" 任务输出=
+time="2021-05-08 20:40:30" level=info msg="任务运行结束"
+time="2021-05-08 20:40:30" level=info msg="通知调度器任务执行状态" status_info="{task_id:086d46ce-b0cb-4a63-a953-2c547bdee2e7,name:,host:192.168.196.1:8888,start:2021-05-08 20:40:30,end:2021-05-08 20:40:30,status:,error:,numbers:0}"
+time="2021-05-08 20:40:30" level=info msg="调度器接收任务状态成功"
+time="2021-05-08 20:41:30" level=info msg="开始执行任务"
+time="2021-05-08 20:41:30" level=info msg="任务执行成功" 任务输出=
+time="2021-05-08 20:41:30" level=info msg="任务运行结束"
+time="2021-05-08 20:41:30" level=info msg="通知调度器任务执行状态" status_info="{task_id:086d46ce-b0cb-4a63-a953-2c547bdee2e7,name:,host:192.168.196.1:8888,start:2021-05-08 20:41:30,end:2021-05-08 20:41:30,status:,error:,numbers:0}"
+time="2021-05-08 20:41:30" level=info msg="调度器接收任务状态成功"
+time="2021-05-08 20:42:30" level=info msg="开始执行任务"
+time="2021-05-08 20:42:30" level=info msg="任务执行成功" 任务输出=
+time="2021-05-08 20:42:30" level=info msg="任务运行结束"
+time="2021-05-08 20:42:30" level=info msg="通知调度器任务执行状态" status_info="{task_id:086d46ce-b0cb-4a63-a953-2c547bdee2e7,name:,host:192.168.196.1:8888,start:2021-05-08 20:42:30,end:2021-05-08 20:42:30,status:,error:,numbers:0}"
+time="2021-05-08 20:42:30" level=info msg="调度器接收任务状态成功"
+time="2021-05-08 20:43:30" level=info msg="开始执行任务"
+time="2021-05-08 20:43:30" level=info msg="任务执行成功" 任务输出=
+time="2021-05-08 20:43:30" level=info msg="任务运行结束"
+time="2021-05-08 20:43:30" level=info msg="通知调度器任务执行状态" status_info="{task_id:086d46ce-b0cb-4a63-a953-2c547bdee2e7,name:,host:192.168.196.1:8888,start:2021-05-08 20:43:30,end:2021-05-08 20:43:30,status:,error:,numbers:0}"
+time="2021-05-08 20:43:30" level=info msg="调度器接收任务状态成功"
+time="2021-05-08 20:44:30" level=info msg="开始执行任务"
+time="2021-05-08 20:44:30" level=info msg="任务执行成功" 任务输出=
+time="2021-05-08 20:44:30" level=info msg="任务运行结束"
+time="2021-05-08 20:44:30" level=info msg="通知调度器任务执行状态" status_info="{task_id:086d46ce-b0cb-4a63-a953-2c547bdee2e7,name:,host:192.168.196.1:8888,start:2021-05-08 20:44:30,end:2021-05-08 20:44:30,status:,error:,numbers:0}"
+time="2021-05-08 20:44:30" level=info msg="调度器接收任务状态成功"
+time="2021-05-08 20:45:30" level=info msg="开始执行任务"
+time="2021-05-08 20:45:30" level=info msg="任务执行成功" 任务输出=
+time="2021-05-08 20:45:30" level=info msg="任务运行结束"
+time="2021-05-08 20:45:30" level=info msg="通知调度器任务执行状态" status_info="{task_id:086d46ce-b0cb-4a63-a953-2c547bdee2e7,name:,host:192.168.196.1:8888,start:2021-05-08 20:45:30,end:2021-05-08 20:45:30,status:,error:,numbers:0}"
+time="2021-05-08 20:45:30" level=info msg="调度器接收任务状态成功"
+time="2021-05-08 20:46:30" level=info msg="开始执行任务"
+time="2021-05-08 20:46:30" level=info msg="任务执行成功" 任务输出=
+time="2021-05-08 20:46:30" level=info msg="任务运行结束"
+time="2021-05-08 20:46:30" level=info msg="通知调度器任务执行状态" status_info="{task_id:086d46ce-b0cb-4a63-a953-2c547bdee2e7,name:,host:192.168.196.1:8888,start:2021-05-08 20:46:30,end:2021-05-08 20:46:30,status:,error:,numbers:0}"
+time="2021-05-08 20:46:30" level=info msg="调度器接收任务状态成功"
+time="2021-05-08 20:47:30" level=info msg="开始执行任务"
+time="2021-05-08 20:47:30" level=info msg="任务执行成功" 任务输出=
+time="2021-05-08 20:47:30" level=info msg="任务运行结束"
+time="2021-05-08 20:47:30" level=info msg="通知调度器任务执行状态" status_info="{task_id:086d46ce-b0cb-4a63-a953-2c547bdee2e7,name:,host:192.168.196.1:8888,start:2021-05-08 20:47:30,end:2021-05-08 20:47:30,status:,error:,numbers:0}"
+time="2021-05-08 20:47:30" level=info msg="调度器接收任务状态成功"
+time="2021-05-08 20:48:30" level=info msg="开始执行任务"
+time="2021-05-08 20:48:30" level=info msg="任务执行成功" 任务输出=
+time="2021-05-08 20:48:30" level=info msg="任务运行结束"
+time="2021-05-08 20:48:30" level=info msg="通知调度器任务执行状态" status_info="{task_id:086d46ce-b0cb-4a63-a953-2c547bdee2e7,name:,host:192.168.196.1:8888,start:2021-05-08 20:48:30,end:2021-05-08 20:48:30,status:,error:,numbers:0}"
+time="2021-05-08 20:48:30" level=info msg="调度器接收任务状态成功"
+time="2021-05-08 20:49:30" level=info msg="开始执行任务"
+time="2021-05-08 20:49:30" level=info msg="任务执行成功" 任务输出=
+time="2021-05-08 20:49:30" level=info msg="任务运行结束"
+time="2021-05-08 20:49:30" level=info msg="通知调度器任务执行状态" status_info="{task_id:086d46ce-b0cb-4a63-a953-2c547bdee2e7,name:,host:192.168.196.1:8888,start:2021-05-08 20:49:30,end:2021-05-08 20:49:30,status:,error:,numbers:0}"
+time="2021-05-08 20:49:30" level=info msg="调度器接收任务状态成功"
+time="2021-05-08 20:50:30" level=info msg="开始执行任务"
+time="2021-05-08 20:50:30" level=info msg="任务执行成功" 任务输出=
+time="2021-05-08 20:50:30" level=info msg="任务运行结束"
+time="2021-05-08 20:50:30" level=info msg="通知调度器任务执行状态" status_info="{task_id:086d46ce-b0cb-4a63-a953-2c547bdee2e7,name:,host:192.168.196.1:8888,start:2021-05-08 20:50:30,end:2021-05-08 20:50:30,status:,error:,numbers:0}"
+time="2021-05-08 20:50:30" level=info msg="调度器接收任务状态成功"
+time="2021-05-08 20:51:30" level=info msg="开始执行任务"
+time="2021-05-08 20:51:30" level=info msg="任务执行成功" 任务输出=
+time="2021-05-08 20:51:30" level=info msg="任务运行结束"
+time="2021-05-08 20:51:30" level=info msg="通知调度器任务执行状态" status_info="{task_id:086d46ce-b0cb-4a63-a953-2c547bdee2e7,name:,host:192.168.196.1:8888,start:2021-05-08 20:51:30,end:2021-05-08 20:51:30,status:,error:,numbers:0}"
+time="2021-05-08 20:51:30" level=info msg="调度器接收任务状态成功"
+time="2021-05-08 20:52:30" level=info msg="开始执行任务"
+time="2021-05-08 20:52:30" level=info msg="任务执行成功" 任务输出=
+time="2021-05-08 20:52:30" level=info msg="任务运行结束"
+time="2021-05-08 20:52:30" level=info msg="通知调度器任务执行状态" status_info="{task_id:086d46ce-b0cb-4a63-a953-2c547bdee2e7,name:,host:192.168.196.1:8888,start:2021-05-08 20:52:30,end:2021-05-08 20:52:30,status:,error:,numbers:0}"
+time="2021-05-08 20:52:30" level=info msg="调度器接收任务状态成功"
+time="2021-05-08 20:53:30" level=info msg="开始执行任务"
+time="2021-05-08 20:53:30" level=info msg="任务执行成功" 任务输出=
+time="2021-05-08 20:53:30" level=info msg="任务运行结束"
+time="2021-05-08 20:53:30" level=info msg="通知调度器任务执行状态" status_info="{task_id:086d46ce-b0cb-4a63-a953-2c547bdee2e7,name:,host:192.168.196.1:8888,start:2021-05-08 20:53:30,end:2021-05-08 20:53:30,status:,error:,numbers:0}"
+time="2021-05-08 20:53:30" level=info msg="调度器接收任务状态成功"
+time="2021-05-08 20:54:30" level=info msg="开始执行任务"
+time="2021-05-08 20:54:30" level=info msg="任务执行成功" 任务输出=
+time="2021-05-08 20:54:30" level=info msg="任务运行结束"
+time="2021-05-08 20:54:30" level=info msg="通知调度器任务执行状态" status_info="{task_id:086d46ce-b0cb-4a63-a953-2c547bdee2e7,name:,host:192.168.196.1:8888,start:2021-05-08 20:54:30,end:2021-05-08 20:54:30,status:,error:,numbers:0}"
+time="2021-05-08 20:54:30" level=info msg="调度器接收任务状态成功"
+time="2021-05-08 20:55:30" level=info msg="开始执行任务"
+time="2021-05-08 20:55:30" level=info msg="任务执行成功" 任务输出=
+time="2021-05-08 20:55:30" level=info msg="任务运行结束"
+time="2021-05-08 20:55:30" level=info msg="通知调度器任务执行状态" status_info="{task_id:086d46ce-b0cb-4a63-a953-2c547bdee2e7,name:,host:192.168.196.1:8888,start:2021-05-08 20:55:30,end:2021-05-08 20:55:30,status:,error:,numbers:0}"
+time="2021-05-08 20:55:30" level=info msg="调度器接收任务状态成功"
+time="2021-05-08 20:56:30" level=info msg="开始执行任务"
+time="2021-05-08 20:56:30" level=info msg="任务执行成功" 任务输出=
+time="2021-05-08 20:56:30" level=info msg="任务运行结束"
+time="2021-05-08 20:56:30" level=info msg="通知调度器任务执行状态" status_info="{task_id:086d46ce-b0cb-4a63-a953-2c547bdee2e7,name:,host:192.168.196.1:8888,start:2021-05-08 20:56:30,end:2021-05-08 20:56:30,status:,error:,numbers:0}"
+time="2021-05-08 20:56:30" level=info msg="调度器接收任务状态成功"
+time="2021-05-08 20:57:30" level=info msg="开始执行任务"
+time="2021-05-08 20:57:30" level=info msg="任务执行成功" 任务输出=
+time="2021-05-08 20:57:30" level=info msg="任务运行结束"
+time="2021-05-08 20:57:30" level=info msg="通知调度器任务执行状态" status_info="{task_id:086d46ce-b0cb-4a63-a953-2c547bdee2e7,name:,host:192.168.196.1:8888,start:2021-05-08 20:57:30,end:2021-05-08 20:57:30,status:,error:,numbers:0}"
+time="2021-05-08 20:57:30" level=info msg="调度器接收任务状态成功"
+time="2021-05-08 20:58:30" level=info msg="开始执行任务"
+time="2021-05-08 20:58:30" level=info msg="任务执行成功" 任务输出=
+time="2021-05-08 20:58:30" level=info msg="任务运行结束"
+time="2021-05-08 20:58:30" level=info msg="通知调度器任务执行状态" status_info="{task_id:086d46ce-b0cb-4a63-a953-2c547bdee2e7,name:,host:192.168.196.1:8888,start:2021-05-08 20:58:30,end:2021-05-08 20:58:30,status:,error:,numbers:0}"
+time="2021-05-08 20:58:30" level=info msg="调度器接收任务状态成功"
+time="2021-05-08 20:59:30" level=info msg="开始执行任务"
+time="2021-05-08 20:59:30" level=info msg="任务执行成功" 任务输出=
+time="2021-05-08 20:59:30" level=info msg="任务运行结束"
+time="2021-05-08 20:59:30" level=info msg="通知调度器任务执行状态" status_info="{task_id:086d46ce-b0cb-4a63-a953-2c547bdee2e7,name:,host:192.168.196.1:8888,start:2021-05-08 20:59:30,end:2021-05-08 20:59:30,status:,error:,numbers:0}"
+time="2021-05-08 20:59:30" level=info msg="调度器接收任务状态成功"
+time="2021-05-08 21:00:30" level=info msg="开始执行任务"
+time="2021-05-08 21:00:30" level=info msg="任务执行成功" 任务输出=
+time="2021-05-08 21:00:30" level=info msg="任务运行结束"
+time="2021-05-08 21:00:30" level=info msg="通知调度器任务执行状态" status_info="{task_id:086d46ce-b0cb-4a63-a953-2c547bdee2e7,name:,host:192.168.196.1:8888,start:2021-05-08 21:00:30,end:2021-05-08 21:00:30,status:,error:,numbers:0}"
+time="2021-05-08 21:00:30" level=info msg="调度器接收任务状态成功"
+time="2021-05-08 21:01:30" level=info msg="开始执行任务"
+time="2021-05-08 21:01:30" level=info msg="任务执行成功" 任务输出=
+time="2021-05-08 21:01:30" level=info msg="任务运行结束"
+time="2021-05-08 21:01:30" level=info msg="通知调度器任务执行状态" status_info="{task_id:086d46ce-b0cb-4a63-a953-2c547bdee2e7,name:,host:192.168.196.1:8888,start:2021-05-08 21:01:30,end:2021-05-08 21:01:30,status:,error:,numbers:0}"
+time="2021-05-08 21:01:30" level=info msg="调度器接收任务状态成功"
+time="2021-05-08 21:02:30" level=info msg="开始执行任务"
+time="2021-05-08 21:02:30" level=info msg="任务执行成功" 任务输出=
+time="2021-05-08 21:02:30" level=info msg="任务运行结束"
+time="2021-05-08 21:02:30" level=info msg="通知调度器任务执行状态" status_info="{task_id:086d46ce-b0cb-4a63-a953-2c547bdee2e7,name:,host:192.168.196.1:8888,start:2021-05-08 21:02:30,end:2021-05-08 21:02:30,status:,error:,numbers:0}"
+time="2021-05-08 21:02:30" level=info msg="调度器接收任务状态成功"
+time="2021-05-08 21:03:30" level=info msg="开始执行任务"
+time="2021-05-08 21:03:30" level=info msg="任务执行成功" 任务输出=
+time="2021-05-08 21:03:30" level=info msg="任务运行结束"
+time="2021-05-08 21:03:30" level=info msg="通知调度器任务执行状态" status_info="{task_id:086d46ce-b0cb-4a63-a953-2c547bdee2e7,name:,host:192.168.196.1:8888,start:2021-05-08 21:03:30,end:2021-05-08 21:03:30,status:,error:,numbers:0}"
+time="2021-05-08 21:03:30" level=info msg="调度器接收任务状态成功"
+time="2021-05-08 21:04:30" level=info msg="开始执行任务"
+time="2021-05-08 21:04:30" level=info msg="任务执行成功" 任务输出=
+time="2021-05-08 21:04:30" level=info msg="任务运行结束"
+time="2021-05-08 21:04:30" level=info msg="通知调度器任务执行状态" status_info="{task_id:086d46ce-b0cb-4a63-a953-2c547bdee2e7,name:,host:192.168.196.1:8888,start:2021-05-08 21:04:30,end:2021-05-08 21:04:30,status:,error:,numbers:0}"
+time="2021-05-08 21:04:30" level=info msg="调度器接收任务状态成功"
+time="2021-05-08 21:05:30" level=info msg="开始执行任务"
+time="2021-05-08 21:05:30" level=info msg="任务执行成功" 任务输出=
+time="2021-05-08 21:05:30" level=info msg="任务运行结束"
+time="2021-05-08 21:05:30" level=info msg="通知调度器任务执行状态" status_info="{task_id:086d46ce-b0cb-4a63-a953-2c547bdee2e7,name:,host:192.168.196.1:8888,start:2021-05-08 21:05:30,end:2021-05-08 21:05:30,status:,error:,numbers:0}"
+time="2021-05-08 21:05:30" level=info msg="调度器接收任务状态成功"
+time="2021-05-08 21:06:30" level=info msg="开始执行任务"
+time="2021-05-08 21:06:30" level=info msg="任务执行成功" 任务输出=
+time="2021-05-08 21:06:30" level=info msg="任务运行结束"
+time="2021-05-08 21:06:30" level=info msg="通知调度器任务执行状态" status_info="{task_id:086d46ce-b0cb-4a63-a953-2c547bdee2e7,name:,host:192.168.196.1:8888,start:2021-05-08 21:06:30,end:2021-05-08 21:06:30,status:,error:,numbers:0}"
+time="2021-05-08 21:06:30" level=info msg="调度器接收任务状态成功"
+time="2021-05-08 21:07:30" level=info msg="开始执行任务"
+time="2021-05-08 21:07:30" level=info msg="任务执行成功" 任务输出=
+time="2021-05-08 21:07:30" level=info msg="任务运行结束"
+time="2021-05-08 21:07:30" level=info msg="通知调度器任务执行状态" status_info="{task_id:086d46ce-b0cb-4a63-a953-2c547bdee2e7,name:,host:192.168.196.1:8888,start:2021-05-08 21:07:30,end:2021-05-08 21:07:30,status:,error:,numbers:0}"
+time="2021-05-08 21:07:30" level=info msg="调度器接收任务状态成功"
+time="2021-05-08 21:08:30" level=info msg="开始执行任务"
+time="2021-05-08 21:08:30" level=info msg="任务执行成功" 任务输出=
+time="2021-05-08 21:08:30" level=info msg="任务运行结束"
+time="2021-05-08 21:08:30" level=info msg="通知调度器任务执行状态" status_info="{task_id:086d46ce-b0cb-4a63-a953-2c547bdee2e7,name:,host:192.168.196.1:8888,start:2021-05-08 21:08:30,end:2021-05-08 21:08:30,status:,error:,numbers:0}"
+time="2021-05-08 21:08:30" level=info msg="调度器接收任务状态成功"
+time="2021-05-08 21:09:30" level=info msg="开始执行任务"
+time="2021-05-08 21:09:30" level=info msg="任务执行成功" 任务输出=
+time="2021-05-08 21:09:30" level=info msg="任务运行结束"
+time="2021-05-08 21:09:30" level=info msg="通知调度器任务执行状态" status_info="{task_id:086d46ce-b0cb-4a63-a953-2c547bdee2e7,name:,host:192.168.196.1:8888,start:2021-05-08 21:09:30,end:2021-05-08 21:09:30,status:,error:,numbers:0}"
+time="2021-05-08 21:09:30" level=info msg="调度器接收任务状态成功"
+time="2021-05-08 21:10:30" level=info msg="开始执行任务"
+time="2021-05-08 21:10:30" level=info msg="任务执行成功" 任务输出=
+time="2021-05-08 21:10:30" level=info msg="任务运行结束"
+time="2021-05-08 21:10:30" level=info msg="通知调度器任务执行状态" status_info="{task_id:086d46ce-b0cb-4a63-a953-2c547bdee2e7,name:,host:192.168.196.1:8888,start:2021-05-08 21:10:30,end:2021-05-08 21:10:30,status:,error:,numbers:0}"
+time="2021-05-08 21:10:30" level=info msg="调度器接收任务状态成功"
+time="2021-05-08 21:11:30" level=info msg="开始执行任务"
+time="2021-05-08 21:11:30" level=info msg="任务执行成功" 任务输出=
+time="2021-05-08 21:11:30" level=info msg="任务运行结束"
+time="2021-05-08 21:11:30" level=info msg="通知调度器任务执行状态" status_info="{task_id:086d46ce-b0cb-4a63-a953-2c547bdee2e7,name:,host:192.168.196.1:8888,start:2021-05-08 21:11:30,end:2021-05-08 21:11:30,status:,error:,numbers:0}"
+time="2021-05-08 21:11:30" level=info msg="调度器接收任务状态成功"
+time="2021-05-08 21:12:30" level=info msg="开始执行任务"
+time="2021-05-08 21:12:30" level=info msg="任务执行成功" 任务输出=
+time="2021-05-08 21:12:30" level=info msg="任务运行结束"
+time="2021-05-08 21:12:30" level=info msg="通知调度器任务执行状态" status_info="{task_id:086d46ce-b0cb-4a63-a953-2c547bdee2e7,name:,host:192.168.196.1:8888,start:2021-05-08 21:12:30,end:2021-05-08 21:12:30,status:,error:,numbers:0}"
+time="2021-05-08 21:12:30" level=info msg="调度器接收任务状态成功"
+time="2021-05-08 21:13:30" level=info msg="开始执行任务"
+time="2021-05-08 21:13:30" level=info msg="任务执行成功" 任务输出=
+time="2021-05-08 21:13:30" level=info msg="任务运行结束"
+time="2021-05-08 21:13:30" level=info msg="通知调度器任务执行状态" status_info="{task_id:086d46ce-b0cb-4a63-a953-2c547bdee2e7,name:,host:192.168.196.1:8888,start:2021-05-08 21:13:30,end:2021-05-08 21:13:30,status:,error:,numbers:0}"
+time="2021-05-08 21:13:30" level=info msg="调度器接收任务状态成功"
+time="2021-05-08 21:14:30" level=info msg="开始执行任务"
+time="2021-05-08 21:14:30" level=info msg="任务执行成功" 任务输出=
+time="2021-05-08 21:14:30" level=info msg="任务运行结束"
+time="2021-05-08 21:14:30" level=info msg="通知调度器任务执行状态" status_info="{task_id:086d46ce-b0cb-4a63-a953-2c547bdee2e7,name:,host:192.168.196.1:8888,start:2021-05-08 21:14:30,end:2021-05-08 21:14:30,status:,error:,numbers:0}"
+time="2021-05-08 21:14:30" level=info msg="调度器接收任务状态成功"
+time="2021-05-08 21:15:30" level=info msg="开始执行任务"
+time="2021-05-08 21:15:30" level=info msg="任务执行成功" 任务输出=
+time="2021-05-08 21:15:30" level=info msg="任务运行结束"
+time="2021-05-08 21:15:30" level=info msg="通知调度器任务执行状态" status_info="{task_id:086d46ce-b0cb-4a63-a953-2c547bdee2e7,name:,host:192.168.196.1:8888,start:2021-05-08 21:15:30,end:2021-05-08 21:15:30,status:,error:,numbers:0}"
+time="2021-05-08 21:15:30" level=info msg="调度器接收任务状态成功"
+time="2021-05-08 21:16:30" level=info msg="开始执行任务"
+time="2021-05-08 21:16:30" level=info msg="任务执行成功" 任务输出=
+time="2021-05-08 21:16:30" level=info msg="任务运行结束"
+time="2021-05-08 21:16:30" level=info msg="通知调度器任务执行状态" status_info="{task_id:086d46ce-b0cb-4a63-a953-2c547bdee2e7,name:,host:192.168.196.1:8888,start:2021-05-08 21:16:30,end:2021-05-08 21:16:30,status:,error:,numbers:0}"
+time="2021-05-08 21:16:30" level=info msg="调度器接收任务状态成功"
+time="2021-05-08 21:17:30" level=info msg="开始执行任务"
+time="2021-05-08 21:17:30" level=info msg="任务执行成功" 任务输出=
+time="2021-05-08 21:17:30" level=info msg="任务运行结束"
+time="2021-05-08 21:17:30" level=info msg="通知调度器任务执行状态" status_info="{task_id:086d46ce-b0cb-4a63-a953-2c547bdee2e7,name:,host:192.168.196.1:8888,start:2021-05-08 21:17:30,end:2021-05-08 21:17:30,status:,error:,numbers:0}"
+time="2021-05-08 21:17:30" level=info msg="调度器接收任务状态成功"
+time="2021-05-08 21:18:30" level=info msg="开始执行任务"
+time="2021-05-08 21:18:30" level=info msg="任务执行成功" 任务输出=
+time="2021-05-08 21:18:30" level=info msg="任务运行结束"
+time="2021-05-08 21:18:30" level=info msg="通知调度器任务执行状态" status_info="{task_id:086d46ce-b0cb-4a63-a953-2c547bdee2e7,name:,host:192.168.196.1:8888,start:2021-05-08 21:18:30,end:2021-05-08 21:18:30,status:,error:,numbers:0}"
+time="2021-05-08 21:18:30" level=info msg="调度器接收任务状态成功"
+time="2021-05-08 21:19:30" level=info msg="开始执行任务"
+time="2021-05-08 21:19:30" level=info msg="任务执行成功" 任务输出=
+time="2021-05-08 21:19:30" level=info msg="任务运行结束"
+time="2021-05-08 21:19:30" level=info msg="通知调度器任务执行状态" status_info="{task_id:086d46ce-b0cb-4a63-a953-2c547bdee2e7,name:,host:192.168.196.1:8888,start:2021-05-08 21:19:30,end:2021-05-08 21:19:30,status:,error:,numbers:0}"
+time="2021-05-08 21:19:30" level=info msg="调度器接收任务状态成功"
+time="2021-05-08 21:20:30" level=info msg="开始执行任务"
+time="2021-05-08 21:20:30" level=info msg="任务执行成功" 任务输出=
+time="2021-05-08 21:20:30" level=info msg="任务运行结束"
+time="2021-05-08 21:20:30" level=info msg="通知调度器任务执行状态" status_info="{task_id:086d46ce-b0cb-4a63-a953-2c547bdee2e7,name:,host:192.168.196.1:8888,start:2021-05-08 21:20:30,end:2021-05-08 21:20:30,status:,error:,numbers:0}"
+time="2021-05-08 21:20:30" level=info msg="调度器接收任务状态成功"
+time="2021-05-08 21:21:30" level=info msg="开始执行任务"
+time="2021-05-08 21:21:30" level=info msg="任务执行成功" 任务输出=
+time="2021-05-08 21:21:30" level=info msg="任务运行结束"
+time="2021-05-08 21:21:30" level=info msg="通知调度器任务执行状态" status_info="{task_id:086d46ce-b0cb-4a63-a953-2c547bdee2e7,name:,host:192.168.196.1:8888,start:2021-05-08 21:21:30,end:2021-05-08 21:21:30,status:,error:,numbers:0}"
+time="2021-05-08 21:21:30" level=info msg="调度器接收任务状态成功"
+time="2021-05-08 21:22:30" level=info msg="开始执行任务"
+time="2021-05-08 21:22:30" level=info msg="任务执行成功" 任务输出=
+time="2021-05-08 21:22:30" level=info msg="任务运行结束"
+time="2021-05-08 21:22:30" level=info msg="通知调度器任务执行状态" status_info="{task_id:086d46ce-b0cb-4a63-a953-2c547bdee2e7,name:,host:192.168.196.1:8888,start:2021-05-08 21:22:30,end:2021-05-08 21:22:30,status:,error:,numbers:0}"
+time="2021-05-08 21:22:30" level=info msg="调度器接收任务状态成功"
+time="2021-05-08 21:23:30" level=info msg="开始执行任务"
+time="2021-05-08 21:23:30" level=info msg="任务执行成功" 任务输出=
+time="2021-05-08 21:23:30" level=info msg="任务运行结束"
+time="2021-05-08 21:23:30" level=info msg="通知调度器任务执行状态" status_info="{task_id:086d46ce-b0cb-4a63-a953-2c547bdee2e7,name:,host:192.168.196.1:8888,start:2021-05-08 21:23:30,end:2021-05-08 21:23:30,status:,error:,numbers:0}"
+time="2021-05-08 21:23:30" level=info msg="调度器接收任务状态成功"
+time="2021-05-08 21:24:30" level=info msg="开始执行任务"
+time="2021-05-08 21:24:30" level=info msg="任务执行成功" 任务输出=
+time="2021-05-08 21:24:30" level=info msg="任务运行结束"
+time="2021-05-08 21:24:30" level=info msg="通知调度器任务执行状态" status_info="{task_id:086d46ce-b0cb-4a63-a953-2c547bdee2e7,name:,host:192.168.196.1:8888,start:2021-05-08 21:24:30,end:2021-05-08 21:24:30,status:,error:,numbers:0}"
+time="2021-05-08 21:24:30" level=info msg="调度器接收任务状态成功"
+time="2021-05-08 21:25:30" level=info msg="开始执行任务"
+time="2021-05-08 21:25:30" level=info msg="任务执行成功" 任务输出=
+time="2021-05-08 21:25:30" level=info msg="任务运行结束"
+time="2021-05-08 21:25:30" level=info msg="通知调度器任务执行状态" status_info="{task_id:086d46ce-b0cb-4a63-a953-2c547bdee2e7,name:,host:192.168.196.1:8888,start:2021-05-08 21:25:30,end:2021-05-08 21:25:30,status:,error:,numbers:0}"
+time="2021-05-08 21:25:30" level=info msg="调度器接收任务状态成功"
+time="2021-05-08 21:26:30" level=info msg="开始执行任务"
+time="2021-05-08 21:26:30" level=info msg="任务执行成功" 任务输出=
+time="2021-05-08 21:26:30" level=info msg="任务运行结束"
+time="2021-05-08 21:26:30" level=info msg="通知调度器任务执行状态" status_info="{task_id:086d46ce-b0cb-4a63-a953-2c547bdee2e7,name:,host:192.168.196.1:8888,start:2021-05-08 21:26:30,end:2021-05-08 21:26:30,status:,error:,numbers:0}"
+time="2021-05-08 21:26:30" level=info msg="调度器接收任务状态成功"
+time="2021-05-08 21:27:30" level=info msg="开始执行任务"
+time="2021-05-08 21:27:30" level=info msg="任务执行成功" 任务输出=
+time="2021-05-08 21:27:30" level=info msg="任务运行结束"
+time="2021-05-08 21:27:30" level=info msg="通知调度器任务执行状态" status_info="{task_id:086d46ce-b0cb-4a63-a953-2c547bdee2e7,name:,host:192.168.196.1:8888,start:2021-05-08 21:27:30,end:2021-05-08 21:27:30,status:,error:,numbers:0}"
+time="2021-05-08 21:27:30" level=info msg="调度器接收任务状态成功"
+time="2021-05-08 21:28:30" level=info msg="开始执行任务"
+time="2021-05-08 21:28:31" level=info msg="任务执行成功" 任务输出=
+time="2021-05-08 21:28:31" level=info msg="任务运行结束"
+time="2021-05-08 21:28:31" level=info msg="通知调度器任务执行状态" status_info="{task_id:086d46ce-b0cb-4a63-a953-2c547bdee2e7,name:,host:192.168.196.1:8888,start:2021-05-08 21:28:30,end:2021-05-08 21:28:31,status:,error:,numbers:0}"
+time="2021-05-08 21:28:31" level=info msg="调度器接收任务状态成功"
+time="2021-05-08 21:29:30" level=info msg="开始执行任务"
+time="2021-05-08 21:29:30" level=info msg="任务执行成功" 任务输出=
+time="2021-05-08 21:29:30" level=info msg="任务运行结束"
+time="2021-05-08 21:29:30" level=info msg="通知调度器任务执行状态" status_info="{task_id:086d46ce-b0cb-4a63-a953-2c547bdee2e7,name:,host:192.168.196.1:8888,start:2021-05-08 21:29:30,end:2021-05-08 21:29:30,status:,error:,numbers:0}"
+time="2021-05-08 21:29:30" level=info msg="调度器接收任务状态成功"
+time="2021-05-08 21:30:30" level=info msg="开始执行任务"
+time="2021-05-08 21:30:30" level=info msg="任务执行成功" 任务输出=
+time="2021-05-08 21:30:30" level=info msg="任务运行结束"
+time="2021-05-08 21:30:30" level=info msg="通知调度器任务执行状态" status_info="{task_id:086d46ce-b0cb-4a63-a953-2c547bdee2e7,name:,host:192.168.196.1:8888,start:2021-05-08 21:30:30,end:2021-05-08 21:30:30,status:,error:,numbers:0}"
+time="2021-05-08 21:30:30" level=info msg="调度器接收任务状态成功"
+time="2021-05-08 21:31:30" level=info msg="开始执行任务"
+time="2021-05-08 21:31:30" level=info msg="任务执行成功" 任务输出=
+time="2021-05-08 21:31:30" level=info msg="任务运行结束"
+time="2021-05-08 21:31:30" level=info msg="通知调度器任务执行状态" status_info="{task_id:086d46ce-b0cb-4a63-a953-2c547bdee2e7,name:,host:192.168.196.1:8888,start:2021-05-08 21:31:30,end:2021-05-08 21:31:30,status:,error:,numbers:0}"
+time="2021-05-08 21:31:30" level=info msg="调度器接收任务状态成功"
+time="2021-05-08 21:32:30" level=info msg="开始执行任务"
+time="2021-05-08 21:32:30" level=info msg="任务执行成功" 任务输出=
+time="2021-05-08 21:32:30" level=info msg="任务运行结束"
+time="2021-05-08 21:32:30" level=info msg="通知调度器任务执行状态" status_info="{task_id:086d46ce-b0cb-4a63-a953-2c547bdee2e7,name:,host:192.168.196.1:8888,start:2021-05-08 21:32:30,end:2021-05-08 21:32:30,status:,error:,numbers:0}"
+time="2021-05-08 21:32:30" level=info msg="调度器接收任务状态成功"
+time="2021-05-08 21:33:30" level=info msg="开始执行任务"
+time="2021-05-08 21:33:30" level=info msg="任务执行成功" 任务输出=
+time="2021-05-08 21:33:30" level=info msg="任务运行结束"
+time="2021-05-08 21:33:30" level=info msg="通知调度器任务执行状态" status_info="{task_id:086d46ce-b0cb-4a63-a953-2c547bdee2e7,name:,host:192.168.196.1:8888,start:2021-05-08 21:33:30,end:2021-05-08 21:33:30,status:,error:,numbers:0}"
+time="2021-05-08 21:33:30" level=info msg="调度器接收任务状态成功"
+time="2021-05-08 21:34:30" level=info msg="开始执行任务"
+time="2021-05-08 21:34:30" level=info msg="任务执行成功" 任务输出=
+time="2021-05-08 21:34:30" level=info msg="任务运行结束"
+time="2021-05-08 21:34:30" level=info msg="通知调度器任务执行状态" status_info="{task_id:086d46ce-b0cb-4a63-a953-2c547bdee2e7,name:,host:192.168.196.1:8888,start:2021-05-08 21:34:30,end:2021-05-08 21:34:30,status:,error:,numbers:0}"
+time="2021-05-08 21:34:30" level=info msg="调度器接收任务状态成功"
+time="2021-05-08 21:35:30" level=info msg="开始执行任务"
+time="2021-05-08 21:35:30" level=info msg="任务执行成功" 任务输出=
+time="2021-05-08 21:35:30" level=info msg="任务运行结束"
+time="2021-05-08 21:35:30" level=info msg="通知调度器任务执行状态" status_info="{task_id:086d46ce-b0cb-4a63-a953-2c547bdee2e7,name:,host:192.168.196.1:8888,start:2021-05-08 21:35:30,end:2021-05-08 21:35:30,status:,error:,numbers:0}"
+time="2021-05-08 21:35:30" level=info msg="调度器接收任务状态成功"
+time="2021-05-08 21:36:30" level=info msg="开始执行任务"
+time="2021-05-08 21:36:30" level=info msg="任务执行成功" 任务输出=
+time="2021-05-08 21:36:30" level=info msg="任务运行结束"
+time="2021-05-08 21:36:30" level=info msg="通知调度器任务执行状态" status_info="{task_id:086d46ce-b0cb-4a63-a953-2c547bdee2e7,name:,host:192.168.196.1:8888,start:2021-05-08 21:36:30,end:2021-05-08 21:36:30,status:,error:,numbers:0}"
+time="2021-05-08 21:36:30" level=info msg="调度器接收任务状态成功"
+time="2021-05-08 21:37:30" level=info msg="开始执行任务"
+time="2021-05-08 21:37:30" level=info msg="任务执行成功" 任务输出=
+time="2021-05-08 21:37:30" level=info msg="任务运行结束"
+time="2021-05-08 21:37:30" level=info msg="通知调度器任务执行状态" status_info="{task_id:086d46ce-b0cb-4a63-a953-2c547bdee2e7,name:,host:192.168.196.1:8888,start:2021-05-08 21:37:30,end:2021-05-08 21:37:30,status:,error:,numbers:0}"
+time="2021-05-08 21:37:30" level=info msg="调度器接收任务状态成功"
+time="2021-05-08 21:38:30" level=info msg="开始执行任务"
+time="2021-05-08 21:38:30" level=info msg="任务执行成功" 任务输出=
+time="2021-05-08 21:38:30" level=info msg="任务运行结束"
+time="2021-05-08 21:38:30" level=info msg="通知调度器任务执行状态" status_info="{task_id:086d46ce-b0cb-4a63-a953-2c547bdee2e7,name:,host:192.168.196.1:8888,start:2021-05-08 21:38:30,end:2021-05-08 21:38:30,status:,error:,numbers:0}"
+time="2021-05-08 21:38:30" level=info msg="调度器接收任务状态成功"
+time="2021-05-08 21:39:30" level=info msg="开始执行任务"
+time="2021-05-08 21:39:30" level=info msg="任务执行成功" 任务输出=
+time="2021-05-08 21:39:30" level=info msg="任务运行结束"
+time="2021-05-08 21:39:30" level=info msg="通知调度器任务执行状态" status_info="{task_id:086d46ce-b0cb-4a63-a953-2c547bdee2e7,name:,host:192.168.196.1:8888,start:2021-05-08 21:39:30,end:2021-05-08 21:39:30,status:,error:,numbers:0}"
+time="2021-05-08 21:39:30" level=info msg="调度器接收任务状态成功"
+time="2021-05-08 21:40:30" level=info msg="开始执行任务"
+time="2021-05-08 21:40:30" level=info msg="任务执行成功" 任务输出=
+time="2021-05-08 21:40:30" level=info msg="任务运行结束"
+time="2021-05-08 21:40:30" level=info msg="通知调度器任务执行状态" status_info="{task_id:086d46ce-b0cb-4a63-a953-2c547bdee2e7,name:,host:192.168.196.1:8888,start:2021-05-08 21:40:30,end:2021-05-08 21:40:30,status:,error:,numbers:0}"
+time="2021-05-08 21:40:30" level=info msg="调度器接收任务状态成功"
+time="2021-05-08 21:41:30" level=info msg="开始执行任务"
+time="2021-05-08 21:41:30" level=info msg="任务执行成功" 任务输出=
+time="2021-05-08 21:41:30" level=info msg="任务运行结束"
+time="2021-05-08 21:41:30" level=info msg="通知调度器任务执行状态" status_info="{task_id:086d46ce-b0cb-4a63-a953-2c547bdee2e7,name:,host:192.168.196.1:8888,start:2021-05-08 21:41:30,end:2021-05-08 21:41:30,status:,error:,numbers:0}"
+time="2021-05-08 21:41:30" level=info msg="调度器接收任务状态成功"
+time="2021-05-08 21:42:30" level=info msg="开始执行任务"
+time="2021-05-08 21:42:30" level=info msg="任务执行成功" 任务输出=
+time="2021-05-08 21:42:30" level=info msg="任务运行结束"
+time="2021-05-08 21:42:30" level=info msg="通知调度器任务执行状态" status_info="{task_id:086d46ce-b0cb-4a63-a953-2c547bdee2e7,name:,host:192.168.196.1:8888,start:2021-05-08 21:42:30,end:2021-05-08 21:42:30,status:,error:,numbers:0}"
+time="2021-05-08 21:42:30" level=info msg="调度器接收任务状态成功"
+time="2021-05-08 21:43:30" level=info msg="开始执行任务"
+time="2021-05-08 21:43:30" level=info msg="任务执行成功" 任务输出=
+time="2021-05-08 21:43:30" level=info msg="任务运行结束"
+time="2021-05-08 21:43:30" level=info msg="通知调度器任务执行状态" status_info="{task_id:086d46ce-b0cb-4a63-a953-2c547bdee2e7,name:,host:192.168.196.1:8888,start:2021-05-08 21:43:30,end:2021-05-08 21:43:30,status:,error:,numbers:0}"
+time="2021-05-08 21:43:30" level=info msg="调度器接收任务状态成功"
+time="2021-05-08 21:44:30" level=info msg="开始执行任务"
+time="2021-05-08 21:44:30" level=info msg="任务执行成功" 任务输出=
+time="2021-05-08 21:44:30" level=info msg="任务运行结束"
+time="2021-05-08 21:44:30" level=info msg="通知调度器任务执行状态" status_info="{task_id:086d46ce-b0cb-4a63-a953-2c547bdee2e7,name:,host:192.168.196.1:8888,start:2021-05-08 21:44:30,end:2021-05-08 21:44:30,status:,error:,numbers:0}"
+time="2021-05-08 21:44:30" level=info msg="调度器接收任务状态成功"
+time="2021-05-08 21:45:30" level=info msg="开始执行任务"
+time="2021-05-08 21:45:30" level=info msg="任务执行成功" 任务输出=
+time="2021-05-08 21:45:30" level=info msg="任务运行结束"
+time="2021-05-08 21:45:30" level=info msg="通知调度器任务执行状态" status_info="{task_id:086d46ce-b0cb-4a63-a953-2c547bdee2e7,name:,host:192.168.196.1:8888,start:2021-05-08 21:45:30,end:2021-05-08 21:45:30,status:,error:,numbers:0}"
+time="2021-05-08 21:45:30" level=info msg="调度器接收任务状态成功"
+time="2021-05-08 21:46:30" level=info msg="开始执行任务"
+time="2021-05-08 21:46:30" level=info msg="任务执行成功" 任务输出=
+time="2021-05-08 21:46:30" level=info msg="任务运行结束"
+time="2021-05-08 21:46:30" level=info msg="通知调度器任务执行状态" status_info="{task_id:086d46ce-b0cb-4a63-a953-2c547bdee2e7,name:,host:192.168.196.1:8888,start:2021-05-08 21:46:30,end:2021-05-08 21:46:30,status:,error:,numbers:0}"
+time="2021-05-08 21:46:30" level=info msg="调度器接收任务状态成功"
+time="2021-05-08 21:47:30" level=info msg="开始执行任务"
+time="2021-05-08 21:47:30" level=info msg="任务执行成功" 任务输出=
+time="2021-05-08 21:47:30" level=info msg="任务运行结束"
+time="2021-05-08 21:47:30" level=info msg="通知调度器任务执行状态" status_info="{task_id:086d46ce-b0cb-4a63-a953-2c547bdee2e7,name:,host:192.168.196.1:8888,start:2021-05-08 21:47:30,end:2021-05-08 21:47:30,status:,error:,numbers:0}"
+time="2021-05-08 21:47:30" level=info msg="调度器接收任务状态成功"
+time="2021-05-08 21:48:30" level=info msg="开始执行任务"
+time="2021-05-08 21:48:30" level=info msg="任务执行成功" 任务输出=
+time="2021-05-08 21:48:30" level=info msg="任务运行结束"
+time="2021-05-08 21:48:30" level=info msg="通知调度器任务执行状态" status_info="{task_id:086d46ce-b0cb-4a63-a953-2c547bdee2e7,name:,host:192.168.196.1:8888,start:2021-05-08 21:48:30,end:2021-05-08 21:48:30,status:,error:,numbers:0}"
+time="2021-05-08 21:48:30" level=info msg="调度器接收任务状态成功"
+time="2021-05-08 21:49:30" level=info msg="开始执行任务"
+time="2021-05-08 21:49:30" level=info msg="任务执行成功" 任务输出=
+time="2021-05-08 21:49:30" level=info msg="任务运行结束"
+time="2021-05-08 21:49:30" level=info msg="通知调度器任务执行状态" status_info="{task_id:086d46ce-b0cb-4a63-a953-2c547bdee2e7,name:,host:192.168.196.1:8888,start:2021-05-08 21:49:30,end:2021-05-08 21:49:30,status:,error:,numbers:0}"
+time="2021-05-08 21:49:30" level=info msg="调度器接收任务状态成功"
+time="2021-05-08 21:50:30" level=info msg="开始执行任务"
+time="2021-05-08 21:50:30" level=info msg="任务执行成功" 任务输出=
+time="2021-05-08 21:50:30" level=info msg="任务运行结束"
+time="2021-05-08 21:50:30" level=info msg="通知调度器任务执行状态" status_info="{task_id:086d46ce-b0cb-4a63-a953-2c547bdee2e7,name:,host:192.168.196.1:8888,start:2021-05-08 21:50:30,end:2021-05-08 21:50:30,status:,error:,numbers:0}"
+time="2021-05-08 21:50:30" level=info msg="调度器接收任务状态成功"
+time="2021-05-08 21:51:30" level=info msg="开始执行任务"
+time="2021-05-08 21:51:30" level=info msg="任务执行成功" 任务输出=
+time="2021-05-08 21:51:30" level=info msg="任务运行结束"
+time="2021-05-08 21:51:30" level=info msg="通知调度器任务执行状态" status_info="{task_id:086d46ce-b0cb-4a63-a953-2c547bdee2e7,name:,host:192.168.196.1:8888,start:2021-05-08 21:51:30,end:2021-05-08 21:51:30,status:,error:,numbers:0}"
+time="2021-05-08 21:51:30" level=info msg="调度器接收任务状态成功"
+time="2021-05-08 21:52:30" level=info msg="开始执行任务"
+time="2021-05-08 21:52:30" level=info msg="任务执行成功" 任务输出=
+time="2021-05-08 21:52:30" level=info msg="任务运行结束"
+time="2021-05-08 21:52:30" level=info msg="通知调度器任务执行状态" status_info="{task_id:086d46ce-b0cb-4a63-a953-2c547bdee2e7,name:,host:192.168.196.1:8888,start:2021-05-08 21:52:30,end:2021-05-08 21:52:30,status:,error:,numbers:0}"
+time="2021-05-08 21:52:30" level=info msg="调度器接收任务状态成功"
+time="2021-05-08 21:53:30" level=info msg="开始执行任务"
+time="2021-05-08 21:53:30" level=info msg="任务执行成功" 任务输出=
+time="2021-05-08 21:53:30" level=info msg="任务运行结束"
+time="2021-05-08 21:53:30" level=info msg="通知调度器任务执行状态" status_info="{task_id:086d46ce-b0cb-4a63-a953-2c547bdee2e7,name:,host:192.168.196.1:8888,start:2021-05-08 21:53:30,end:2021-05-08 21:53:30,status:,error:,numbers:0}"
+time="2021-05-08 21:53:30" level=info msg="调度器接收任务状态成功"
+time="2021-05-08 21:54:30" level=info msg="开始执行任务"
+time="2021-05-08 21:54:30" level=info msg="任务执行成功" 任务输出=
+time="2021-05-08 21:54:30" level=info msg="任务运行结束"
+time="2021-05-08 21:54:30" level=info msg="通知调度器任务执行状态" status_info="{task_id:086d46ce-b0cb-4a63-a953-2c547bdee2e7,name:,host:192.168.196.1:8888,start:2021-05-08 21:54:30,end:2021-05-08 21:54:30,status:,error:,numbers:0}"
+time="2021-05-08 21:54:30" level=info msg="调度器接收任务状态成功"
+time="2021-05-08 21:55:30" level=info msg="开始执行任务"
+time="2021-05-08 21:55:30" level=info msg="任务执行成功" 任务输出=
+time="2021-05-08 21:55:30" level=info msg="任务运行结束"
+time="2021-05-08 21:55:30" level=info msg="通知调度器任务执行状态" status_info="{task_id:086d46ce-b0cb-4a63-a953-2c547bdee2e7,name:,host:192.168.196.1:8888,start:2021-05-08 21:55:30,end:2021-05-08 21:55:30,status:,error:,numbers:0}"
+time="2021-05-08 21:55:30" level=info msg="调度器接收任务状态成功"
+time="2021-05-08 21:56:30" level=info msg="开始执行任务"
+time="2021-05-08 21:56:30" level=info msg="任务执行成功" 任务输出=
+time="2021-05-08 21:56:30" level=info msg="任务运行结束"
+time="2021-05-08 21:56:30" level=info msg="通知调度器任务执行状态" status_info="{task_id:086d46ce-b0cb-4a63-a953-2c547bdee2e7,name:,host:192.168.196.1:8888,start:2021-05-08 21:56:30,end:2021-05-08 21:56:30,status:,error:,numbers:0}"
+time="2021-05-08 21:56:30" level=info msg="调度器接收任务状态成功"
+time="2021-05-08 21:57:30" level=info msg="开始执行任务"
+time="2021-05-08 21:57:30" level=info msg="任务执行成功" 任务输出=
+time="2021-05-08 21:57:30" level=info msg="任务运行结束"
+time="2021-05-08 21:57:30" level=info msg="通知调度器任务执行状态" status_info="{task_id:086d46ce-b0cb-4a63-a953-2c547bdee2e7,name:,host:192.168.196.1:8888,start:2021-05-08 21:57:30,end:2021-05-08 21:57:30,status:,error:,numbers:0}"
+time="2021-05-08 21:57:30" level=info msg="调度器接收任务状态成功"
+time="2021-05-08 21:58:30" level=info msg="开始执行任务"
+time="2021-05-08 21:58:30" level=info msg="任务执行成功" 任务输出=
+time="2021-05-08 21:58:30" level=info msg="任务运行结束"
+time="2021-05-08 21:58:30" level=info msg="通知调度器任务执行状态" status_info="{task_id:086d46ce-b0cb-4a63-a953-2c547bdee2e7,name:,host:192.168.196.1:8888,start:2021-05-08 21:58:30,end:2021-05-08 21:58:30,status:,error:,numbers:0}"
+time="2021-05-08 21:58:30" level=info msg="调度器接收任务状态成功"
+time="2021-05-08 21:59:30" level=info msg="开始执行任务"
+time="2021-05-08 21:59:30" level=info msg="任务执行成功" 任务输出=
+time="2021-05-08 21:59:30" level=info msg="任务运行结束"
+time="2021-05-08 21:59:30" level=info msg="通知调度器任务执行状态" status_info="{task_id:086d46ce-b0cb-4a63-a953-2c547bdee2e7,name:,host:192.168.196.1:8888,start:2021-05-08 21:59:30,end:2021-05-08 21:59:30,status:,error:,numbers:0}"
+time="2021-05-08 21:59:30" level=info msg="调度器接收任务状态成功"
+time="2021-05-08 22:00:30" level=info msg="开始执行任务"
+time="2021-05-08 22:00:30" level=info msg="任务执行成功" 任务输出=
+time="2021-05-08 22:00:30" level=info msg="任务运行结束"
+time="2021-05-08 22:00:30" level=info msg="通知调度器任务执行状态" status_info="{task_id:086d46ce-b0cb-4a63-a953-2c547bdee2e7,name:,host:192.168.196.1:8888,start:2021-05-08 22:00:30,end:2021-05-08 22:00:30,status:,error:,numbers:0}"
+time="2021-05-08 22:00:30" level=info msg="调度器接收任务状态成功"
+time="2021-05-08 22:01:30" level=info msg="开始执行任务"
+time="2021-05-08 22:01:30" level=info msg="任务执行成功" 任务输出=
+time="2021-05-08 22:01:30" level=info msg="任务运行结束"
+time="2021-05-08 22:01:30" level=info msg="通知调度器任务执行状态" status_info="{task_id:086d46ce-b0cb-4a63-a953-2c547bdee2e7,name:,host:192.168.196.1:8888,start:2021-05-08 22:01:30,end:2021-05-08 22:01:30,status:,error:,numbers:0}"
+time="2021-05-08 22:01:30" level=info msg="调度器接收任务状态成功"
+time="2021-05-08 22:02:30" level=info msg="开始执行任务"
+time="2021-05-08 22:02:30" level=info msg="任务执行成功" 任务输出=
+time="2021-05-08 22:02:30" level=info msg="任务运行结束"
+time="2021-05-08 22:02:30" level=info msg="通知调度器任务执行状态" status_info="{task_id:086d46ce-b0cb-4a63-a953-2c547bdee2e7,name:,host:192.168.196.1:8888,start:2021-05-08 22:02:30,end:2021-05-08 22:02:30,status:,error:,numbers:0}"
+time="2021-05-08 22:02:30" level=info msg="调度器接收任务状态成功"
+time="2021-05-08 22:03:30" level=info msg="开始执行任务"
+time="2021-05-08 22:03:30" level=info msg="任务执行成功" 任务输出=
+time="2021-05-08 22:03:30" level=info msg="任务运行结束"
+time="2021-05-08 22:03:30" level=info msg="通知调度器任务执行状态" status_info="{task_id:086d46ce-b0cb-4a63-a953-2c547bdee2e7,name:,host:192.168.196.1:8888,start:2021-05-08 22:03:30,end:2021-05-08 22:03:30,status:,error:,numbers:0}"
+time="2021-05-08 22:03:30" level=info msg="调度器接收任务状态成功"
+time="2021-05-08 22:04:30" level=info msg="开始执行任务"
+time="2021-05-08 22:04:30" level=info msg="任务执行成功" 任务输出=
+time="2021-05-08 22:04:30" level=info msg="任务运行结束"
+time="2021-05-08 22:04:30" level=info msg="通知调度器任务执行状态" status_info="{task_id:086d46ce-b0cb-4a63-a953-2c547bdee2e7,name:,host:192.168.196.1:8888,start:2021-05-08 22:04:30,end:2021-05-08 22:04:30,status:,error:,numbers:0}"
+time="2021-05-08 22:04:30" level=info msg="调度器接收任务状态成功"
+time="2021-05-08 22:05:30" level=info msg="开始执行任务"
+time="2021-05-08 22:05:30" level=info msg="任务执行成功" 任务输出=
+time="2021-05-08 22:05:30" level=info msg="任务运行结束"
+time="2021-05-08 22:05:30" level=info msg="通知调度器任务执行状态" status_info="{task_id:086d46ce-b0cb-4a63-a953-2c547bdee2e7,name:,host:192.168.196.1:8888,start:2021-05-08 22:05:30,end:2021-05-08 22:05:30,status:,error:,numbers:0}"
+time="2021-05-08 22:05:30" level=info msg="调度器接收任务状态成功"
+time="2021-05-08 22:06:30" level=info msg="开始执行任务"
+time="2021-05-08 22:06:30" level=info msg="任务执行成功" 任务输出=
+time="2021-05-08 22:06:30" level=info msg="任务运行结束"
+time="2021-05-08 22:06:30" level=info msg="通知调度器任务执行状态" status_info="{task_id:086d46ce-b0cb-4a63-a953-2c547bdee2e7,name:,host:192.168.196.1:8888,start:2021-05-08 22:06:30,end:2021-05-08 22:06:30,status:,error:,numbers:0}"
+time="2021-05-08 22:06:30" level=info msg="调度器接收任务状态成功"
+time="2021-05-08 22:07:30" level=info msg="开始执行任务"
+time="2021-05-08 22:07:30" level=info msg="任务执行成功" 任务输出=
+time="2021-05-08 22:07:30" level=info msg="任务运行结束"
+time="2021-05-08 22:07:30" level=info msg="通知调度器任务执行状态" status_info="{task_id:086d46ce-b0cb-4a63-a953-2c547bdee2e7,name:,host:192.168.196.1:8888,start:2021-05-08 22:07:30,end:2021-05-08 22:07:30,status:,error:,numbers:0}"
+time="2021-05-08 22:07:30" level=info msg="调度器接收任务状态成功"
+time="2021-05-08 22:08:30" level=info msg="开始执行任务"
+time="2021-05-08 22:08:30" level=info msg="任务执行成功" 任务输出=
+time="2021-05-08 22:08:30" level=info msg="任务运行结束"
+time="2021-05-08 22:08:30" level=info msg="通知调度器任务执行状态" status_info="{task_id:086d46ce-b0cb-4a63-a953-2c547bdee2e7,name:,host:192.168.196.1:8888,start:2021-05-08 22:08:30,end:2021-05-08 22:08:30,status:,error:,numbers:0}"
+time="2021-05-08 22:08:30" level=info msg="调度器接收任务状态成功"
+time="2021-05-08 22:09:30" level=info msg="开始执行任务"
+time="2021-05-08 22:09:30" level=info msg="任务执行成功" 任务输出=
+time="2021-05-08 22:09:30" level=info msg="任务运行结束"
+time="2021-05-08 22:09:30" level=info msg="通知调度器任务执行状态" status_info="{task_id:086d46ce-b0cb-4a63-a953-2c547bdee2e7,name:,host:192.168.196.1:8888,start:2021-05-08 22:09:30,end:2021-05-08 22:09:30,status:,error:,numbers:0}"
+time="2021-05-08 22:09:30" level=info msg="调度器接收任务状态成功"
+time="2021-05-08 22:10:30" level=info msg="开始执行任务"
+time="2021-05-08 22:10:30" level=info msg="任务执行成功" 任务输出=
+time="2021-05-08 22:10:30" level=info msg="任务运行结束"
+time="2021-05-08 22:10:30" level=info msg="通知调度器任务执行状态" status_info="{task_id:086d46ce-b0cb-4a63-a953-2c547bdee2e7,name:,host:192.168.196.1:8888,start:2021-05-08 22:10:30,end:2021-05-08 22:10:30,status:,error:,numbers:0}"
+time="2021-05-08 22:10:30" level=info msg="调度器接收任务状态成功"
