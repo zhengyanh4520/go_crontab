@@ -9,7 +9,6 @@ import (
 	"go_crontab/cron"
 	"go_crontab/etcd"
 	"go_crontab/ghttp"
-	db "go_crontab/mysql_dao"
 	"os"
 	"os/signal"
 	"sync"
