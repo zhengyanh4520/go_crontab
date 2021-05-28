@@ -51,14 +51,12 @@ func (u *UserDao) CheckUser(checkUser *model.User) (*model.User, error) {
 
 func (u *UserDao) InsertUser(user *model.User) error {
 	logger := log.WithFields(log.Fields{
-		"insert_id":     user.Id,
-		"insert_psw":    user.Password,
-		"insert_name":   user.Name,
+		"insert_user": user.ToString(),
 	})
 
 	logger.Info("注册新用户数据入库")
 
-	sql := "insert into UserTable(id,password,name) values(?,?,?)"
+	sql := "insert into UserTable(id,password,name,company,department,duties,phone) values(?,?,?,?,?,?,?)"
 
 	client := getMysqlClient()
 	stmt, err := client.Prepare(sql)
@@ -67,7 +65,7 @@ func (u *UserDao) InsertUser(user *model.User) error {
 		return err
 	}
 
-	_, err = stmt.Exec(user.Id, user.Password, user.Name)
+	_, err = stmt.Exec(user.Id, user.Password, user.Name, user.Company, user.Department, user.Duties, user.Phone)
 	if err != nil {
 		logger.Error("注册新用户数据入库出错：" + err.Error())
 		return err
@@ -130,27 +128,61 @@ func (u *UserDao) ModifyUserPassword(id, newPwd, oldPwd string) error {
 	return errors.New("没有此用户")
 }
 
-func (u *UserDao) ModifyUserName(id, name string) error {
+func (u *UserDao) ModifyUserInfo(user *model.User) error {
 	logger := log.WithFields(log.Fields{
-		"user_id": id,
-		"name":    name,
+		"modify_user": user.ToString(),
 	})
 
-	logger.Info("修改用户用户名")
+	logger.Info("修改用户信息")
 
-	sql := "update UserTable set name=? where id=?"
+	sql := "update UserTable set name=?,company=?,department=?,duties=?,phone=? where id=?"
 	client := getMysqlClient()
 	stmt, err := client.Prepare(sql)
 	if err != nil {
-		logger.Error("修改用户用户名出错：" + err.Error())
+		logger.Error("修改用户信息出错：" + err.Error())
 		return err
 	}
 
-	_, err = stmt.Exec(name, id)
+	_, err = stmt.Exec(user.Name, user.Company, user.Department, user.Duties, user.Phone, user.Id)
 	if err != nil {
-		logger.Error("修改用户用户名出错：" + err.Error())
+		logger.Error("修改用户信息出错：" + err.Error())
 		return err
 	}
 
 	return nil
+}
+
+func (u *UserDao) GetUserInfo(id string) (*model.User, error) {
+	logger := log.WithFields(log.Fields{
+		"user_id": id,
+	})
+
+	logger.Info("获取用户信息")
+
+	sql := "select id,name,company,department,duties,phone from UserTable where id=?"
+	client := getMysqlClient()
+	stmt, err := client.Prepare(sql)
+	if err != nil {
+		logger.Error("获取用户信息出错：" + err.Error())
+		return nil, err
+	}
+
+	rows, err := stmt.Query(id)
+	if err != nil {
+		logger.Error("获取用户信息出错：" + err.Error())
+		return nil, err
+	}
+	defer rows.Close()
+
+	for rows.Next() {
+		var user model.User
+		err = rows.Scan(&user.Id, &user.Name, &user.Company, &user.Department, &user.Duties, &user.Phone)
+		if err != nil {
+			logger.Error("获取用户信息出错：" + err.Error())
+			return nil, err
+		}
+		return &user, nil
+	}
+
+	return nil, errors.New("没有此用户")
 }

@@ -66,8 +66,9 @@ func NewSchedulerServer(con *config.HttpConfig) *HttpServer {
 
 	r.POST("/login", handler.login)
 	r.POST("/register", handler.register)
+	r.POST("/readUserInfo", handler.readUserInfo)
 	r.POST("/modifyPassword", handler.modifyPassword)
-	r.POST("/modifyName", handler.modifyName)
+	r.POST("/modifyInfo", handler.modifyInfo)
 	r.GET("/exit", handler.exit)
 
 	r.POST("/addNode", handler.addNode)

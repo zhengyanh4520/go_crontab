@@ -8,6 +8,7 @@ import (
 	"go_crontab/config"
 	"go_crontab/constants"
 	"go_crontab/model"
+	"go_crontab/mysql_dao"
 	"go_crontab/notify"
 	"strings"
 	"time"
@@ -71,7 +72,7 @@ func InitSchedulerEtcd(con *config.EtcdConfig, hcfg *config.HttpConfig, reset ch
 	//监听
 	ch := make(chan error, 0)
 	go sEtcd.watchSchedulerLeader(ctx, ch, reset)
-	go sEtcd.watchSchedulerList(ctx,reset)
+	go sEtcd.watchSchedulerList(ctx, reset)
 
 	//尝试抢锁，决定调度器的leader
 	result, err := sEtcd.lock()
@@ -210,7 +211,7 @@ func (s *SchedulerEtcd) watchNodeList(ctx context.Context) {
 					log.Info("出现新的任务节点：" + host)
 
 					//先等待一段时间，此时任务节点可能还在初始化配置
-					time.Sleep(10 * time.Second)
+					time.Sleep(5 * time.Second)
 
 					//尝试下发该节点的任务
 					n := notify.Notify{}
@@ -323,17 +324,24 @@ func (s *SchedulerEtcd) GetSystemShareCommand(user_id string) ([]model.CommandLi
 
 	for _, v := range resp.Kvs {
 		str := string(v.Value)
-		value := strings.Split(str, ":")
+		value := strings.Split(str, "###")
 		temp := model.CommandList{
 			Host:    value[0],
-			Command: value[2],
-			UserId:  value[3],
-			Status:  value[4],
+			Command: value[1],
+			Status:  value[3],
+		}
+
+		udao := mysql_dao.UserDao{}
+		user, err := udao.GetUserInfo(value[2])
+		if err != nil {
+			temp.User = "获取用户信息出错"
+		} else {
+			temp.User = user.Company + "---" + user.Department + "---" + user.Duties + "---" + user.Name
 		}
 
 		if temp.Status == "System Layer" {
 			commandList = append(commandList, temp)
-		} else if temp.UserId == user_id {
+		} else if value[2] == user_id {
 			commandList = append(commandList, temp)
 		}
 	}

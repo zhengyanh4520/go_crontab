@@ -76,6 +76,32 @@ func (s1 *schedulerHandler) register(c *gin.Context) {
 	})
 }
 
+func (s1 *schedulerHandler) readUserInfo(c *gin.Context) {
+	log.WithField("remote_host", c.Request.RemoteAddr).Info("查看个人信息")
+
+	user_id, err := c.Cookie("user_id")
+	if err != nil {
+		c.JSON(http.StatusOK, gin.H{
+			"error": err.Error(),
+		})
+		return
+	}
+
+	//获取数据库数据
+	u := &mysql_dao.UserDao{}
+	user, err := u.GetUserInfo(user_id)
+	if err != nil {
+		c.JSON(http.StatusOK, gin.H{
+			"error": err.Error(),
+		})
+		return
+	}
+	c.JSON(http.StatusOK, gin.H{
+		"error": "",
+		"user":  user,
+	})
+}
+
 func (s1 *schedulerHandler) modifyPassword(c *gin.Context) {
 	log.WithField("remote_host", c.Request.RemoteAddr).Info("修改用户密码")
 
@@ -98,15 +124,11 @@ func (s1 *schedulerHandler) modifyPassword(c *gin.Context) {
 	})
 }
 
-func (s1 *schedulerHandler) modifyName(c *gin.Context) {
-	log.WithField("remote_host", c.Request.RemoteAddr).Info("修改用户用户名")
+func (s1 *schedulerHandler) modifyInfo(c *gin.Context) {
+	log.WithField("remote_host", c.Request.RemoteAddr).Info("修改用户信息")
 
-	id := c.PostForm("id")
-	name := c.PostForm("name")
-
-	u := &mysql_dao.UserDao{}
-
-	err := u.ModifyUserName(id, name)
+	var user model.User
+	err := c.ShouldBind(&user)
 	if err != nil {
 		c.JSON(http.StatusOK, gin.H{
 			"error": err.Error(),
@@ -114,7 +136,16 @@ func (s1 *schedulerHandler) modifyName(c *gin.Context) {
 		return
 	}
 
-	c.SetCookie("user_name", name, 3600*24, "/", s1.server.host, false, false)
+	u := &mysql_dao.UserDao{}
+	err = u.ModifyUserInfo(&user)
+	if err != nil {
+		c.JSON(http.StatusOK, gin.H{
+			"error": err.Error(),
+		})
+		return
+	}
+
+	c.SetCookie("user_name", user.Name, 3600*24, "/", s1.server.host, false, false)
 
 	c.JSON(http.StatusOK, gin.H{
 		"error": "",

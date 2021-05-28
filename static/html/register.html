@@ -17,13 +17,11 @@
         }
         #register{
             position: absolute;
-            left: 36%;
-            top: 26%;
+            left: 30%;
+            top: 7%;
             width: auto;
             height: auto;
-            padding-top: 40px;
-            padding-bottom: 20px;
-            padding-right: 20px;
+            padding: 40px 100px 20px 80px;
             background: white;
             border-radius: 10px;
             opacity:0.91;
@@ -48,6 +46,22 @@
 
         <el-form-item label="用户名：" prop="name">
             <el-input v-model="form.name"></el-input>
+        </el-form-item>
+
+        <el-form-item label="工作单位：" prop="name">
+            <el-input v-model="form.company"></el-input>
+        </el-form-item>
+
+        <el-form-item label="所属部门：" prop="name">
+            <el-input v-model="form.department"></el-input>
+        </el-form-item>
+
+        <el-form-item label="担任职务：" prop="name">
+            <el-input v-model="form.duties"></el-input>
+        </el-form-item>
+
+        <el-form-item label="手机号码：" prop="phone">
+            <el-input v-model="form.phone"></el-input>
         </el-form-item>
 
         <el-form-item >
@@ -81,6 +95,10 @@
                         password:"",
                         password2:"",
                         name:"",
+                        company:"",
+                        department:"",
+                        duties:"",
+                        phone:"",
                     },
                     rules: {
                         id:[
@@ -96,8 +114,12 @@
                             {validator: validatePass,required: true, trigger: 'blur' }
                         ],
                         name:[
-                            {type: "string", required: true, message: '请输入用户名', trigger: 'blur'},
+                            {type: "string", required: true, message: '不能为空', trigger: 'blur'},
                             {max: 20, message: "长度在20以内", trigger: "blur" }
+                        ],
+                        phone:[
+                            {type: "string", required: true, message: '不能为空', trigger: 'blur'},
+                            {type: "string", message: '手机号码不符合规范',pattern:/^((13[0-9])|(14[5-9])|(15([0-3]|[5-9]))|(16[6-7])|(17[1-8])|(18[0-9])|(19[1|3])|(19[5|6])|(19[8|9]))\d{8}$/, trigger: 'blur'},
                         ]
                     },
                 };
@@ -115,6 +137,10 @@
                                         "id": user.id,
                                         "password": user.password,
                                         "name": user.name,
+                                        "company": user.company,
+                                        "department": user.department,
+                                        "duties": user.duties,
+                                        "phone": user.phone,
                                     },
                             }).then(function (response) {
                                 if (response.data.error === "") {

@@ -8,6 +8,7 @@ import (
 
 type LogConfig struct {
 	Path string `yaml:"path"`
+	Day int `yaml:"day"`
 }
 
 type HttpConfig struct {

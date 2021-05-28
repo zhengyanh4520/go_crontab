@@ -1,5 +1,6 @@
 log:
   path: ../log/scheduler
+  day: 7
 
 http:
   host: 192.168.196.1

@@ -93,8 +93,9 @@
                     <el-dropdown trigger="click">
                         <img id="head" src="/static/picture/head.jfif">
                         <el-dropdown-menu >
+                            <el-dropdown-item><span @click="toUserInfo()">个人信息</span></el-dropdown-item>
+                            <el-dropdown-item><span @click="toModifyInfo()">修改信息</span></el-dropdown-item>
                             <el-dropdown-item><span @click="toModifyPassword()">修改密码</span></el-dropdown-item>
-                            <el-dropdown-item><span @click="toModifyName()">修改用户名</span></el-dropdown-item>
                         </el-dropdown-menu>
                     </el-dropdown>
                     <span style="margin: auto 15px;">{{name}}</span>
@@ -162,11 +163,14 @@
                 toReadCommand(){
                     document.getElementById('mainFrame').src= '/static/html/readCommandList.html';
                 },
+                toUserInfo(){
+                    document.getElementById('mainFrame').src= '/static/html/userInfo.html';
+                },
                 toModifyPassword(){
                     document.getElementById('mainFrame').src= '/static/html/modifyPassword.html';
                 },
-                toModifyName(){
-                    document.getElementById('mainFrame').src= '/static/html/modifyName.html';
+                toModifyInfo(){
+                    document.getElementById('mainFrame').src= '/static/html/modifyInfo.html';
                 },
                 exit(){
                     axios({

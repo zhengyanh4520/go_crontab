@@ -52,7 +52,7 @@ func initConfig(con *config.Config) {
 	fmt.Println("初始化配置")
 
 	//init log
-	initLog(con.Log.Path)
+	initLog(con.Log)
 
 	//init etcd
 	err := etcd.InitNodeEtcd(con.Etcd, con.Http, reset)
@@ -72,9 +72,9 @@ func initConfig(con *config.Config) {
 	}()
 }
 
-func initLog(path string) {
+func initLog(lc *config.LogConfig) {
 	//日志文件
-	file, _ := os.OpenFile(path, os.O_CREATE|os.O_APPEND|os.O_WRONLY, 0666)
+	file, _ := os.OpenFile(lc.Path, os.O_CREATE|os.O_APPEND|os.O_WRONLY, 0666)
 	log.SetOutput(file)
 	//设置最低loglevel
 	log.SetLevel(log.TraceLevel)
@@ -82,13 +82,13 @@ func initLog(path string) {
 	// 设置 rotatelogs
 	logWriter, err := rotatelogs.New(
 		//分割后文件名称
-		path+"%Y%m%d.log",
+		lc.Path+"%Y%m%d.log",
 
 		//生成软链，指向最新日志文件
-		rotatelogs.WithLinkName(path),
+		rotatelogs.WithLinkName(lc.Path),
 
 		//最大保存时间
-		rotatelogs.WithMaxAge(7*24*time.Hour),
+		rotatelogs.WithMaxAge(time.Duration(lc.Day)*24*time.Hour),
 
 		//日志切割间隔
 		rotatelogs.WithRotationTime(24*time.Hour),

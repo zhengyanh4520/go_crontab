@@ -37,9 +37,13 @@ type StatusInfo struct {
 }
 
 type User struct {
-	Id       string `form:"id" json:"id"`
-	Password string `form:"password" json:"password`
-	Name     string `form:"name" json:"name"`
+	Id         string `form:"id" json:"id"`
+	Password   string `form:"password" json:"password"`
+	Name       string `form:"name" json:"name"`
+	Company    string `form:"company" json:"company"`
+	Department string `form:"department" json:"department"`
+	Duties     string `form:"duties" json:"duties"`
+	Phone      string `form:"phone" json:"phone"`
 }
 
 type HostList struct {
@@ -51,7 +55,7 @@ type HostList struct {
 }
 
 type CommandList struct {
-	UserId  string `form:"user_id" json:"user_id"`
+	User    string `form:"user" json:"user"`
 	Command string `form:"command" json:"command"`
 	Host    string `form:"host" json:"host"`
 	Status  string `form:"status" json:"status"`
@@ -82,5 +86,10 @@ func (t *TaskList) ToString() string {
 
 func (s *StatusInfo) ToString() string {
 	result, _ := json.Marshal(s)
+	return strings.Replace(string(result), "\"", "", -1)
+}
+
+func (u *User) ToString() string {
+	result, _ := json.Marshal(u)
 	return strings.Replace(string(result), "\"", "", -1)
 }
